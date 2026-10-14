@@ -1,0 +1,117 @@
+{% extends "_base.html" %}
+{% set titulek = "Poptávka dveří Vasco Doors | Sestavte si dveře" %}
+{% set popis = "Nechte si vypracovat kalkulaci dveří zcela zdarma. Vyberte model, provedení a dekor, doplňte rozměr a my připravíme cenu včetně zárubně a montáže." %}
+{% set ns = namespace(cfg=[]) %}
+{% for m in data.models %}
+  {% set ns.cfg = ns.cfg + [{
+    'slug': m.slug, 'nazev': m.nazev, 'typ': m.typ, 'od': m.od, 'katalog': m.v_katalogu,
+    'varianty': m.varianty|map(attribute='nazev')|list,
+    'ceny': m.varianty|map(attribute='cena')|list,
+    'img': m.varianty|map(attribute='img')|map('img_url_640')|list,
+    'r': m.varianty|map(attribute='r')|list, 'hlavni': m.hlavni,
+    'dekory': m.dekory|map(attribute='nazev')|list,
+    'dekory_img': m.dekory|map(attribute='img')|map('img_url_240')|list
+  }] %}
+{% endfor %}
+{% block obsah %}
+<section class="stranka-hlava stranka-hlava--uzka">
+  <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a><span>Nezávazná poptávka</span></nav>
+  <p class="nadtitulek">Vasco Doors · Praha a okolí</p>
+  <h1>Sestavte si dveře</h1>
+  <p class="stranka-hlava__perex">Vyberte model a&nbsp;parametry, my vám připravíme nabídku. Cenu křídla vidíte hned podle ceníku, zárubeň, kování a&nbsp;montáž doplníme po zaměření. Nejde o&nbsp;závaznou objednávku.</p>
+</section>
+
+<form class="sestavovac formular" data-sestavovac data-endpoint="{{ site.formular.endpoint }}" data-demo="{{ 1 if site.formular.demo or not site.formular.endpoint else 0 }}" novalidate>
+  <div class="sestavovac__nahled" aria-live="polite">
+    <div class="sestavovac__stena">
+      {% set v0 = data.models[3].varianty[0] %}<div class="model__kridlo js-kridlo" style="--r: {{ v0.r }}"><span class="kridlo__otvor"><span class="kridlo__list"><img class="js-nahled" src="{{ img_url(v0.img, 640) }}" alt="Náhled dveří" width="300" height="795"></span></span></div>
+      <figure class="model__vzorek js-vzorek" hidden><img alt="" width="120" height="120"><figcaption></figcaption></figure>
+    </div>
+    <dl class="souhrn">
+      <div><dt>Model</dt><dd class="js-s-model">–</dd></div>
+      <div><dt>Provedení</dt><dd class="js-s-var">–</dd></div>
+      <div><dt>Dekor</dt><dd class="js-s-dekor">–</dd></div>
+      <div><dt>Typ a rozměr</dt><dd class="js-s-typ">–</dd></div>
+    </dl>
+    <p class="souhrn__cena"><small>Cena křídla podle ceníku</small><b class="js-cena">–</b><span class="js-cena-pozn">za kus bez DPH</span></p>
+    <p class="souhrn__pozn">Zárubeň, kování, dopravu a&nbsp;montáž naceníme podle zaměření. Ozveme se s&nbsp;nabídkou e-mailem nebo telefonem.</p>
+  </div>
+
+  <div class="sestavovac__kroky">
+    <fieldset class="krok">
+      <legend><span class="krok__c">1</span>Model dveří</legend>
+      {% for skupina, nazev in [('folie', 'Fólie'), ('cpl', 'CPL')] %}
+      <p class="krok__skupina">{{ nazev }}</p>
+      <div class="volby volby--modely">
+        {% for m in data.models if m.typ == skupina and m.v_katalogu %}
+        <label class="volba volba--model"><input type="radio" name="model" value="{{ m.slug }}"><span class="volba__kridlo" style="--r: {{ m.varianty[m.hlavni].r }}"><img src="{{ img_url(m.varianty[m.hlavni].img, 640) }}" alt="" width="60" height="159" loading="lazy"></span><b>{{ m.nazev }}</b><small>od {{ m.od_txt }}</small></label>
+        {% endfor %}
+      </div>
+      {% endfor %}
+      <label class="volba volba--radek"><input type="radio" name="model" value="poradit"><b>Jiný model / potřebuji poradit</b></label>
+    </fieldset>
+
+    <fieldset class="krok js-krok-var">
+      <legend><span class="krok__c">2</span>Provedení</legend>
+      <div class="volby volby--provedeni js-varianty"><p class="krok__prazdne">Nejdřív vyberte model.</p></div>
+    </fieldset>
+
+    <fieldset class="krok js-krok-dekor">
+      <legend><span class="krok__c">3</span>Dekor</legend>
+      <div class="volby volby--dekory js-dekory"><p class="krok__prazdne">Nejdřív vyberte model.</p></div>
+    </fieldset>
+
+    <fieldset class="krok">
+      <legend><span class="krok__c">4</span>Typ dveří a rozměr</legend>
+      <div class="volby volby--pilulky">
+        {% for t in ['Interiérové otočné', 'Bezfalcové', 'Posuvné do pouzdra', 'Posuvné na stěnu', 'Masivní dřevěné', 'Potřebuji poradit'] %}
+        <label class="volba volba--text"><input type="radio" name="typ" value="{{ t }}"{% if loop.first %} checked{% endif %}><span>{{ t }}</span></label>
+        {% endfor %}
+      </div>
+      <p class="krok__skupina">Šířka dveří</p>
+      <div class="volby volby--pilulky">
+        {% for s in ['60 cm', '70 cm', '80 cm', '90 cm', 'Jiná / nevím'] %}
+        <label class="volba volba--text"><input type="radio" name="sirka" value="{{ s }}"{% if s == '80 cm' %} checked{% endif %}><span>{{ s }}</span></label>
+        {% endfor %}
+      </div>
+      <div class="krok__pole">
+        <label>Síla zdi včetně omítky (mm, nepovinné)<input name="sila_zdi" inputmode="numeric" placeholder="např. 120"></label>
+        <label>Počet kusů<input name="pocet" type="number" min="1" value="1"></label>
+      </div>
+      <p class="krok__tip">Podle síly zdi vybereme správnou obložkovou zárubeň. Nevíte? Nevadí, změříme ji při zaměření. <a href="{{ url('oblozkove-zarubne') }}">Jak sílu zdi změřit</a></p>
+    </fieldset>
+
+    <fieldset class="krok">
+      <legend><span class="krok__c">5</span>Montáž a doprava</legend>
+      <div class="krok__dva">
+        <div><p class="krok__skupina">Montáž</p><div class="volby volby--pilulky">{% for o in ['Ano', 'Ne', 'Potřebuji poradit'] %}<label class="volba volba--text"><input type="radio" name="montaz" value="{{ o }}"{% if loop.first %} checked{% endif %}><span>{{ o }}</span></label>{% endfor %}</div></div>
+        <div><p class="krok__skupina">Doprava</p><div class="volby volby--pilulky">{% for o in ['Ano', 'Ne', 'Potřebuji poradit'] %}<label class="volba volba--text"><input type="radio" name="doprava" value="{{ o }}"{% if loop.first %} checked{% endif %}><span>{{ o }}</span></label>{% endfor %}</div></div>
+      </div>
+      <p class="krok__skupina">Místo realizace</p>
+      <div class="krok__pole krok__pole--adresa">
+        <label>Ulice a číslo popisné<input name="ulice" autocomplete="street-address"></label>
+        <label>Město<input name="mesto" autocomplete="address-level2"></label>
+        <label>PSČ<input name="psc" inputmode="numeric" autocomplete="postal-code"></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="krok">
+      <legend><span class="krok__c">6</span>Kontaktní údaje</legend>
+      <div class="krok__pole">
+        <label>Jméno a příjmení (nepovinné)<input name="jmeno" autocomplete="name"></label>
+        <label>Telefon<input name="telefon" type="tel" autocomplete="tel"></label>
+        <label>E-mail<input name="email" type="email" autocomplete="email"></label>
+      </div>
+      <label class="krok__poznamka">Poznámka / upřesnění<textarea name="poznamka" rows="4"></textarea></label>
+      <label class="souhlas"><input type="checkbox" name="souhlas" required><span>Souhlasím se zpracováním osobních údajů za účelem vyřízení poptávky (<a href="{{ url('ochrana-osobnich-udaju') }}">podrobnosti</a>).</span></label>
+      <div class="past" aria-hidden="true"><label>Nevyplňovat <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+      <input type="hidden" name="_subject" value="{{ site.formular.predmet }}">
+      <input type="hidden" name="souhrn" class="js-souhrn">
+      <button type="submit" class="tlacitko tlacitko--velke">Odeslat poptávku</button>
+      <p class="krok__tip">Pro možnost odpovědi vyplňte alespoň telefon nebo e-mail.</p>
+      <p class="formular-stav" role="status" aria-live="polite"></p>
+    </fieldset>
+  </div>
+  <script type="application/json" id="modely-data">{{ ns.cfg|tojson }}</script>
+</form>
+{% endblock %}

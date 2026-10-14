@@ -1,0 +1,42 @@
+{% extends "_base.html" %}
+{% set titulek = "Kontaktní informace vzorkovna dveří | Interiérové dveře Praha" %}
+{% set popis = "Navštivte naši vzorkovnu dveří Vasco Doors v Praze 2, Slavíkova 29. Petra Šťastná vám pomůže s výběrem, Josef Šťastný zajistí zaměření a montáž." %}
+{% block obsah %}
+<section class="stranka-hlava">
+  <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a><span>Kontakt</span></nav>
+  <p class="nadtitulek">Vzorkovna Vasco Doors</p>
+  <h1>Najdete nás na rohu ulic Slavíkova 29 a&nbsp;Vozová 10</h1>
+  <p class="stranka-hlava__perex">Ve vzorkovně vás přivítá Petra Šťastná, která vám pomůže s&nbsp;výběrem dveří, dekorů i&nbsp;kování. Technické poradenství, zaměření a&nbsp;montáže zajišťuje Josef Šťastný.</p>
+</section>
+<section class="tym" aria-label="Kdo vám pomůže">
+  {% for c in site.lide %}
+  <article class="osoba">
+    {{ img(c.foto, c.jmeno, sizes='(max-width: 700px) 100vw, 33vw') }}
+    <h2>{{ c.jmeno }}</h2>
+    <p>{{ c.role }}</p>
+    <a class="osoba__tel" href="tel:{{ c.telefon|replace(' ', '') }}">{{ c.telefon }}</a>
+  </article>
+  {% if loop.first %}
+  <article class="osoba osoba--vyloha">
+    {{ img(site.vzorkovna_foto, 'Vzorkovna Dveře a podlahy, Slavíkova 29', sizes='(max-width: 700px) 100vw, 33vw') }}
+    <h2>Vzorkovna</h2>
+    <p>Interiérové, bezfalcové a&nbsp;posuvné dveře</p>
+    <a class="osoba__tel" href="{{ site.mapa }}" target="_blank" rel="noopener">Otevřít v mapách</a>
+  </article>
+  {% endif %}
+  {% endfor %}
+</section>
+<section class="kontakt">
+  <dl class="kontakt__udaje">
+    <div><dt>Adresa</dt><dd>{{ site.kontakt.adresa.ulice }}<br>{{ site.kontakt.adresa.mesto }}<br>{{ site.kontakt.adresa.psc }}</dd></div>
+    <div><dt>Otevírací doba</dt><dd>{% for t in site.oteviraci_text %}{{ t }}<br>{% endfor %}<small>{{ site.oteviraci_pozn }} Děkujeme za pochopení.</small></dd></div>
+    <div><dt>E-mail a telefon</dt><dd><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a><br><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></dd></div>
+    <div><dt>Firemní údaje</dt><dd>{{ site.provozovatel }}<br>IČO: {{ site.ico }}<br>DIČ: {{ site.dic }}</dd></div>
+  </dl>
+  <div class="kontakt__form">
+    <h2>Napište nám</h2>
+    <p>Na dotaz odpovíme e-mailem nebo telefonem. Chcete-li rovnou cenu, použijte <a href="{{ url('cenova-kalkulace-dvere') }}">nezávaznou poptávku</a>.</p>
+    {% include "_formular.html" %}
+  </div>
+</section>
+{% endblock %}

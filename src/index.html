@@ -1,0 +1,162 @@
+{% extends "_base.html" %}
+{% import "_makra.html" as mk with context %}
+{% set titulek = "Interiérové dveře Praha | Bezfalcové a posuvné dveře | Vasco Doors" %}
+{% set popis = "Interiérové dveře Vasco Doors – bezfalcové dveře, posuvné dveře i bezpečnostní dveře. Prodej, zaměření a odborná montáž v Praze a okolí, vzorkovna Praha 2." %}
+{% set M = {} %}
+{% for m in data.models %}{% set _ = M.update({m.nazev: m}) %}{% endfor %}
+{% block body_class %}uvod{% endblock %}
+{% block obsah %}
+
+<section class="hero">
+  <div class="hero__text">
+    <p class="nadtitulek">Vasco Doors · Praha a okolí</p>
+    <h1 class="hero__h1">Interiérové dveře pro váš domov</h1>
+    <p class="hero__perex">Interiérové, posuvné i masivní dřevěné dveře. Vyberte si dveře, které budou dokonale ladit s&nbsp;vaším interiérem. Zajistíme prodej, zaměření i&nbsp;odbornou montáž v&nbsp;Praze a&nbsp;okolí.</p>
+    <div class="hero__akce">
+      <a class="tlacitko" href="{{ url('cenova-kalkulace-dvere') }}">Sestavit a nacenit dveře</a>
+      <a class="tlacitko tlacitko--obrys" href="{{ url('dvere-interierove') }}">Prohlédnout modely</a>
+    </div>
+  </div>
+  <div class="hero__stena" aria-label="Ukázka modelů ve vzorkovně">
+    <div class="rada rada--hero">
+      {{ mk.kridlo(M['Santiago'], M['Santiago'].varianty[1], sizes='(max-width: 700px) 26vw, 150px') }}
+      {{ mk.kridlo(M['Leon'], M['Leon'].varianty[1], sizes='(max-width: 700px) 26vw, 150px') }}
+      {{ mk.kridlo(M['Faro'], M['Faro'].varianty[3], sizes='(max-width: 700px) 26vw, 150px') }}
+      {{ mk.kridlo(M['Presto'], M['Presto'].varianty[2], sizes='(max-width: 700px) 26vw, 150px') }}
+      {{ mk.kridlo(M['Ventura'], M['Ventura'].varianty[2], sizes='(max-width: 700px) 26vw, 150px') }}
+    </div>
+    <p class="hero__podpis">Ceny křídel bez DPH, podle ceníku vzorkovny.</p>
+  </div>
+  <ul class="fakta">
+    <li><b>Již do 21 dnů</b><span>rychlé dodání dveří</span></li>
+    <li><b>Prodej · zaměření · montáž</b><span>v Praze a okolí</span></li>
+    <li><b>Vzorkovna Praha 2</b><span>{{ site.kontakt.adresa.ulice }}, Vinohrady</span></li>
+  </ul>
+</section>
+
+<section class="sortiment" aria-labelledby="sortiment-h">
+  <div class="sekce-hlava">
+    <p class="nadtitulek">Prodej · zaměření · montáž</p>
+    <h2 id="sortiment-h">Interiérové, posuvné i bezpečnostní dveře</h2>
+  </div>
+  <div class="sortiment__mriz">
+    <a class="dlazdice dlazdice--velka" href="{{ url('dvere-interierove') }}">
+      {{ img('wp/interierove-dvere-braga-d86fde.png', 'Interiérové dveře Vasco Doors Braga v interiéru', sizes='(max-width: 800px) 100vw, 60vw') }}
+      <span class="dlazdice__text"><small>Kolekce Vasco Doors</small><b>Interiérové dveře</b><span>Stylové řešení pro každý domov. Moderní i&nbsp;klasické modely s&nbsp;precizním zpracováním a&nbsp;dlouhou životností.</span></span>
+    </a>
+    <a class="dlazdice" href="{{ url('dvere-posuvne') }}">
+      {{ img('wp/posuvne-dvere-do-pouzdra-vc-stavebniho-rezu-0042c9.png', 'Posuvné dveře do stavebního pouzdra', sizes='(max-width: 800px) 100vw, 35vw') }}
+      <span class="dlazdice__text"><small>Kolekce Vasco Doors</small><b>Posuvné dveře</b><span>Elegantní řešení pro úsporu prostoru.</span></span>
+    </a>
+    <a class="dlazdice dlazdice--bezpecnost" href="{{ url('bezpecnostni-dvere') }}">
+      {{ img('wp/bezpecnostni-dvere-b2-a8fa92.png', 'Bezpečnostní dveře Vasco Doors', sizes='(max-width: 800px) 40vw, 14vw') }}
+      <span class="dlazdice__text"><small>Bezpečí a kvalitní provedení</small><b>Bezpečnostní dveře</b><span>Větší pocit bezpečí pro váš domov.</span></span>
+    </a>
+  </div>
+  <ul class="sortiment__dalsi">
+    <li><a href="{{ url('dvere-bezfalcove') }}">Bezfalcové dveře</a></li>
+    <li><a href="{{ url('masivni-dvere-na-zakazku') }}">Masivní dveře na zakázku</a></li>
+    <li><a href="{{ url('oblozkove-zarubne') }}">Obložkové zárubně</a></li>
+    <li><a href="{{ url('kovani') }}">Kování – kliky</a></li>
+    <li><a href="{{ url('stavebni-pouzdra') }}">Stavební pouzdra Scrigno</a></li>
+    <li><a href="{{ url('eclisse') }}">ECLISSE</a></li>
+  </ul>
+</section>
+
+<section class="modely" aria-labelledby="modely-h">
+  <div class="sekce-hlava sekce-hlava--radek">
+    <div>
+      <p class="nadtitulek">Kolekce Vasco Doors</p>
+      <h2 id="modely-h">Patnáct modelů, jak stojí ve vzorkovně</h2>
+    </div>
+    <p class="sekce-hlava__perex">Osm modelů v&nbsp;dekoru fólie a&nbsp;sedm v&nbsp;laminátu CPL. Klikněte na křídlo a&nbsp;uvidíte všechna provedení, dekory i&nbsp;výbavu.</p>
+  </div>
+  {% for skupina, nazev in [('folie', 'Fólie'), ('cpl', 'CPL')] %}
+  <div class="rada-obal rada-obal--patro">
+    <div class="rada rada--katalog" tabindex="0" aria-label="Modely dveří {{ nazev }}">
+      <p class="rada__skupina"><span>{{ nazev }}</span></p>
+      {% for m in data.models if m.typ == skupina and m.v_katalogu %}{{ mk.kridlo(m) }}{% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+  <p class="modely__odkaz"><a class="odkaz-sipka" href="{{ url('dvere-interierove') }}">Všechny modely s filtrem</a></p>
+</section>
+
+<section class="sestav" aria-labelledby="sestav-h">
+  <div class="sestav__text">
+    <p class="nadtitulek">Nezávazná poptávka</p>
+    <h2 id="sestav-h">Sestavte si dveře a my je naceníme i s montáží</h2>
+    <p>Vyberte model, provedení a&nbsp;dekor, doplňte šířku a&nbsp;sílu zdi. Hned vidíte cenu křídla podle ceníku a&nbsp;my k&nbsp;ní připravíme zárubeň, kování a&nbsp;montáž.</p>
+    <ol class="sestav__kroky">
+      <li>Model</li><li>Provedení</li><li>Dekor</li><li>Rozměr a zárubeň</li><li>Montáž</li>
+    </ol>
+    <a class="tlacitko" href="{{ url('cenova-kalkulace-dvere') }}">Začít s výběrem</a>
+  </div>
+  <div class="sestav__ukazka" aria-hidden="true">
+    <div class="sestav__kridlo">{{ img(M['Santiago'].varianty[0].img, '', sizes='220px') }}</div>
+    <div class="sestav__vzorky">
+      {% for d in M['Santiago'].dekory[2:8] %}<span class="sestav__vzorek" style="--i: {{ loop.index0 }}">{{ img(d.img, '', sizes='120px') }}<small>{{ d.nazev }}</small></span>{% endfor %}
+    </div>
+    <p class="sestav__cena"><small>{{ M['Santiago'].varianty[0].nazev }} · {{ M['Santiago'].dekory[2].nazev }}</small><b>{{ M['Santiago'].varianty[0].cena_txt }}</b><span>za kus bez DPH</span></p>
+  </div>
+</section>
+
+<section class="postup" aria-labelledby="postup-h">
+  <div class="sekce-hlava">
+    <p class="nadtitulek">Jak probíhá spolupráce</p>
+    <h2 id="postup-h">Od výběru až po montáž</h2>
+  </div>
+  <ol class="postup__kroky">
+    <li><b>Výběr řešení</b><span>Ve vzorkovně nebo podle webu poradíme s&nbsp;modelem, dekorem, kováním i&nbsp;typem otevírání.</span></li>
+    <li><b>Zaměření</b><span>Zkontrolujeme stavební otvor, změříme sílu zdi a&nbsp;doporučíme správnou zárubeň.</span></li>
+    <li><b>Dodání</b><span>Připravíme dveře, zárubeň, systém a&nbsp;potřebné příslušenství. U&nbsp;většiny modelů do 14–21 dnů.</span></li>
+    <li><b>Montáž</b><span>Zajistíme odborné osazení, seřízení a&nbsp;kontrolu funkčnosti.</span></li>
+  </ol>
+</section>
+
+<section class="realizace-uvod" aria-labelledby="realizace-h">
+  <div class="sekce-hlava sekce-hlava--radek">
+    <div>
+      <p class="nadtitulek">Skutečné montáže · Praha · Praha-západ · Praha-východ</p>
+      <h2 id="realizace-h">Skutečné realizace interiérových dveří v Praze</h2>
+    </div>
+    <p class="sekce-hlava__perex">Ukázky skutečně dodaných a&nbsp;namontovaných interiérových a&nbsp;posuvných dveří. Každá realizace je řešená individuálně, od výběru dekoru až po odbornou montáž.</p>
+  </div>
+  <div class="realizace-uvod__pas">
+    {% for r in data.realizace[0:24:4][:6] %}<figure>{{ img(r.img, r.nazev or 'Realizace interiérových dveří Dveře Šťastný', sizes='(max-width: 700px) 60vw, 22vw') }}</figure>{% endfor %}
+  </div>
+  <div class="realizace-uvod__pata">
+    <a class="odkaz-sipka" href="{{ url('realizace-interierovych-dveri') }}">Zobrazit všechny realizace</a>
+    <a class="hodnoceni" href="{{ site.recenze.odkaz }}" target="_blank" rel="noopener"><b>{{ site.recenze.hodnoceni }} / 5</b><span>{{ site.recenze.pocet }} recenzí Google od zákazníků z&nbsp;Prahy a&nbsp;okolí</span></a>
+  </div>
+</section>
+
+<section class="vzorkovna" aria-labelledby="vzorkovna-h">
+  <figure class="vzorkovna__vyloha">{{ img(site.vzorkovna_foto, 'Výloha vzorkovny Dveře a podlahy, Slavíkova 29, Praha 2', sizes='(max-width: 900px) 100vw, 50vw') }}</figure>
+  <div class="vzorkovna__text">
+    <p class="nadtitulek">Vzorkovna</p>
+    <h2 id="vzorkovna-h">Najdete nás na rohu ulic Slavíkova 29 a&nbsp;Vozová 10</h2>
+    <p>Ve vzorkovně vás přivítá Petra Šťastná, která vám pomůže s&nbsp;výběrem dveří, dekorů i&nbsp;kování. Technické poradenství, zaměření a&nbsp;montáže zajišťuje Josef Šťastný.</p>
+    <dl class="vzorkovna__udaje">
+      <div><dt>Adresa</dt><dd>{{ site.kontakt.adresa.ulice }}<br>{{ site.kontakt.adresa.mesto }}</dd></div>
+      <div><dt>Otevřeno</dt><dd>{% for t in site.oteviraci_text %}{{ t }}<br>{% endfor %}</dd></div>
+    </dl>
+    <p class="vzorkovna__pozn">{{ site.oteviraci_pozn|nbsp }}</p>
+    <div class="hero__akce">
+      <a class="tlacitko" href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">Zavolat {{ site.kontakt.telefon }}</a>
+      <a class="tlacitko tlacitko--obrys" href="{{ url('kontakt') }}">Kontakt a mapa</a>
+    </div>
+  </div>
+</section>
+
+<section class="katalog-pdf">
+  <div class="katalog-pdf__in">
+    {{ img('wp/vasco-katalog-icon3-5fa49b.png', 'Katalog Vasco Doors 2026', sizes='280px', cls='katalog-pdf__obr') }}
+    <div>
+      <h2>Katalog Vasco Doors 2026</h2>
+      <p>Kompletní sortiment výrobků Vasco Doors včetně podrobných specifikací.</p>
+      <a class="odkaz-sipka" href="{{ site.katalog_pdf }}" target="_blank" rel="noopener">Stáhnout PDF</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

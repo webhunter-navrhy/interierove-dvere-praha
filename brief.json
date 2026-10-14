@@ -1,0 +1,211 @@
+{
+ "slug": "interierove-dvere-praha",
+ "zdroj_url": "https://www.dvere-vascodoors.cz/",
+ "firma": "Interiérové dveře Praha",
+ "obor": [
+  "stavebnictví a řemesla",
+  "právo a poradenství"
+ ],
+ "ico": "74119893",
+ "ares": {
+  "ico": "74119893",
+  "obchodni_jmeno": "Josef Šťastný",
+  "pravni_forma": "101",
+  "adresa": "V zápolí 1163/32, Michle, 14100 Praha 4",
+  "obec": "Praha",
+  "dic": "CZ7502200904",
+  "datum_vzniku": "2010-06-14",
+  "nace": [
+   "461",
+   "43320",
+   "471",
+   "68200",
+   "00"
+  ]
+ },
+ "kontakty": {
+  "emaily": [
+   "info@dvere-vascodoors.cz"
+  ],
+  "telefony": [
+   "+420 727 945 909"
+  ],
+  "adresa": "",
+  "socialni_site": []
+ },
+ "logo": {
+  "soubor": "podklady/logo.png",
+  "zdroj": "https://www.dvere-vascodoors.cz/wp-content/uploads/2026/09/ChatGPT-Image-11.-9.-2026-13_34_07.png",
+  "rozmery": [
+   1983,
+   793
+  ]
+ },
+ "barvy": {
+  "css_promenne": {},
+  "z_css": [
+   "#c89a4b",
+   "#337ab7",
+   "#82d344",
+   "#111155",
+   "#20b426",
+   "#cc0000"
+  ],
+  "z_loga": [
+   "#ca2128",
+   "#b08946",
+   "#e2888a",
+   "#5c2e19"
+  ],
+  "theme_color": null,
+  "doporucene": [
+   "#ca2128",
+   "#b08946",
+   "#c89a4b",
+   "#337ab7"
+  ]
+ },
+ "fotky": [
+  {
+   "soubor": "podklady/foto/foto-01.png",
+   "url": "https://www.dvere-vascodoors.cz/wp-content/uploads/2026/09/ChatGPT-Image-11.-9.-2026-13_34_07.png",
+   "sirka": 1983,
+   "vyska": 793,
+   "alt": ""
+  },
+  {
+   "soubor": "podklady/foto/foto-02.png",
+   "url": "https://www.dvere-vascodoors.cz/wp-content/uploads/2026/02/Interierove-dvere-Braga-1024x683.png",
+   "sirka": 1024,
+   "vyska": 683,
+   "alt": "Interiérové dveře Vasco Doors Braga"
+  },
+  {
+   "soubor": "podklady/foto/foto-03.png",
+   "url": "https://www.dvere-vascodoors.cz/wp-content/uploads/2026/02/Posuvne-dvere-do-pouzdra-vc.-stavebniho-rezu-1024x683.png",
+   "sirka": 1024,
+   "vyska": 683,
+   "alt": "Posuvné dveře do stavebního pouzdra"
+  },
+  {
+   "soubor": "podklady/foto/foto-04.png",
+   "url": "https://www.dvere-vascodoors.cz/wp-content/uploads/2026/10/bezpecnostni_dvere_b2.png",
+   "sirka": 460,
+   "vyska": 1000,
+   "alt": "Bezpečnostní dveře Vasco Doors"
+  }
+ ],
+ "fakta": [
+  {
+   "typ": "h1",
+   "text": "Home",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "h1",
+   "text": "INTERIÉROVÉ DVEŘE PRO VÁŠ DOMOV",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "Interiérové, posuvné i bezpečnostní dveře",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "h3",
+   "text": "Interiérové dveře",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "h3",
+   "text": "Posuvné dveře",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "h3",
+   "text": "Bezpečnostní dveře",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "4,8 / 5 na Google",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "Skutečné realizace interiérových dveří v Praze",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "h2",
+   "text": "Folie",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Sortiment Interiérové dveře Posuvné dveře Bezfalcové dveře Masivní dveře Nacenit dveře Kování – Kliky Obložkové zárubně Stavební pouzdra ECLISSE Scrigno Bezpečnostní dveře",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Sortiment Interiérové dveře Posuvné dveře Bezfalcové dveře Masivní dveře Nacenit dveře Kování – Kliky Obložkové zárubně Stavební pouzdra ECLISSE Scrigno Bezpečnostní dveře",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Interiérové, posuvné i masivní dřevěné dveře. Vyberte si dveře, které budou dokonale ladit s vaším interiérem.\n      Zajistíme prodej, zaměření i odbornou montáž v Praze a okolí.",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Prodej, zaměření a odborná montáž dveří v Praze a okolí.",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Stylové řešení pro každý domov.\n        Moderní i klasické modely s precizním\n        zpracováním a dlouhou životností.",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Elegantní řešení pro úsporu prostoru.\n        Ideální volba pro moderní interiéry\n        s důrazem na čistý design.",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Větší pocit bezpečí pro váš domov.\n        Vyberte si bezpečnostní dveře,\n        které spojují ochranu, spolehlivost\n        a elegantní vzhled.",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "22 recenzí Google od spokojených zákazníků z Prahy a okolí.",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Podívejte se na ukázky skutečně dodaných a namontovaných interiérových a posuvných dveří Vasco Doors.\n      Každá realizace je řešena individuálně – od výběru dekoru až po odbornou montáž.",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Ochrana osobních údajů Společnost zpracovává osobní údaje v souladu s platnými právními předpisy, zejména Nařízením Evropského parlamentu a Rady (EU) 2016/679 (GDPR). Informace o zpracování osobních údajů naleznete zde.",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Interiérové dveře Braga Interiérové dveře Evora Interiérové dveře Ibiza Interiérové dveře Leon Interiérové dveře Santiago Interiérové dveře Malaga Interiérové dveře Torre Interiérové dveře Nero",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "odstavec",
+   "text": "Interiérové dveře Primo Interiérové dveře Faro Interiérové dveře Rego Interiérové dveře Ventura Interiérové dveře Nero GT Interiérové dveře Presto Interiérové dveře Presto Alto",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  }
+ ],
+ "chybi": [
+  "fotky firmy/provozu/produktů (nalezeno 4, potřeba aspoň 6)",
+  "adresa / provozovna",
+  "potvrzení služeb a ceníku (nic nevymýšlet)"
+ ],
+ "popis_webu": "Interiérové dveře Vasco Doors – bezfalcové dveře, posuvné dveře, obložkové zárubně a odborná montáž. Navštivte vzorkovnu Vasco Doors na Praze 2 – Vinohrady."
+}

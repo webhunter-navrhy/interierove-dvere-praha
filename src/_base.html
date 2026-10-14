@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ titulek or site.nazev }}</title>
+<meta name="description" content="{{ popis or site.popis }}">
+{% if site.navrh or noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+<meta name="theme-color" content="{{ site.theme_color }}">
+<link rel="canonical" href="{{ site.url }}{{ cesta or '' }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:title" content="{{ titulek or site.nazev }}">
+<meta property="og:description" content="{{ popis or site.popis }}">
+<meta property="og:url" content="{{ site.url }}{{ cesta or '' }}">
+{% if og_url %}<meta property="og:image" content="{{ og_url }}">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">{% endif %}
+<link rel="icon" href="{{ base }}favicon.png" type="image/png">
+<link rel="preload" href="{{ base }}fonts/Jost-500-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% block head %}{% endblock %}
+{% if jsonld %}<script type="application/ld+json">{{ jsonld|safe }}</script>{% endif %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<header class="hlavicka">
+  <div class="hlavicka__in">
+    <a href="{{ url('') }}" class="hlavicka__logo"><img src="{{ base }}{{ site.logo }}" alt="Interiérové dveře Praha – více než 15 let praxe v oboru" width="320" height="89"></a>
+    <nav class="menu" id="menu" aria-label="Hlavní">
+      <ul class="menu__seznam">
+        {% for n in site.nav %}
+        {% if n.sub is defined %}
+        <li class="menu__polozka menu__polozka--sub">
+          <button class="menu__odkaz menu__rozbal" type="button" aria-expanded="false">{{ n.text }}<span aria-hidden="true" class="menu__sipka"></span></button>
+          <ul class="menu__panel">
+            {% for s in n.sub %}<li><a href="{{ url(s.href) }}"{% if cesta == s.href + '/' %} aria-current="page"{% endif %}>{{ s.text }}</a></li>{% endfor %}
+          </ul>
+        </li>
+        {% else %}
+        <li class="menu__polozka"><a class="menu__odkaz" href="{{ url(n.href) }}"{% if cesta == n.href + '/' %} aria-current="page"{% endif %}>{{ n.text }}</a></li>
+        {% endif %}
+        {% endfor %}
+        <li class="menu__polozka menu__polozka--tel"><a class="menu__odkaz" href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></li>
+      </ul>
+    </nav>
+    <a class="tlacitko tlacitko--male hlavicka__cta" href="{{ url(site.cta.href) }}">{{ site.cta.text }}</a>
+    <button class="burger" type="button" aria-controls="menu" aria-expanded="false"><span class="burger__car"></span><span class="sr">Menu</span></button>
+  </div>
+</header>
+<main id="obsah">
+{% block obsah %}{% endblock %}
+</main>
+<footer class="paticka">
+  <div class="paticka__in">
+    <div class="paticka__firma">
+      <img src="{{ base }}{{ site.logo_tmave }}" alt="Interiérové dveře Praha" width="260" height="72" loading="lazy">
+      <p>Vzorkovna Vasco Doors<br>{{ site.kontakt.adresa.ulice }}, {{ site.kontakt.adresa.mesto }}</p>
+      <p>{% for t in site.oteviraci_text %}{{ t }}<br>{% endfor %}</p>
+    </div>
+    <div class="paticka__sloupec">
+      <h2 class="paticka__nadpis">Fólie</h2>
+      <ul>{% for m in data.models if m.typ == 'folie' and m.v_katalogu %}<li><a href="{{ url(m.slug) }}">Interiérové dveře {{ m.nazev }}</a></li>{% endfor %}</ul>
+    </div>
+    <div class="paticka__sloupec">
+      <h2 class="paticka__nadpis">CPL</h2>
+      <ul>{% for m in data.models if m.typ == 'cpl' %}<li><a href="{{ url(m.slug) }}">Interiérové dveře {{ m.nazev }}</a></li>{% endfor %}</ul>
+    </div>
+    <div class="paticka__sloupec">
+      <h2 class="paticka__nadpis">Kontakt</h2>
+      <ul>
+        <li><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></li>
+        <li><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></li>
+        <li><a href="{{ url('kontakt') }}">Jak nás najdete</a></li>
+        <li><a href="{{ url('cenova-kalkulace-dvere') }}">Nezávazná poptávka</a></li>
+      </ul>
+      <h2 class="paticka__nadpis paticka__nadpis--dalsi">Naše další weby</h2>
+      <ul>{% for s in site.sesterske %}<li><a href="{{ s.href }}">{{ s.text }}</a></li>{% endfor %}</ul>
+    </div>
+  </div>
+  <div class="paticka__spodek">
+    <p>{{ site.provozovatel }} · IČO {{ site.ico }} · DIČ {{ site.dic }}</p>
+    <p><a href="{{ url('ochrana-osobnich-udaju') }}">Ochrana osobních údajů</a></p>
+  </div>
+</footer>
+<script src="{{ asset('js/main.js') }}" defer></script>
+{% block skripty %}{% endblock %}
+</body>
+</html>

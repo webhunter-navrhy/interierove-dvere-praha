@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+{% import "_makra.html" as mk with context %}
+{% set s = stranka %}
+{% set titulek = s.seo_title %}
+{% set popis = s.description %}
+{% set sortiment = site.nav[1].sub %}
+{% block obsah %}
+<section class="stranka-hlava">
+  <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a>{% if s.rubrika %}<span>{{ s.rubrika }}</span>{% endif %}<span>{{ s.nazev }}</span></nav>
+  {% if s.kicker %}<p class="nadtitulek">{{ s.kicker }}</p>{% endif %}
+  <h1>{{ s.h1|nbsp }}</h1>
+</section>
+<div class="stranka">
+  <article class="obsah">
+    {{ mk.bloky(s.blocks) }}
+  </article>
+  <aside class="bocni">
+    {% if s.path != 'ochrana-osobnich-udaju' %}
+    <nav class="bocni__menu" aria-label="Sortiment">
+      <p class="bocni__nadpis">Sortiment</p>
+      <ul>{% for n in sortiment %}<li><a href="{{ url(n.href) }}"{% if s.path == n.href %} aria-current="page"{% endif %}>{{ n.text }}</a></li>{% endfor %}</ul>
+    </nav>
+    {% endif %}
+    <div class="bocni__vyzva">
+      <p class="bocni__nadpis">Nezávazná poptávka</p>
+      <p>Vyberte model, provedení a&nbsp;dekor, cenu připravíme i&nbsp;s&nbsp;montáží.</p>
+      <a class="tlacitko tlacitko--male" href="{{ url('cenova-kalkulace-dvere') }}">Sestavit a nacenit</a>
+      <p class="bocni__tel">nebo volejte <a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
+    </div>
+  </aside>
+</div>
+{% endblock %}

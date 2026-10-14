@@ -1,0 +1,51 @@
+{# Dveřní křídlo stojící na podlaze vzorkovny, s cedulkou. #}
+{% macro kridlo(m, v=None, odkaz=True, sizes='(max-width: 700px) 30vw, 180px', jmeno=None, cena=None) -%}
+{% set var = v or m.varianty[m.hlavni] %}
+<{{ 'a' if odkaz else 'div' }} class="kridlo{% if var.r > 0.6 %} kridlo--sada{% endif %}" style="--r: {{ var.r }}"{% if odkaz %} href="{{ url(m.slug) }}"{% endif %}>
+  <span class="kridlo__otvor"><span class="kridlo__list">{{ img(var.img, (jmeno or m.nazev) ~ ' – interiérové dveře Vasco Doors', sizes=sizes) }}</span></span>
+  <span class="kridlo__cedulka"><b>{{ jmeno or m.nazev }}</b><span>{{ cena or ('od ' ~ m.od_txt) }}</span></span>
+</{{ 'a' if odkaz else 'div' }}>
+{%- endmacro %}
+
+{# Obsah převzatý z WordPressu: bloky -> HTML. #}
+{% macro bloky(bl) -%}
+{% set ns = namespace(h2=0) %}
+{% for b in bl %}
+{% if b.t == 'h' %}
+<h{{ b.l }} class="obsah__h{{ b.l }}"{% if b.l == 2 %} id="cast-{{ loop.index }}"{% endif %}>{{ b.x|nbsp }}</h{{ b.l }}>
+{% elif b.t == 'kicker' %}
+<p class="nadtitulek">{{ b.h|striptags }}</p>
+{% elif b.t == 'num' %}
+<p class="krok-cislo" aria-hidden="true">{{ b.h }}</p>
+{% elif b.t == 'q' %}
+<p class="otazka">{{ b.h|nbsp }}</p>
+{% elif b.t == 'p' %}
+<p{% if b.get("center") %} class="na-stred"{% endif %}>{{ b.h|odkazy|nbsp }}</p>
+{% elif b.t in ('ul', 'ol') %}
+<{{ b.t }} class="seznam{% if b.get("check") %} seznam--fajfky{% endif %}">{% for i in b['items'] %}<li>{{ i|odkazy|nbsp }}</li>{% endfor %}</{{ b.t }}>
+{% elif b.t == 'table' %}
+<div class="tabulka-obal"><table class="tabulka">{% for r in b.rows %}<tr>{% for c in r %}<td>{{ c|odkazy }}</td>{% endfor %}</tr>{% endfor %}</table></div>
+{% elif b.t == 'img' %}
+<figure class="obsah__foto{% if b.get("w") and b.w < 700 %} obsah__foto--male{% endif %}">{{ img(b.src, b.get("alt") or '', sizes='(max-width: 800px) 100vw, 760px') }}{% if b.get("cap") %}<figcaption>{{ b.cap }}</figcaption>{% endif %}</figure>
+{% elif b.t == 'gallery' %}
+<div class="vzornik{% if b['items']|length > 8 %} vzornik--husty{% endif %}">
+  {% for i in b['items'] %}<figure class="vzornik__kus">{{ img(i.src, i.get("title") or '', sizes='(max-width: 700px) 45vw, 220px') }}{% if i.get("title") %}<figcaption>{{ i.title }}</figcaption>{% endif %}</figure>{% endfor %}
+</div>
+{% elif b.t == 'cards' %}
+<div class="karty">{% for c in b['items'] %}<a class="karta" href="{{ c.href|replace('@/', base) }}">{% if c.get("img") %}{{ img(c.img, c.title, sizes='(max-width: 700px) 100vw, 360px') }}{% endif %}<b>{{ c.title }}</b>{% if c.get("excerpt") %}<span>{{ c.excerpt }}</span>{% endif %}</a>{% endfor %}</div>
+{% elif b.t == 'btn' %}
+<p><a class="tlacitko tlacitko--obrys" href="{{ b.href|replace('@/', base) }}">{{ b.x }}</a></p>
+{% elif b.t == 'form' %}
+<aside class="vyzva">
+  <p class="vyzva__text">Nezávaznou poptávku vyplníte za dvě minuty. Vyberte model, provedení a dekor, my připravíme cenu včetně montáže.</p>
+  <a class="tlacitko" href="{{ url('cenova-kalkulace-dvere') }}">Sestavit a nacenit dveře</a>
+</aside>
+{% elif b.t == 'map' %}
+<p><a class="tlacitko tlacitko--obrys" href="{{ site.mapa }}" target="_blank" rel="noopener">Otevřít v mapách</a></p>
+{% elif b.t == 'video' %}
+<div class="video"><iframe src="{{ b.src }}" title="Video" loading="lazy" allowfullscreen></iframe></div>
+{% elif b.t == 'hr' %}
+<hr class="linka">
+{% endif %}
+{% endfor %}
+{%- endmacro %}

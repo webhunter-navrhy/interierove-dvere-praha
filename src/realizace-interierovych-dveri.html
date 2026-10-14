@@ -1,0 +1,19 @@
+{% extends "_base.html" %}
+{% set titulek = "Realizace dveří Vasco Doors | Interiérové dveře Praha" %}
+{% set popis = "Podívejte se na fotogalerii dveří ze skutečných realizací v Praze a okolí – interiérové, posuvné i bezfalcové dveře Vasco Doors s montáží." %}
+{% block obsah %}
+<section class="stranka-hlava">
+  <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a><span>Realizace</span></nav>
+  <p class="nadtitulek">Praha · Praha-západ · Praha-východ</p>
+  <h1>Realizace interiérových dveří</h1>
+  <p class="stranka-hlava__perex">Ukázky skutečně dodaných a&nbsp;namontovaných interiérových a&nbsp;posuvných dveří Vasco Doors. Každá realizace je řešená individuálně, od výběru dekoru až po odbornou montáž.</p>
+</section>
+<section class="galerie" aria-label="Fotogalerie realizací">
+  {% for r in data.realizace %}<a class="galerie__kus" href="{{ img_url(r.img, 1920) }}" data-lightbox>{{ img(r.img, r.get("nazev") or ('Realizace dveří ' ~ loop.index), sizes='(max-width: 700px) 50vw, (max-width: 1100px) 33vw, 25vw') }}</a>{% endfor %}
+</section>
+<dialog class="lightbox" aria-label="Fotografie realizace"><img alt=""><button type="button" class="lightbox__zavrit" aria-label="Zavřít">×</button><button type="button" class="lightbox__dalsi lightbox__dalsi--zpet" aria-label="Předchozí">‹</button><button type="button" class="lightbox__dalsi" aria-label="Další">›</button></dialog>
+<aside class="vyzva vyzva--siroka">
+  <div><h2>Líbí se vám některé z&nbsp;provedení?</h2><p class="vyzva__text">Sestavte si dveře podle sebe a&nbsp;my připravíme cenu včetně montáže.</p></div>
+  <a class="tlacitko" href="{{ url('cenova-kalkulace-dvere') }}">Sestavit a nacenit</a>
+</aside>
+{% endblock %}

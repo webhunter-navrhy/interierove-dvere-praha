@@ -1,0 +1,162 @@
+// Interiérové dveře Praha – menu, filtr katalogu, náhled provedení/dekoru, galerie, sestavovač dveří, formuláře.
+(function () {
+  var d = document;
+
+  // Menu: burger na mobilu, rozbalovací Sortiment
+  var burger = d.querySelector('.burger');
+  if (burger) burger.addEventListener('click', function () {
+    var o = burger.getAttribute('aria-expanded') === 'true';
+    burger.setAttribute('aria-expanded', String(!o));
+    d.body.classList.toggle('menu-otevrene', !o);
+  });
+  d.querySelectorAll('.menu__rozbal').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var o = b.getAttribute('aria-expanded') === 'true';
+      b.setAttribute('aria-expanded', String(!o));
+    });
+  });
+  d.addEventListener('click', function (e) {
+    d.querySelectorAll('.menu__rozbal[aria-expanded="true"]').forEach(function (b) {
+      if (!b.parentNode.contains(e.target)) b.setAttribute('aria-expanded', 'false');
+    });
+  });
+  d.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') d.querySelectorAll('.menu__rozbal').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
+  });
+
+  // Filtr katalogu Fólie / CPL
+  d.querySelectorAll('[data-filtr]').forEach(function (k) {
+    k.querySelectorAll('button[data-f]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var f = b.getAttribute('data-f');
+        k.querySelectorAll('button[data-f]').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+        k.querySelectorAll('[data-typ]').forEach(function (m) { m.hidden = f !== 'vse' && m.getAttribute('data-typ') !== f; });
+      });
+    });
+  });
+
+  // Detail modelu: provedení a dekor do náhledu
+  function vymen(img, src, alt) {
+    if (!img) return;
+    img.removeAttribute('srcset'); img.src = src; if (alt) img.alt = alt;
+  }
+  var nahled = d.querySelector('[data-nahled] img');
+  d.querySelectorAll('[data-varianta]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      d.querySelectorAll('[data-varianta]').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      vymen(nahled, b.getAttribute('data-varianta'), 'Interiérové dveře ' + b.getAttribute('data-nazev'));
+      d.querySelector('[data-nahled]').style.setProperty('--r', b.getAttribute('data-r'));
+      var top = d.querySelector('.model');
+      if (top && top.getBoundingClientRect().bottom < 120) top.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+  var vzorek = d.querySelector('.model__vzorek');
+  d.querySelectorAll('[data-dekor]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      d.querySelectorAll('[data-dekor]').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      if (vzorek) { vymen(vzorek.querySelector('img'), b.getAttribute('data-dekor')); vzorek.querySelector('figcaption').textContent = b.getAttribute('data-nazev'); }
+    });
+  });
+
+  // Galerie realizací
+  var dlg = d.querySelector('.lightbox');
+  if (dlg && dlg.showModal) {
+    var odkazy = Array.prototype.slice.call(d.querySelectorAll('[data-lightbox]')), i = 0;
+    var ukaz = function (n) { i = (n + odkazy.length) % odkazy.length; var a = odkazy[i]; var im = dlg.querySelector('img'); im.src = a.href; im.alt = a.querySelector('img').alt; };
+    odkazy.forEach(function (a, n) { a.addEventListener('click', function (e) { e.preventDefault(); ukaz(n); dlg.showModal(); }); });
+    dlg.querySelector('.lightbox__zavrit').addEventListener('click', function () { dlg.close(); });
+    dlg.querySelector('.lightbox__dalsi:not(.lightbox__dalsi--zpet)').addEventListener('click', function () { ukaz(i + 1); });
+    dlg.querySelector('.lightbox__dalsi--zpet').addEventListener('click', function () { ukaz(i - 1); });
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+    dlg.addEventListener('keydown', function (e) { if (e.key === 'ArrowRight') ukaz(i + 1); if (e.key === 'ArrowLeft') ukaz(i - 1); });
+  }
+
+  // Sestavovač dveří
+  var s = d.querySelector('[data-sestavovac]');
+  if (s) {
+    var M = JSON.parse(d.getElementById('modely-data').textContent);
+    var kc = function (n) { return n ? n.toLocaleString('cs-CZ').replace(/\s/g, ' ') + ' Kč' : ''; };
+    var $ = function (c) { return s.querySelector(c); };
+    var esc = function (t) { var x = d.createElement('span'); x.textContent = t; return x.innerHTML; };
+    var aktualni = null;
+    var hodnota = function (n) { var x = s.querySelector('input[name="' + n + '"]:checked'); return x ? x.value : ''; };
+
+    var souhrn = function () {
+      var m = aktualni, vi = hodnota('varianta'), di = hodnota('dekor');
+      $('.js-s-model').textContent = m ? m.nazev + ' (' + (m.typ === 'cpl' ? 'CPL' : 'fólie') + ')' : (hodnota('model') === 'poradit' ? 'poradíme' : '–');
+      $('.js-s-var').textContent = m && vi !== '' ? m.varianty[vi] : '–';
+      $('.js-s-dekor').textContent = m && di !== '' ? m.dekory[di] : (m && !m.dekory.length ? 'podle provedení' : '–');
+      var pocet = Math.max(1, parseInt(s.pocet.value, 10) || 1);
+      $('.js-s-typ').textContent = [hodnota('typ'), hodnota('sirka'), s.sila_zdi.value ? 'zeď ' + s.sila_zdi.value + ' mm' : '', pocet > 1 ? pocet + ' ks' : ''].filter(Boolean).join(', ');
+      var cena = m ? (vi !== '' ? m.ceny[vi] : m.od) : null;
+      $('.js-cena').textContent = cena ? (vi === '' ? 'od ' : '') + kc(cena) : 'po výběru modelu';
+      $('.js-cena-pozn').textContent = cena ? (pocet > 1 ? 'za kus bez DPH, ' + pocet + ' ks = ' + kc(cena * pocet) : 'za kus bez DPH') : '';
+      var v = s.querySelector('.sestavovac__nahled');
+      var text = ['Model: ' + $('.js-s-model').textContent, 'Provedení: ' + $('.js-s-var').textContent, 'Dekor: ' + $('.js-s-dekor').textContent,
+        'Typ a rozměr: ' + $('.js-s-typ').textContent, 'Montáž: ' + hodnota('montaz'), 'Doprava: ' + hodnota('doprava'), 'Cena křídla: ' + $('.js-cena').textContent];
+      $('.js-souhrn').value = text.join('\n');
+    };
+
+    var vyberModel = function (slug) {
+      aktualni = M.filter(function (x) { return x.slug === slug; })[0] || null;
+      var vv = $('.js-varianty'), dd = $('.js-dekory');
+      if (!aktualni) {
+        vv.innerHTML = '<p class="krok__prazdne">Model s vámi vybereme při konzultaci.</p>';
+        dd.innerHTML = '<p class="krok__prazdne">Dekor s vámi vybereme při konzultaci.</p>';
+        $('.js-vzorek').hidden = true; souhrn(); return;
+      }
+      vv.innerHTML = aktualni.varianty.map(function (n, i) {
+        return '<label class="volba volba--model"><input type="radio" name="varianta" value="' + i + '"' + (i === 0 ? ' checked' : '') + '><span class="volba__kridlo"><img src="' + aktualni.img[i] + '" alt="" width="60" height="159" loading="lazy"></span><b>' + esc(n) + '</b><small>' + kc(aktualni.ceny[i]) + '</small></label>';
+      }).join('');
+      dd.innerHTML = aktualni.dekory.length ? aktualni.dekory.map(function (n, i) {
+        return '<label class="volba volba--dekor"><input type="radio" name="dekor" value="' + i + '"' + (i === 0 ? ' checked' : '') + '><img src="' + aktualni.dekory_img[i] + '" alt="" width="64" height="64" loading="lazy"><span>' + esc(n) + '</span></label>';
+      }).join('') : '<p class="krok__prazdne">U modelu ' + esc(aktualni.nazev) + ' je dekor součástí provedení, vyberte ho v kroku 2.</p>';
+      nastavNahled(); souhrn();
+    };
+
+    var nastavNahled = function () {
+      if (!aktualni) return;
+      var vi = hodnota('varianta') || aktualni.hlavni, di = hodnota('dekor');
+      var im = $('.js-nahled'); im.src = aktualni.img[vi]; im.alt = 'Náhled: ' + aktualni.varianty[vi];
+      $('.js-kridlo').style.setProperty('--r', aktualni.r[vi]);
+      var vz = $('.js-vzorek');
+      if (di !== '' && aktualni.dekory.length) { vz.hidden = false; vz.querySelector('img').src = aktualni.dekory_img[di]; vz.querySelector('figcaption').textContent = aktualni.dekory[di]; }
+      else vz.hidden = true;
+    };
+
+    s.addEventListener('change', function (e) {
+      if (e.target.name === 'model') vyberModel(e.target.value);
+      else { nastavNahled(); souhrn(); }
+    });
+    s.addEventListener('input', function (e) { if (e.target.name === 'pocet' || e.target.name === 'sila_zdi') souhrn(); });
+
+    var q = new URLSearchParams(location.search).get('model') || 'interierove-dvere-vasco-doors-leon';
+    var start = s.querySelector('input[name="model"][value="' + (q || '') + '"]');
+    if (start) { start.checked = true; vyberModel(q); } else souhrn();
+  }
+
+  // Formuláře (kontakt i sestavovač): v návrhu ukázkový režim, nic se neodesílá
+  d.querySelectorAll('form.formular').forEach(function (f) {
+    var stav = f.querySelector('.formular-stav');
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var past = f.querySelector('.past input');
+      if (past && past.value) return;
+      if (f.hasAttribute('data-sestavovac') && !f.telefon.value && !f.email.value) {
+        stav.textContent = 'Vyplňte prosím telefon nebo e-mail, ať vám můžeme poslat nabídku.'; f.telefon.focus(); return;
+      }
+      var souhlas = f.querySelector('input[name="souhlas"]');
+      if (souhlas && !souhlas.checked) { stav.textContent = 'Potvrďte prosím souhlas se zpracováním osobních údajů.'; return; }
+      if (!f.hasAttribute('data-sestavovac') && !f.checkValidity()) { f.reportValidity(); return; }
+      var endpoint = f.getAttribute('data-endpoint');
+      if (f.getAttribute('data-demo') === '1' || !endpoint) {
+        stav.textContent = 'Ukázka formuláře: v návrhu se nic neodesílá. Po spuštění webu přijde poptávka rovnou na e-mail vzorkovny.';
+        return;
+      }
+      stav.textContent = 'Odesílám…';
+      fetch(endpoint, { method: 'POST', body: new FormData(f), headers: { Accept: 'application/json' } })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); f.reset(); stav.textContent = 'Děkujeme, poptávka byla odeslána. Ozveme se vám s nabídkou.'; })
+        .catch(function () { stav.textContent = 'Odeslání se nepodařilo. Napište nám prosím na e-mail nebo zavolejte.'; });
+    });
+  });
+})();

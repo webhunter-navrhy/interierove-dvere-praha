@@ -1,0 +1,2718 @@
+[
+ {
+  "id": 9262,
+  "slug": "interierove-dvere-vasco-doors-braga",
+  "nazev": "Braga",
+  "typ": "folie",
+  "kratce": "Robustní model s výraznou strukturou povrchu a možností falcového, bezfalcového i posuvného provedení.",
+  "popis": "Braga je robustní model s výraznou texturou povrchu, která dodává dveřím zajímavý vizuální efekt a zároveň zdůrazňuje jejich kvalitu. Hodí se do interiérů, kde je požadavek na pevnost a trvanlivost bez kompromisů na designu. Povrchová úprava je odolná a snadno udržovatelná. Braga se vyrábí ve falcovém i bezfalcovém provedení, doplněném o posuvné systémy na zeď i do pouzdra.",
+  "od": 3467,
+  "od_txt": "3 467 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Braga plné, model 1",
+    "cena": 3467,
+    "img": "wp/braga-plne-model-1-2c3f34.jpg",
+    "cena_txt": "3 467 Kč",
+    "r": 0.922
+   },
+   {
+    "nazev": "Braga kombinované, model 2",
+    "cena": 3467,
+    "img": "wp/braga-kombinovane-model-2-b990c5.jpg",
+    "cena_txt": "3 467 Kč",
+    "r": 0.863
+   },
+   {
+    "nazev": "Braga kombinované, model 3",
+    "cena": 3698,
+    "img": "wp/braga-kombinovane-model-3-14af69.jpg",
+    "cena_txt": "3 698 Kč",
+    "r": 0.863
+   },
+   {
+    "nazev": "Braga kombinované, model 4",
+    "cena": 3698,
+    "img": "wp/braga-kombinovane-model-4-a275ae.jpg",
+    "cena_txt": "3 698 Kč",
+    "r": 0.865
+   },
+   {
+    "nazev": "Braga kombinované, model 5",
+    "cena": 3698,
+    "img": "wp/braga-kombinovane-model-5-07ee50.jpg",
+    "cena_txt": "3 698 Kč",
+    "r": 0.863
+   },
+   {
+    "nazev": "Braga kombinované, model A",
+    "cena": 3698,
+    "img": "wp/braga-kombinovane-model-a-0ab27f.jpg",
+    "cena_txt": "3 698 Kč",
+    "r": 0.866
+   },
+   {
+    "nazev": "Braga kombinované, model B",
+    "cena": 3698,
+    "img": "wp/braga-kombinovane-model-b-45cfbd.jpg",
+    "cena_txt": "3 698 Kč",
+    "r": 0.865
+   },
+   {
+    "nazev": "Braga skleněné, model 6",
+    "cena": 3698,
+    "img": "wp/braga-sklenene-model-6-33c96e.jpg",
+    "cena_txt": "3 698 Kč",
+    "r": 0.863
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Bílá",
+    "img": "wp/910-bila-57e01e.jpg"
+   },
+   {
+    "nazev": "Dub Aljaška",
+    "img": "wp/dub-aljaska-priplatek-424-kc-5a71cf.jpg"
+   },
+   {
+    "nazev": "Dub Riviera",
+    "img": "wp/dub-riviera-priplatek-337-kc-2dc5ae.jpg"
+   },
+   {
+    "nazev": "Dub Sonoma",
+    "img": "wp/dub-sonoma-priplatek-337-kc-2e2b4a.jpg"
+   },
+   {
+    "nazev": "Dub Stříbrný",
+    "img": "wp/dub-stribrny-priplatek-424-kc-14786f.jpg"
+   },
+   {
+    "nazev": "Dub Šedý",
+    "img": "wp/dub-sedy-priplatek-337-kc-d3bced.jpg"
+   },
+   {
+    "nazev": "Ořech Columbia",
+    "img": "wp/orech-columbia-priplatek-337-kc-780850.jpg"
+   },
+   {
+    "nazev": "Ořech Muškát",
+    "img": "wp/orech-muskat-priplatek-337-kc-5ef923.jpg"
+   },
+   {
+    "nazev": "Dub Santa",
+    "img": "wp/novy-dekor-dub-santa-1-20c410.jpg"
+   },
+   {
+    "nazev": "Dub Viking",
+    "img": "wp/dub-viking-66efc4.jpg"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "p",
+    "h": "standardní vybavení",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "rám vyrobený z MDF potažený po celém obvodu, bez viditelných spojů",
+     "povrch: Decor Design nebo Decorative",
+     "sklo: tvrzené satinato 4 mm",
+     "příprava pro podřez křídla do 40 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "pro vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "doplňky za příplatek:",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "ventilace:",
+     "štěrbina (W)",
+     "ventilační otvory (T)",
+     "ventilační podřez (P)"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>falcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany, zakončené polodrážkou (falcem)",
+     "zadlabací zámek mechanický",
+     "panty čepové, regulované – 3 ks",
+     "dostupné také v dvoukřídlém provedení",
+     "dostupná obložková zárubeň regulovaná nebo rámová"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>bezfalcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany bez polodrážky",
+     "zadlabací zámek magnetický",
+     "panty: dvě kapsy pro skryté 3D panty (skryté panty"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "jsou součástí vybavení bezfalcové obložkové zárubně)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dostupná bezfalcová obložková zárubeň regulovaná",
+     "rámová zárubeň NEDOSTUPNÁ",
+     "dvoukřídlové provedení NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": "wp/interierove-dvere-braga-d86fde.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře Braga | Moderní dveře Vasco Doors Praha",
+  "description": "Moderní interiérové dveře Vasco Doors Braga v různých dekorech a provedeních. Elegantní design, kvalitní zpracování a showroom Praha 2 – Vinohrady. Nezávazná poptávka online.",
+  "hlavni": 0
+ },
+ {
+  "id": 9297,
+  "slug": "interierove-dvere-vasco-doors-evora",
+  "nazev": "Evora",
+  "typ": "folie",
+  "kratce": "Elegantní model s přírodní inspirací a jemnou strukturou povrchu pro moderní i klasické interiéry.",
+  "popis": "Evora představuje dveře s přírodní inspirací, kde jsou na povrchu patrné jemné vzory a textura připomínající dřevo. Tento model nabízí příjemný pocit tepla a klidu, který dokonale doplní vaše bydlení. Výroba z pevných materiálů a důraz na detail dodávají dveřím vysokou životnost. Evora je možné zvolit v provedení falcovém, bezfalcovém i posuvném na zeď i do pouzdra.",
+  "od": 3979,
+  "od_txt": "3 979 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Evora 1",
+    "cena": 3979,
+    "img": "wp/evora-1-11e9ae.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.414
+   },
+   {
+    "nazev": "Evora 2",
+    "cena": 3979,
+    "img": "wp/evora-2-7efcb8.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.414
+   },
+   {
+    "nazev": "Evora 3",
+    "cena": 3979,
+    "img": "wp/evora-3-2136e8.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.414
+   },
+   {
+    "nazev": "Evora 4",
+    "cena": 3979,
+    "img": "wp/evora-4-bf2c2d.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.414
+   },
+   {
+    "nazev": "Evora 5",
+    "cena": 3979,
+    "img": "wp/evora-5-02eb7c.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.414
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Dub Stříbrný",
+    "img": "wp/dub-stribrny-priplatek-424-kc-1-484267.jpg"
+   },
+   {
+    "nazev": "Dub Viking",
+    "img": "wp/375-dub-viking-1-4b9107.jpg"
+   },
+   {
+    "nazev": "Dub Aljaška",
+    "img": "wp/dub-aljaska-priplatek-424-kc-1-8af498.jpg"
+   },
+   {
+    "nazev": "Dub Riviera",
+    "img": "wp/dub-riviera-priplatek-337-kc-1-2d27e2.jpg"
+   },
+   {
+    "nazev": "Dub Sonoma",
+    "img": "wp/dub-sonoma-priplatek-424-kc-e5a315.jpg"
+   },
+   {
+    "nazev": "Ořech Columbia",
+    "img": "wp/orech-columbia-priplatek-337-kc-1-55013d.jpg"
+   },
+   {
+    "nazev": "Dub Šedý",
+    "img": "wp/dub-sedy-priplatek-337-kc-1-f4bc39.jpg"
+   },
+   {
+    "nazev": "Dub Santa",
+    "img": "wp/novy-dekor-dub-santa-1-20c410.jpg"
+   },
+   {
+    "nazev": "Ořech Muškát",
+    "img": "wp/orech-muskat-priplatek-337-kc-1-4c0bb2.jpg"
+   },
+   {
+    "nazev": "Bílá",
+    "img": "wp/bila-0a6851.jpg"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "p",
+    "h": "standardní vybavení",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "rám vyrobený z MDF potažený po celém obvodu, bez viditelných spojů",
+     "povrch: Decor Design nebo Decorative",
+     "sklo: tvrzené satinato 4 mm",
+     "příprava pro podřez křídla do 40 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "pro vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "doplňky za příplatek:",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "ventilace:",
+     "štěrbina (W)",
+     "ventilační otvory (T)",
+     "ventilační podřez (P)"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>falcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany, zakončené polodrážkou (falcem)",
+     "zadlabací zámek mechanický",
+     "panty čepové, regulované – 3 ks",
+     "dostupné také v dvoukřídlém provedení",
+     "dostupná obložková zárubeň regulovaná nebo rámová"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>bezfalcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany bez polodrážky",
+     "zadlabací zámek magnetický",
+     "panty: dvě kapsy pro skryté 3D panty (skryté panty"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "jsou součástí vybavení bezfalcové obložkové zárubně)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dostupná bezfalcová obložková zárubeň regulovaná",
+     "rámová zárubeň NEDOSTUPNÁ",
+     "dvoukřídlové provedení NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": "wp/interierove-dvere-evora-742fac.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře Evora |",
+  "description": "Interiérové dveře EVORA značky VASCO DOORS představují moderní pojetí klasických interiérových dveří. Díky masivnímu rámu působí majestátně a přilákají Vaši pozornost na první pohled.",
+  "hlavni": 0
+ },
+ {
+  "id": 9364,
+  "slug": "interierove-dvere-vasco-doors-ibiza",
+  "nazev": "Ibiza",
+  "typ": "folie",
+  "kratce": "Lehký a svěží model s hladkým povrchem, vhodný pro moderní a světlé interiéry.",
+  "popis": "Ibiza jsou dveře, které v sobě nesou lehkost a svěžest, ideální pro moderní a světlé interiéry. Povrch je hladký, což zajišťuje elegantní vzhled a snadnou údržbu. Konstrukce je pevná a odolná, s vysokou odolností proti oděru. Tento model je univerzální a nabízí varianty falcových, bezfalcových i posuvných dveří včetně systému do pouzdra.",
+  "od": 3979,
+  "od_txt": "3 979 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Ibiza 1",
+    "cena": 3979,
+    "img": "wp/ibiza-1-00f004.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.41
+   },
+   {
+    "nazev": "Ibiza 2",
+    "cena": 3979,
+    "img": "wp/ibiza-2-f53d83.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.41
+   },
+   {
+    "nazev": "Ibiza 3",
+    "cena": 3979,
+    "img": "wp/ibiza-3-1769ad.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.41
+   },
+   {
+    "nazev": "Ibiza 4",
+    "cena": 3979,
+    "img": "wp/ibiza-4-801551.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.41
+   },
+   {
+    "nazev": "Ibiza 5",
+    "cena": 3979,
+    "img": "wp/ibiza-5-557b5e.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.41
+   },
+   {
+    "nazev": "Ibiza 6",
+    "cena": 3979,
+    "img": "wp/ibiza-6-fcf64e.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.41
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Ořech Columbia",
+    "img": "wp/473-decor-design-orech-columbia-14dfc4.jpg"
+   },
+   {
+    "nazev": "Dub Riviera",
+    "img": "wp/474-decor-design-dub-riviera-2feb9b.jpg"
+   },
+   {
+    "nazev": "Ořech Muškátový",
+    "img": "wp/475-decor-design-orech-muskatovy-554129.jpg"
+   },
+   {
+    "nazev": "Dub Šedý",
+    "img": "wp/676-decor-design-dub-sedy-bfea0b.jpg"
+   },
+   {
+    "nazev": "Dub Aljaška",
+    "img": "wp/679-decor-design-dub-aljassky-d5d9a1.jpg"
+   },
+   {
+    "nazev": "Dub Stříbrný",
+    "img": "wp/682-decor-design-dub-stribrny-69be5d.jpg"
+   },
+   {
+    "nazev": "Dub Sonoma",
+    "img": "wp/690-decor-design-dub-sonoma-1-5b5d52.jpg"
+   },
+   {
+    "nazev": "Bílá",
+    "img": "wp/910-decorative-bila-1-2b6f58.jpg"
+   },
+   {
+    "nazev": "Dub Santa",
+    "img": "wp/novy-dekor-dub-santa-1-20c410.jpg"
+   },
+   {
+    "nazev": "Dub Viking",
+    "img": "wp/dub-viking-66efc4.jpg"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "p",
+    "h": "standardní vybavení",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "rám vyrobený z MDF potažený po celém obvodu, bez viditelných spojů",
+     "povrch: Decor Design nebo Decorative",
+     "sklo: tvrzené satinato 4 mm",
+     "příprava pro podřez křídla do 40 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "pro vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "doplňky za příplatek:",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "ventilace:",
+     "štěrbina (W)",
+     "ventilační otvory (T)",
+     "ventilační podřez (P)"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>falcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany, zakončené polodrážkou (falcem)",
+     "zadlabací zámek mechanický",
+     "panty čepové, regulované – 3 ks",
+     "dostupné také v dvoukřídlém provedení",
+     "dostupná obložková zárubeň regulovaná nebo rámová"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>bezfalcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany bez polodrážky",
+     "zadlabací zámek magnetický",
+     "panty: dvě kapsy pro skryté 3D panty (skryté panty"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "jsou součástí vybavení bezfalcové obložkové zárubně)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dostupná bezfalcová obložková zárubeň regulovaná",
+     "rámová zárubeň NEDOSTUPNÁ",
+     "dvoukřídlové provedení NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": "wp/interierove-dvere-ibiza-effff5.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře Ibiza |",
+  "description": "Interiérové dveře IBIZA značky VASCO DOORS jsou unikátním spojením krásy a funkčnosti.",
+  "hlavni": 0
+ },
+ {
+  "id": 9382,
+  "slug": "interierove-dvere-vasco-doors-leon",
+  "nazev": "Leon",
+  "typ": "folie",
+  "kratce": "Moderní a dynamický design kombinující jednoduchost s výraznou strukturou povrchu.",
+  "popis": "Leon je dveřní model s moderním a dynamickým designem, který kombinuje jednoduchost s výraznou strukturou povrchu. Vyniká svou odolností a snadnou údržbou, díky kvalitním materiálům a povrchové úpravě. Hodí se do interiérů, kde je žádoucí současný a svěží styl. Stejně jako ostatní modely VASCO DOORS je dostupný jako falcový i bezfalcový, s možností posuvného otevírání na stěnu nebo do pouzdra.",
+  "od": 3689,
+  "od_txt": "3 689 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Leon · provedení 1",
+    "cena": 3689,
+    "img": "wp/leon-1-9e9db3.jpg",
+    "cena_txt": "3 689 Kč",
+    "r": 0.412
+   },
+   {
+    "nazev": "Leon 1",
+    "cena": 4125,
+    "img": "wp/leon-1-1-299309.jpg",
+    "cena_txt": "4 125 Kč",
+    "r": 0.411
+   },
+   {
+    "nazev": "Leon · provedení 2",
+    "cena": 4125,
+    "img": "wp/leon-3-aac914.jpg",
+    "cena_txt": "4 125 Kč",
+    "r": 0.416
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Ořech Columbia",
+    "img": "wp/473-decor-design-orech-columbia-1-c808e6.jpg"
+   },
+   {
+    "nazev": "Dub Riviera",
+    "img": "wp/474-decor-design-dub-riviera-1-58bc18.jpg"
+   },
+   {
+    "nazev": "Ořech Muškátový",
+    "img": "wp/475-decor-design-orech-muskatovy-1-f9b6fe.jpg"
+   },
+   {
+    "nazev": "Dub Šedý",
+    "img": "wp/676-decor-design-dub-sedy-1-0e4f09.jpg"
+   },
+   {
+    "nazev": "Dub Aljaška",
+    "img": "wp/679-decor-design-dub-aljassky-1-0a0e3d.jpg"
+   },
+   {
+    "nazev": "Dub Stříbrný",
+    "img": "wp/682-decor-design-dub-stribrny-1-3288ed.jpg"
+   },
+   {
+    "nazev": "Dub Sonoma",
+    "img": "wp/690-decor-design-dub-sonoma-2-4a3005.jpg"
+   },
+   {
+    "nazev": "Bílá",
+    "img": "wp/910-decorative-bila-2-4bdca1.jpg"
+   },
+   {
+    "nazev": "Dub Santa",
+    "img": "wp/novy-dekor-dub-santa-b4c881.jpg"
+   },
+   {
+    "nazev": "Dub Viking",
+    "img": "wp/dub-viking-66efc4.jpg"
+   },
+   {
+    "nazev": "Šedý Beton",
+    "img": "wp/sedy-beton-23dd87.jpg"
+   },
+   {
+    "nazev": "Šedý Písek",
+    "img": "wp/sedy-pisek-d9cd8a.jpg"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "p",
+    "h": "standardní vybavení",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "vnitřní rám vyrobený z MDF, potažený po celém obvodu, bez viditelných spojů",
+     "desková sendvičová konstrukce s voštinovou výplní o síle 33 mm",
+     "povrch: Decor Design nebo Decorative",
+     "příprava pro podřez křídla do 40 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "pro vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "doplňky za příplatek:",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "mřížka (K)",
+     "ventilační otvory (T)",
+     "ventilační podřez (P)"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>falcové dveře- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany, zakončené polodrážkou (falcem)",
+     "zadlabací zámek mechanický",
+     "panty čepové, regulované – 3 ks",
+     "dostupná obložková zárubeň regulovaná nebo rámová",
+     "dvoukřídlé provedení – nedostupné"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>bezfalcové dveře- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany bez polodrážky",
+     "zadlabací zámek magnetický",
+     "panty: dvě kapsy pro skryté 3D panty (skryté panty"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "jsou součástí vybavení bezfalcové obložkové zárubně)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dostupná bezfalcová obložková zárubeň regulovaná",
+     "rámová zárubeň NEDOSTUPNÁ",
+     "dvoukřídlové provedení NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": "wp/interierove-dvere-leon-49a5aa.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře Leon |",
+  "description": "Dveře LEON značky VASCO DOORS jsou moderním a funkčním doplňkem do interiéru. Masivní rám s panelem v kvalitním provedení, dodá Vašemu domovu moderní vzhled.",
+  "hlavni": 0
+ },
+ {
+  "id": 9280,
+  "slug": "interierove-dvere-vasco-doors-santiago",
+  "nazev": "Santiago",
+  "typ": "folie",
+  "kratce": "Nadčasově elegantní dveře s čistými liniemi, minimalistickým designem a decentním dekorem.",
+  "popis": "Model Santiago je nadčasově elegantní interiérové dveře s čistými liniemi a minimalistickým designem. Díky hladkému povrchu a decentnímu dekoru působí velmi moderně a hodí se do každého interiéru od klasického až po industriální styl. Santiago nabízí výborné zpracování s pevným rámem a kvalitními povrchovými úpravami, které jsou odolné proti opotřebení. Tento model je dostupný ve variantách falcových i bezfalcových dveří, včetně posuvných systémů – buď klasicky na stěnu, nebo prakticky do pouzdra, což oceníte při úspoře místa.",
+  "od": 3884,
+  "od_txt": "3 884 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Santiago 1",
+    "cena": 3884,
+    "img": "wp/santiago-1-3563a8.jpg",
+    "cena_txt": "3 884 Kč",
+    "r": 0.413
+   },
+   {
+    "nazev": "Santiago 2",
+    "cena": 3884,
+    "img": "wp/santiago-2-3ca973.jpg",
+    "cena_txt": "3 884 Kč",
+    "r": 0.413
+   },
+   {
+    "nazev": "Santiago 5",
+    "cena": 3884,
+    "img": "wp/santiago-5-0490f8.jpg",
+    "cena_txt": "3 884 Kč",
+    "r": 0.413
+   },
+   {
+    "nazev": "Santiago 6",
+    "cena": 3884,
+    "img": "wp/santiago-6-24bb82.jpg",
+    "cena_txt": "3 884 Kč",
+    "r": 0.413
+   },
+   {
+    "nazev": "Santiago 7",
+    "cena": 3884,
+    "img": "wp/santiago-7-5e41d6.jpg",
+    "cena_txt": "3 884 Kč",
+    "r": 0.413
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Bílá",
+    "img": "wp/bila-1-303efa.jpg"
+   },
+   {
+    "nazev": "Dub Aljaška",
+    "img": "wp/dub-aljaska-priplatek-424-kc-2-5e1d31.jpg"
+   },
+   {
+    "nazev": "Dub Riviera",
+    "img": "wp/dub-riviera-priplatek-337-kc-2-e05c62.jpg"
+   },
+   {
+    "nazev": "Dub Sonoma",
+    "img": "wp/dub-sonoma-priplatek-424-kc-1-0f879b.jpg"
+   },
+   {
+    "nazev": "Dub Stříbrný",
+    "img": "wp/dub-stribrny-priplatek-424-kc-2-4431c1.jpg"
+   },
+   {
+    "nazev": "Dub Šedý",
+    "img": "wp/dub-sedy-priplatek-337-kc-2-89ad8f.jpg"
+   },
+   {
+    "nazev": "Ořech Columbia",
+    "img": "wp/orech-columbia-priplatek-337-kc-2-1b265a.jpg"
+   },
+   {
+    "nazev": "Ořech Muškát",
+    "img": "wp/orech-muskat-priplatek-337-kc-2-906c91.jpg"
+   },
+   {
+    "nazev": "Dub Santa",
+    "img": "wp/novy-dekor-dub-santa-b4c881.jpg"
+   },
+   {
+    "nazev": "Dub Viking",
+    "img": "wp/dub-viking-66efc4.jpg"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "ul",
+    "items": [
+     "rám vyrobený z MDF potažený po celém obvodu bez viditelných spojů",
+     "povrch: Decor Design nebo Decorative",
+     "sklo: tvrzené satinato 4 mm",
+     "příprava pro podřez křídla do 40 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "pro vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>falcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany, zakončené polodrážkou (falcem)",
+     "zadlabací zámek mechanický",
+     "panty čepové, regulované – 3 ks",
+     "dostupné také v dvoukřídlém provedení",
+     "dostupná obložková zárubeň regulovaná nebo rámová"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>bezfalcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany bez polodrážky",
+     "zadlabací zámek magnetický",
+     "panty: dvě kapsy pro skryté 3D panty (skryté panty"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "jsou součástí vybavení bezfalcové obložkové zárubně)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dostupná bezfalcová obložková zárubeň regulovaná",
+     "rámová zárubeň NEDOSTUPNÁ",
+     "dvoukřídlové provedení NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": "wp/interierove-dvere-santiago-90aa55.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře Santiago |",
+  "description": "Interiérové dveře SANTIAGO značky VASCO DOORS jsou unikátním spojením krásy a funkčnosti.",
+  "hlavni": 0
+ },
+ {
+  "id": 14766,
+  "slug": "interierove-dvere-malaga",
+  "nazev": "Malaga",
+  "typ": "folie",
+  "kratce": "Model s jemným a výrazným dekorem s přírodními prvky pro útulný a moderní interiér.",
+  "popis": "Malaga je dveřní model, který se vyznačuje jemným a přitom výrazným dekorem s přírodními prvky. Je ideální volbou pro ty, kdo chtějí do bytu či domu vnést pocit útulnosti a tepla. Kvalitní materiály a precizní povrchová úprava zajišťují snadnou údržbu a vysokou odolnost proti poškrábání. Dveře Malaga jsou dostupné v klasickém falcovém i moderním bezfalcovém provedení a zároveň lze zvolit i praktický posuvný systém – na zeď i do pouzdra.",
+  "od": 3979,
+  "od_txt": "3 979 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Malaga 1",
+    "cena": 3979,
+    "img": "wp/malaga1-0749dc.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.41
+   },
+   {
+    "nazev": "Malaga 6",
+    "cena": 3979,
+    "img": "wp/malaga6-88ffb9.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.41
+   },
+   {
+    "nazev": "Malaga 2",
+    "cena": 3979,
+    "img": "wp/malaga2-f778f1.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.41
+   },
+   {
+    "nazev": "Malaga 3",
+    "cena": 3979,
+    "img": "wp/malaga3-dd28ed.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.41
+   },
+   {
+    "nazev": "Malaga 4",
+    "cena": 3979,
+    "img": "wp/malaga4-e3ea4a.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.41
+   },
+   {
+    "nazev": "Malaga 5",
+    "cena": 3979,
+    "img": "wp/malaga5-d4926a.jpg",
+    "cena_txt": "3 979 Kč",
+    "r": 0.41
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Bílá",
+    "img": "wp/910-decorative-bila-4-f7a26a.jpg"
+   },
+   {
+    "nazev": "Dub Sonoma",
+    "img": "wp/690-decor-design-dub-sonoma-4-a8a6b7.jpg"
+   },
+   {
+    "nazev": "Dub Aljaška",
+    "img": "wp/679-decor-design-dub-aljassky-3-84582c.jpg"
+   },
+   {
+    "nazev": "Dub Šedý",
+    "img": "wp/676-decor-design-dub-sedy-3-f33881.jpg"
+   },
+   {
+    "nazev": "Ořech Muškátový",
+    "img": "wp/475-decor-design-orech-muskatovy-3-74df6c.jpg"
+   },
+   {
+    "nazev": "Dub Riviera",
+    "img": "wp/474-decor-design-dub-riviera-3-f79f35.jpg"
+   },
+   {
+    "nazev": "Ořech Columbia",
+    "img": "wp/473-decor-design-orech-columbia-4-4ed19a.jpg"
+   },
+   {
+    "nazev": "Dub Stříbrný",
+    "img": "wp/682-decor-design-dub-stribrny-3-67e5d7.jpg"
+   },
+   {
+    "nazev": "Dub Viking",
+    "img": "wp/375-dub-viking-1-4b9107.jpg"
+   },
+   {
+    "nazev": "Dub Santa",
+    "img": "wp/novy-dekor-dub-santa-b4c881.jpg"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "ul",
+    "items": [
+     "rám vyrobený z MDF potažený po celém obvodu bez viditelných spojů",
+     "povrch: Decor Design nebo Decorative",
+     "sklo: tvrzené satinato 4 mm",
+     "příprava pro podřez křídla do 40 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "pro vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>falcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany, zakončené polodrážkou (falcem)",
+     "zadlabací zámek mechanický",
+     "panty čepové, regulované – 3 ks",
+     "dostupné také v dvoukřídlém provedení",
+     "dostupná obložková zárubeň regulovaná nebo rámová"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>bezfalcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany bez polodrážky",
+     "zadlabací zámek magnetický",
+     "panty: dvě kapsy pro skryté 3D panty (skryté panty"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "jsou součástí vybavení bezfalcové obložkové zárubně)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dostupná bezfalcová obložková zárubeň regulovaná",
+     "rámová zárubeň NEDOSTUPNÁ",
+     "dvoukřídlové provedení NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": "wp/interierove-dvere-malaga-be1882.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře Malaga |",
+  "description": "Kvalitní a designový produkt, který by neměl chybět v žádné moderní domácnosti. Dveře Malaga to je trefa do černého. Výrobce VASCO DOORS přináší spousty dekorů ve vysoké kvalitě.",
+  "hlavni": 0
+ },
+ {
+  "id": 14801,
+  "slug": "interierove-dvere-torre",
+  "nazev": "Torre",
+  "typ": "folie",
+  "kratce": "Robustní a elegantní vzhled s jemným reliéfem na povrchu.",
+  "popis": "Model Torre zaujme především svým robustním a přitom elegantním vzhledem s jemným reliéfem na povrchu. Je vhodný pro interiéry, kde chcete zdůraznit kvalitu a trvanlivost dveří s nádechem klasiky. Precizní zpracování a výběr materiálů zaručují dlouhodobou spokojenost. Torre se vyrábí jako falcové nebo bezfalcové dveře a je kompatibilní s posuvnými systémy na zeď i do pouzdra.",
+  "od": 4343,
+  "od_txt": "4 343 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Torre 1",
+    "cena": 4343,
+    "img": "wp/torre-1-1-20ffcf.jpg",
+    "cena_txt": "4 343 Kč",
+    "r": 0.415
+   },
+   {
+    "nazev": "Torre 2",
+    "cena": 4343,
+    "img": "wp/torre-2-1-d12962.jpg",
+    "cena_txt": "4 343 Kč",
+    "r": 0.415
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Ořech Columbia",
+    "img": "wp/473-decor-design-orech-columbia-5-c1762e.jpg"
+   },
+   {
+    "nazev": "Dub Riviera",
+    "img": "wp/474-decor-design-dub-riviera-4-d608d8.jpg"
+   },
+   {
+    "nazev": "Ořech Muškátový",
+    "img": "wp/475-decor-design-orech-muskatovy-4-41373c.jpg"
+   },
+   {
+    "nazev": "Dub Šedý",
+    "img": "wp/676-decor-design-dub-sedy-4-78f4d7.jpg"
+   },
+   {
+    "nazev": "Dub Aljaška",
+    "img": "wp/679-decor-design-dub-aljassky-4-228836.jpg"
+   },
+   {
+    "nazev": "Dub Stříbrný",
+    "img": "wp/682-decor-design-dub-stribrny-4-583906.jpg"
+   },
+   {
+    "nazev": "Dub Sonoma",
+    "img": "wp/690-decor-design-dub-sonoma-5-20cd15.jpg"
+   },
+   {
+    "nazev": "Bílá",
+    "img": "wp/910-decorative-bila-5-a43097.jpg"
+   },
+   {
+    "nazev": "Dub Santa",
+    "img": "wp/novy-dekor-dub-santa-b4c881.jpg"
+   },
+   {
+    "nazev": "Dub Viking",
+    "img": "wp/dub-viking-66efc4.jpg"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "p",
+    "h": "standardní vybavení",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "rám vyrobený z MDF potažený po celém obvodu, bez viditelných spojů",
+     "povrch: Decor Design nebo Decorative",
+     "sklo: tvrzené satinato 4 mm",
+     "příprava pro podřez křídla do 40 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "pro vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "doplňky za příplatek:",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "ventilace:",
+     "štěrbina (W)",
+     "ventilační otvory (T)",
+     "ventilační podřez (P)"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>falcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany, zakončené polodrážkou (falcem)",
+     "zadlabací zámek mechanický",
+     "panty čepové, regulované – 3 ks",
+     "dostupné také v dvoukřídlém provedení",
+     "dostupná obložková zárubeň regulovaná nebo rámová"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>bezfalcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany bez polodrážky",
+     "zadlabací zámek magnetický",
+     "panty: dvě kapsy pro skryté 3D panty (skryté panty"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "jsou součástí vybavení bezfalcové obložkové zárubně)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dostupná bezfalcová obložková zárubeň regulovaná",
+     "rámová zárubeň NEDOSTUPNÁ",
+     "dvoukřídlové provedení NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": "wp/interierove-dvere-torre-decc70.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře Torre |",
+  "description": "Kvalitní a designový produkt, který by neměl chybět v žádné moderní domácnosti. Dveře Torre to je trefa do černého. Výrobce VASCO DOORS přináší spousty dekorů ve vysoké kvalitě.",
+  "hlavni": 0
+ },
+ {
+  "id": 20841,
+  "slug": "interierove-dvere-nero",
+  "nazev": "Nero",
+  "typ": "folie",
+  "kratce": "Výrazné interiérové dveře s moderním designem a charakteristickým tmavým dekorem.",
+  "popis": "Nero představuje výrazné interiérové dveře s charakterem, které vynikají svým moderním designem a výrazným tmavým dekorem. Precizní zpracování zaručuje dlouhou životnost a pevnost konstrukce, zároveň dveře působí masivně a luxusně. Nero je vhodný model pro ty, kdo chtějí do svého prostoru vtisknout styl s osobitým nádechem. Možnosti výroby zahrnují bezfalcové provedení, stejně jako posuvné varianty na zeď či do pouzdra, což dodává maximální flexibilitu při plánování interiéru.",
+  "od": 4220,
+  "od_txt": "4 220 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Nero 882",
+    "cena": 4220,
+    "img": "wp/nero-1-b66026.jpg",
+    "cena_txt": "4 220 Kč",
+    "r": 0.484
+   },
+   {
+    "nazev": "Nero 558",
+    "cena": 4220,
+    "img": "wp/nero-2-97f35e.jpg",
+    "cena_txt": "4 220 Kč",
+    "r": 0.483
+   },
+   {
+    "nazev": "Nero 347",
+    "cena": 4220,
+    "img": "wp/nero-3-59d2ae.jpg",
+    "cena_txt": "4 220 Kč",
+    "r": 0.482
+   },
+   {
+    "nazev": "Nero 346",
+    "cena": 4220,
+    "img": "wp/nero-4-66eb1b.jpg",
+    "cena_txt": "4 220 Kč",
+    "r": 0.483
+   },
+   {
+    "nazev": "Nero 345",
+    "cena": 4220,
+    "img": "wp/nero-5-a3244e.jpg",
+    "cena_txt": "4 220 Kč",
+    "r": 0.484
+   },
+   {
+    "nazev": "Nero 344",
+    "cena": 4220,
+    "img": "wp/nero-6-17fb79.jpg",
+    "cena_txt": "4 220 Kč",
+    "r": 0.481
+   }
+  ],
+  "dekory": [],
+  "vybava": [
+   {
+    "t": "p",
+    "h": "dveře jsou pouze v bezfalcovém provedení",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "rám dveří je v černém dekoru",
+     "hrany bezfalcových dveří jsou v černém dekoru",
+     "zárubeň dveří je v černém dekoru",
+     "ozdobná středová deska dveří"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "(na výběr je 6 barev středové desky)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "skryté panty s černou povrchovou úpravou",
+     "magnetický zámek s černou povrchovou úpravou",
+     "protiplech s černou povrchovou úpravou"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "standardní vybavení",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "vnitřní rám vyrobený z MDF, potažený po celém"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "obvodu, bez viditelných spojů",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "desková sendvičová konstrukce s voštinovou výplní"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "o síle 33 mm",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "povrch: Decor Design nebo Decorative",
+     "příprava pro podřez křídla do 40 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek pro"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "doplňky za příplatek",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "ventilace:",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "mřížka (K)",
+     "ventilační otvory (T)",
+     "ventilační podřez (P)"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": "wp/interierove-dvere-nero-5e23d0.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře Nero |",
+  "description": "Nero představuje výrazné interiérové dveře s charakterem, které vynikají svým moderním designem a výrazným tmavým dekorem. Precizní zpracování zaručuje…",
+  "hlavni": 0
+ },
+ {
+  "id": 16621,
+  "slug": "interierove-dvere-primo",
+  "nazev": "Primo",
+  "typ": "cpl",
+  "kratce": "Klasický design s jemnou strukturou povrchu vhodný do různých typů interiérů.",
+  "popis": "Primo představuje dveře s klasickým designem a jemnou texturou, která dodává dveřím příjemný přirozený vzhled. Jsou ideální pro ty, kteří chtějí do interiéru vnést tradiční atmosféru bez kompromisů na kvalitě a odolnosti. Konstrukce je pevná a materiály vysoce kvalitní. Tento model je možné vyrobit jako falcové, bezfalcové i posuvné dveře, včetně systému do pouzdra.",
+  "od": 5107,
+  "od_txt": "5 107 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Primo 1",
+    "cena": 5107,
+    "img": "wp/primo-1-3e0704.jpg",
+    "cena_txt": "5 107 Kč",
+    "r": 0.409
+   },
+   {
+    "nazev": "Primo 2",
+    "cena": 5107,
+    "img": "wp/primo-2-28d184.jpg",
+    "cena_txt": "5 107 Kč",
+    "r": 0.409
+   },
+   {
+    "nazev": "Primo 3",
+    "cena": 5107,
+    "img": "wp/primo-3-67c91a.jpg",
+    "cena_txt": "5 107 Kč",
+    "r": 0.408
+   },
+   {
+    "nazev": "Primo 4",
+    "cena": 5107,
+    "img": "wp/primo-4-9ae9e7.jpg",
+    "cena_txt": "5 107 Kč",
+    "r": 0.409
+   },
+   {
+    "nazev": "Primo 5",
+    "cena": 5107,
+    "img": "wp/primo-5-9432a3.jpg",
+    "cena_txt": "5 107 Kč",
+    "r": 0.409
+   },
+   {
+    "nazev": "Primo 6",
+    "cena": 5107,
+    "img": "wp/primo-6-eb983d.jpg",
+    "cena_txt": "5 107 Kč",
+    "r": 0.409
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Dub Přírodní",
+    "img": "wp/dub-prirodni-f50422.jpg"
+   },
+   {
+    "nazev": "Dub Skandinávský",
+    "img": "wp/dub-skandinavsky-d06c30.jpg"
+   },
+   {
+    "nazev": "Bílá Bianco",
+    "img": "wp/bila-bianco-18969c.jpg"
+   },
+   {
+    "nazev": "Šedá",
+    "img": "wp/506-seda-3d1e71.png"
+   },
+   {
+    "nazev": "Kašmír",
+    "img": "wp/510-kasmir-a230af.png"
+   },
+   {
+    "nazev": "Dub Lago",
+    "img": "wp/513-dub-lago-f77c8c.png"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "p",
+    "h": "standardní vybavení",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "rám vyrobený z MDF potažený po celém obvodu, bez viditelných spojů",
+     "povrch: Laminát CPL",
+     "sklo: tvrzené satinato 4 mm",
+     "příprava pro podřez křídla do 40 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "pro vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "doplňky za příplatek:",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "ventilace:",
+     "štěrbina (W)",
+     "ventilační otvory (T)",
+     "ventilační podřez (P)"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>falcové dveře- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany, zakončené polodrážkou (falcem)",
+     "zadlabací zámek mechanický",
+     "panty čepové, regulované – 3 ks",
+     "dostupné také v dvoukřídlém provedení",
+     "dostupná obložková zárubeň regulovaná nebo rámová"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>bezfalcové dveře- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany bez polodrážky",
+     "zadlabací zámek magnetický",
+     "panty: dvě kapsy pro skryté 3D panty (skryté panty"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "jsou součástí vybavení bezfalcové obložkové zárubně)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dostupná bezfalcová obložková zárubeň regulovaná",
+     "rámová zárubeň NEDOSTUPNÁ",
+     "dvoukřídlové provedení NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": "wp/interierove-dvere-primo-325212.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře Primo v Praze |",
+  "description": "Primo představuje dveře s klasickým designem a jemnou texturou, která dodává dveřím příjemný přirozený vzhled. Jsou ideální pro ty, kteří chtějí do…",
+  "hlavni": 0
+ },
+ {
+  "id": 9177,
+  "slug": "dvere-faro",
+  "nazev": "Faro",
+  "typ": "cpl",
+  "kratce": "Elegantní minimalistický model s univerzálním vzhledem pro moderní i tradiční interiéry.",
+  "popis": "Faro jsou elegantní dveře s minimalistickým designem, které zaujmou svou jednoduchostí a univerzálností. Jsou ideální do moderních i tradičních interiérů, díky své čisté konstrukci a hladkému povrchu. Výrobní technologie zaručuje stabilitu a kvalitu, dveře jsou odolné proti běžnému mechanickému opotřebení. Model Faro je možné vyrobit ve falcovém i bezfalcovém provedení a doplnit o posuvné systémy, které šetří prostor a zvyšují komfort užívání.",
+  "od": 4165,
+  "od_txt": "4 165 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Faro 1",
+    "cena": 4165,
+    "img": "wp/faro-1-f6ba6f.jpg",
+    "cena_txt": "4 165 Kč",
+    "r": 0.417
+   },
+   {
+    "nazev": "Faro 2",
+    "cena": 5289,
+    "img": "wp/faro-2-ad26e6.jpg",
+    "cena_txt": "5 289 Kč",
+    "r": 0.417
+   },
+   {
+    "nazev": "Faro 6",
+    "cena": 5289,
+    "img": "wp/faro-6-fe9c21.jpg",
+    "cena_txt": "5 289 Kč",
+    "r": 0.417
+   },
+   {
+    "nazev": "Faro 7",
+    "cena": 5289,
+    "img": "wp/faro-7-fb0e45.jpg",
+    "cena_txt": "5 289 Kč",
+    "r": 0.414
+   },
+   {
+    "nazev": "Faro 8",
+    "cena": 5289,
+    "img": "wp/faro-8-bcfa30.jpg",
+    "cena_txt": "5 289 Kč",
+    "r": 0.415
+   },
+   {
+    "nazev": "Faro 7 F",
+    "cena": 5289,
+    "img": "wp/faro-7-cire-typ-f-c.png",
+    "cena_txt": "5 289 Kč",
+    "r": 0.377
+   },
+   {
+    "nazev": "Faro 7 mříž",
+    "cena": 5289,
+    "img": "wp/faro-7-mriz-typ-j-c.png",
+    "cena_txt": "5 289 Kč",
+    "r": 0.377
+   },
+   {
+    "nazev": "Faro 7 M",
+    "cena": 5289,
+    "img": "wp/faro-7-mriz-typ-m-c.png",
+    "cena_txt": "5 289 Kč",
+    "r": 0.377
+   },
+   {
+    "nazev": "Faro 7 typ 1",
+    "cena": 5289,
+    "img": "wp/faro-7-ornament-typ-1-c.png",
+    "cena_txt": "5 289 Kč",
+    "r": 0.377
+   },
+   {
+    "nazev": "Faro 7 typ 2",
+    "cena": 5289,
+    "img": "wp/faro-7-ornament-typ-2-c.png",
+    "cena_txt": "5 289 Kč",
+    "r": 0.377
+   },
+   {
+    "nazev": "Faro 7 typ 3",
+    "cena": 5289,
+    "img": "wp/faro-7-ornament-typ-3-c.png",
+    "cena_txt": "5 289 Kč",
+    "r": 0.377
+   },
+   {
+    "nazev": "Faro 7 satinato",
+    "cena": 5289,
+    "img": "wp/faro-7-satinato-c.png",
+    "cena_txt": "5 289 Kč",
+    "r": 0.377
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Dub Skandinávský",
+    "img": "wp/dub-skandinavsky-2-dc15a8.jpg"
+   },
+   {
+    "nazev": "Dub Přírodní",
+    "img": "wp/3c35314f-7f8f-4e82-b494-7ed8ce3c7531-ce1182.jpeg"
+   },
+   {
+    "nazev": "Bílá Bianco",
+    "img": "wp/bila-bianco-18969c.jpg"
+   },
+   {
+    "nazev": "Dub Lago",
+    "img": "wp/513-dub-lago-f77c8c.png"
+   },
+   {
+    "nazev": "Kašmír",
+    "img": "wp/510-kasmir-a230af.png"
+   },
+   {
+    "nazev": "Šedá",
+    "img": "wp/506-seda-3d1e71.png"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "p",
+    "h": "standardní vybavení",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "rám vyrobený z MDF potažený po celém obvodu, bez viditelných spojů",
+     "povrch: Laminát CPL",
+     "sklo: tvrzené satinato 4 mm",
+     "příprava pro podřez křídla do 40 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "pro vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "doplňky za příplatek:",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "ventilace:",
+     "štěrbina (W)",
+     "ventilační otvory (T)",
+     "ventilační podřez (P)"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>falcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany, zakončené polodrážkou (falcem)",
+     "zadlabací zámek mechanický",
+     "panty čepové, regulované – 3 ks",
+     "dostupné také v dvoukřídlém provedení",
+     "dostupná obložková zárubeň regulovaná nebo rámová"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>bezfalcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany bez polodrážky",
+     "zadlabací zámek magnetický",
+     "panty: dvě kapsy pro skryté 3D panty (skryté panty"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "jsou součástí vybavení bezfalcové obložkové zárubně)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dostupná bezfalcová obložková zárubeň regulovaná",
+     "rámová zárubeň NEDOSTUPNÁ",
+     "dvoukřídlové provedení NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": "wp/interierove-dvere-faro-d66d65.png",
+  "v_katalogu": true,
+  "seo_title": "Interíérové dveře Faro |",
+  "description": "Designové dveře do interiéru FARO, od firmy VASCO DOORS představují precizní provedení a krásný vzhled. Dodají Vašemu domovu ucelený dojem.",
+  "hlavni": 0
+ },
+ {
+  "id": 9346,
+  "slug": "interierove-dvere-vasco-doors-rego",
+  "nazev": "Rego",
+  "typ": "cpl",
+  "kratce": "Čistý a jednoduchý design doplněný jemnou strukturou povrchu a moderním provedením.",
+  "popis": "Rego je dveřní model, který vyniká svým jednoduchým a čistým designem, doplněným o jemnou strukturu povrchu. Díky použitým materiálům jsou dveře pevné a odolné, s dlouhou životností. Rego je velmi univerzální a snadno se kombinuje s různými styly interiérů. V nabídce jsou falcové, bezfalcové i posuvné varianty, které umožňují variabilní řešení prostoru.",
+  "od": 4261,
+  "od_txt": "4 261 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Rego (voština) · provedení 1",
+    "cena": 4790,
+    "img": "wp/4-c2c129.webp",
+    "cena_txt": "4 790 Kč",
+    "r": 1.333
+   },
+   {
+    "nazev": "Rego (voština) · provedení 2",
+    "cena": 4790,
+    "img": "wp/3-366fe8.webp",
+    "cena_txt": "4 790 Kč",
+    "r": 1.333
+   },
+   {
+    "nazev": "Rego (voština) · provedení 3",
+    "cena": 4790,
+    "img": "wp/2-9c6458.webp",
+    "cena_txt": "4 790 Kč",
+    "r": 1.333
+   },
+   {
+    "nazev": "Rego (voština) · provedení 4",
+    "cena": 4790,
+    "img": "wp/1-51ae71.webp",
+    "cena_txt": "4 790 Kč",
+    "r": 1.333
+   },
+   {
+    "nazev": "Rego 2",
+    "cena": 4261,
+    "img": "wp/rego-plne-2-5529da.jpg",
+    "cena_txt": "4 261 Kč",
+    "r": 0.412
+   },
+   {
+    "nazev": "Rego 1",
+    "cena": 4261,
+    "img": "wp/rego-plne-1-7a08bb.jpg",
+    "cena_txt": "4 261 Kč",
+    "r": 0.412
+   },
+   {
+    "nazev": "Rego okénko",
+    "cena": 7289,
+    "img": "wp/5-bf29fd.webp",
+    "cena_txt": "7 289 Kč",
+    "r": 1.333
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Grafit",
+    "img": "wp/533-laminat-cpl-grafit-adb656.jpg"
+   },
+   {
+    "nazev": "Dub Skandinávský",
+    "img": "wp/547-laminat-cpl-dub-skandinavsky-1-e61ec4.jpg"
+   },
+   {
+    "nazev": "Světlá Šedá",
+    "img": "wp/549-laminat-cpl-svetla-seda-5681c0.jpg"
+   },
+   {
+    "nazev": "Dub Přírodní",
+    "img": "wp/3c35314f-7f8f-4e82-b494-7ed8ce3c7531-ce1182.jpeg"
+   },
+   {
+    "nazev": "Kašmír",
+    "img": "wp/510-kasmir-176dee.png"
+   },
+   {
+    "nazev": "Dub Lago",
+    "img": "wp/513-dub-lago-99fa48.png"
+   },
+   {
+    "nazev": "Dub Nevi",
+    "img": "wp/511-dub-nevi-2eb274.png"
+   },
+   {
+    "nazev": "Dub Belo",
+    "img": "wp/512-dub-belo-4d1051.png"
+   },
+   {
+    "nazev": "Bílá",
+    "img": "wp/516-bila-1e1546.jpg"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "ul",
+    "items": [
+     "rám z měkkého dřeva a desky MDF, oboustranně opláštěný deskou HDF",
+     "povrchová úprava: Laminát CPL",
+     "viditelné hrany jsou zakončeny ve stejném dekoru",
+     "výplň: „sendvičová” deska s voštinovou výplní,"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "za příplatek lze vyrobit s výplní DTD",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "příprava pro podřez křídla do 40 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "pro vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "doplňky za příplatek:",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "ventilace:",
+     "mřížka",
+     "ventilační otvory (T)",
+     "ventilační podřez (P)"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>falcové dveře- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "ostré hrany, zakončené polodrážkou (falcem)",
+     "zadlabací zámek mechanický",
+     "panty čepové, regulované – 3 ks",
+     "dostupná obložková zárubeň regulovaná nebo rámová",
+     "dvoukřídlé provedení – nedostupné"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "doplňky za příplatek:",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "výplň DTD",
+     "křídlo „100“"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>bezfalcové dveře- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "ostré hrany bez polodrážky",
+     "zadlabací zámek magnetický",
+     "panty: dvě kapsy pro skryté 3D panty (skryté panty"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "jsou součástí vybavení bezfalcové obložkové zárubně)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dostupná bezfalcová obložková zárubeň regulovaná",
+     "rámová zárubeň NEDOSTUPNÁ",
+     "dvoukřídlové provedení NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": "wp/interierove-dvere-rego-84d736.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře Rego |",
+  "description": "Moderní dveře Rego se vyznačují čistým designem s autentickým vzhledem jednotlivých dekorů.",
+  "hlavni": 4
+ },
+ {
+  "id": 9317,
+  "slug": "interierove-dvere-vasco-doors-ventura",
+  "nazev": "Ventura",
+  "typ": "cpl",
+  "kratce": "Model kombinující tradiční prvky s moderním designem a elegantním hladkým povrchem.",
+  "popis": "Ventura je model, který kombinuje tradiční prvky s moderním designem. Povrch dveří je hladký, elegantní a nabízí decentní barevné varianty vhodné do různých stylů bydlení. Konstrukce je pevná a stabilní, což zajišťuje dlouhou životnost. Ventura lze objednat jako falcové i bezfalcové dveře.",
+  "od": 5372,
+  "od_txt": "5 372 Kč",
+  "dostupnost": "21–28",
+  "varianty": [
+   {
+    "nazev": "Ventura 1",
+    "cena": 5372,
+    "img": "wp/ventura-1-e40949.jpg",
+    "cena_txt": "5 372 Kč",
+    "r": 0.415
+   },
+   {
+    "nazev": "Ventura 2",
+    "cena": 5372,
+    "img": "wp/ventura-2-faaac5.jpg",
+    "cena_txt": "5 372 Kč",
+    "r": 0.412
+   },
+   {
+    "nazev": "Ventura 3",
+    "cena": 6459,
+    "img": "wp/ventura-3-ba7bec.jpg",
+    "cena_txt": "6 459 Kč",
+    "r": 0.415
+   },
+   {
+    "nazev": "Ventura 4",
+    "cena": 6459,
+    "img": "wp/ventura-4-2dcfe0.jpg",
+    "cena_txt": "6 459 Kč",
+    "r": 0.415
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Dub Skandinávský",
+    "img": "wp/547-laminat-cpl-dub-skandinavsky-0e693a.jpg"
+   },
+   {
+    "nazev": "Dub Přírodní",
+    "img": "wp/3c35314f-7f8f-4e82-b494-7ed8ce3c7531-ce1182.jpeg"
+   },
+   {
+    "nazev": "Bílá Bianco",
+    "img": "wp/bila-bianco-18969c.jpg"
+   },
+   {
+    "nazev": "Kašmír",
+    "img": "wp/510-kasmir-176dee.png"
+   },
+   {
+    "nazev": "Dub Lago",
+    "img": "wp/513-dub-lago-99fa48.png"
+   },
+   {
+    "nazev": "Šedá",
+    "img": "wp/506-seda-3d1e71.png"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "p",
+    "h": "standardní vybavení",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "rám vyrobený z MDF potažený po celém obvodu, bez viditelných spojů",
+     "povrch: Laminát CPL",
+     "sklo: tvrzené satinato 4 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "pro vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "Výhody tvrzeného skla ESG:",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "vysoká odolnost proti mechanickému namáhání",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "menší riziko zranění v důsledku rozbití skleněné výplně",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "větší odolnost vůči prudkým změnám teploty",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>falcové dveře- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany, zakončené polodrážkou (falcem)",
+     "zadlabací zámek mechanický",
+     "panty čepové, regulované – 3 ks",
+     "dostupné také v dvoukřídlém provedení",
+     "dostupná obložková zárubeň regulovaná nebo rámová"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>bezfalcové dveře- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany bez polodrážky",
+     "zadlabací zámek magnetický",
+     "panty: dvě kapsy pro skryté 3D panty (skryté panty"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "jsou součástí vybavení bezfalcové obložkové zárubně)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dostupná bezfalcová obložková zárubeň regulovaná",
+     "rámová zárubeň NEDOSTUPNÁ",
+     "dvoukřídlové provedení NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": "wp/interierove-dvere-ventura-06ea7c.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře Ventura |",
+  "description": "Užijte si krásné, kvalitně vyrobené dveře VENTURA SATINATO firmy VASCO DOORS, které obohatí Váš interiér.",
+  "hlavni": 0
+ },
+ {
+  "id": 20854,
+  "slug": "interierove-dvere-nero-gt",
+  "nazev": "Nero GT",
+  "typ": "cpl",
+  "kratce": "Výrazný moderní model s charakterem a tmavým dekorem pro současné interiéry.",
+  "popis": "Představuje výrazné interiérové dveře s charakterem, které vynikají svým moderním designem a výrazným tmavým dekorem. Precizní zpracování zaručuje dlouhou životnost a pevnost konstrukce, zároveň dveře působí masivně a luxusně. Nero je vhodný model pro ty, kdo chtějí do svého prostoru vtisknout styl s osobitým nádechem. Možnosti výroby zahrnují bezfalcové provedení, stejně jako posuvné varianty na zeď či do pouzdra, což dodává maximální flexibilitu při plánování interiéru.",
+  "od": 6538,
+  "od_txt": "6 538 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Nero GT 1",
+    "cena": 6538,
+    "img": "wp/nero-gt-1-aed025.jpg",
+    "cena_txt": "6 538 Kč",
+    "r": 0.515
+   },
+   {
+    "nazev": "Nero GT 2",
+    "cena": 6538,
+    "img": "wp/nero-gt-2-3955b1.jpg",
+    "cena_txt": "6 538 Kč",
+    "r": 0.519
+   },
+   {
+    "nazev": "Nero GT 3",
+    "cena": 6538,
+    "img": "wp/nero-gt-3-35d7c9.jpg",
+    "cena_txt": "6 538 Kč",
+    "r": 0.511
+   },
+   {
+    "nazev": "Nero GT 4",
+    "cena": 6538,
+    "img": "wp/nero-gt-4-f102ff.jpg",
+    "cena_txt": "6 538 Kč",
+    "r": 0.519
+   },
+   {
+    "nazev": "Nero GT · provedení 1",
+    "cena": 6538,
+    "img": "wp/nero-gt-944dea.jpg",
+    "cena_txt": "6 538 Kč",
+    "r": 0.519
+   },
+   {
+    "nazev": "Nero GT · provedení 2",
+    "cena": 9725,
+    "img": "wp/nero-gt-1-31f3a2.png",
+    "cena_txt": "9 725 Kč",
+    "r": 0.413
+   }
+  ],
+  "dekory": [],
+  "vybava": [],
+  "interier": "wp/interierove-dvere-nero-gt-0cc72b.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře Nero GT |",
+  "description": "Představuje výrazné interiérové dveře s charakterem, které vynikají svým moderním designem a výrazným tmavým dekorem. Precizní zpracování zaručuje dlouhou…",
+  "hlavni": 0
+ },
+ {
+  "id": 27088,
+  "slug": "interierove-dvere-presto",
+  "nazev": "Presto",
+  "typ": "cpl",
+  "kratce": "Minimalistický design s hladkým povrchem, který podtrhuje čistotu moderního interiéru.",
+  "popis": "Presto jsou dveře s minimalistickým designem a hladkým povrchem, který zdůrazňuje čistotu a jednoduchost interiéru. Tento model je ideální pro moderní a funkční prostory, kde je kladen důraz na praktičnost a estetiku. Konstrukce je vysoce odolná a stabilní. Presto nabízí všechny varianty otevírání – falcové, bezfalcové a posuvné systémy, včetně možnosti zabudování do pouzdra.",
+  "od": 4242,
+  "od_txt": "4 242 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Presto plné 1",
+    "cena": 4242,
+    "img": "wp/presto-plne-model-1-31852e.jpg",
+    "cena_txt": "4 242 Kč",
+    "r": 0.415
+   },
+   {
+    "nazev": "Presto plné 2",
+    "cena": 4242,
+    "img": "wp/presto-plne-model-2-6ff58c.jpg",
+    "cena_txt": "4 242 Kč",
+    "r": 0.415
+   },
+   {
+    "nazev": "Presto model 3",
+    "cena": 4843,
+    "img": "wp/presto-model-3-cut-a0ca7f.jpg",
+    "cena_txt": "4 843 Kč",
+    "r": 0.416
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Šedá",
+    "img": "wp/506-seda-85a88b.png"
+   },
+   {
+    "nazev": "Kašmír",
+    "img": "wp/510-kasmir-abfff3.png"
+   },
+   {
+    "nazev": "Dub Nevi",
+    "img": "wp/511-dub-nevi-14523a.png"
+   },
+   {
+    "nazev": "Dub Belo",
+    "img": "wp/512-dub-belo-5b349b.png"
+   },
+   {
+    "nazev": "Dub Lago",
+    "img": "wp/513-dub-lago-d0e1c3.png"
+   },
+   {
+    "nazev": "Bílá",
+    "img": "wp/516-bila-f19dcb.jpg"
+   },
+   {
+    "nazev": "Grafit",
+    "img": "wp/523-grafit-32c908.jpg"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "p",
+    "h": "standardní vybavení",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "vnitřní rám vyrobený z MDF, potažený po celém obvodu, bez viditelných spojů",
+     "vyztužená MDF deska o celkové tloušťce 32 mm",
+     "povrch: Laminát CPL",
+     "příprava pro podřez křídla do 40 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek pro"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "doplňky za příplatek:",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "intarzie",
+     "ventilace:",
+     "mřížka (K)",
+     "ventilační otvory (T)",
+     "ventilační podřez (P)"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>falcové dveře- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany, zakončené polodrážkou (falcem)",
+     "zadlabací zámek mechanický",
+     "panty čepové, regulované – 3 ks",
+     "dostupná obložková zárubeň regulovaná nebo rámová",
+     "dvoukřídlé provedení – NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>bezfalcové dveře- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany bez polodrážky",
+     "zadlabací zámek magnetický",
+     "panty: dvě kapsy pro skryté 3D panty (skryté panty jsou"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "součástí vybavení bezfalcové obložkové zárubně)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dostupná bezfalcová obložková zárubeň regulovaná",
+     "rámová zárubeň – NEDOSTUPNÁ",
+     "dvoukřídlové provedení – NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": "wp/interierove-dvere-presto-8d0b14.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře PRESTO |",
+  "description": "Presto jsou dveře s minimalistickým designem a hladkým povrchem, který zdůrazňuje čistotu a jednoduchost interiéru. Tento model je ideální pro moderní a…",
+  "hlavni": 0
+ },
+ {
+  "id": 27104,
+  "slug": "interierove-dvere-presto-alto",
+  "nazev": "Presto Alto",
+  "typ": "cpl",
+  "kratce": "Minimalistické dveře s hladkým povrchem a čistým moderním vzhledem.",
+  "popis": "Presto jsou dveře s minimalistickým designem a hladkým povrchem, který zdůrazňuje čistotu a jednoduchost interiéru. Tento model je ideální pro moderní a funkční prostory, kde je kladen důraz na praktičnost a estetiku. Konstrukce je vysoce odolná a stabilní. Presto nabízí všechny varianty otevírání – falcové, bezfalcové a posuvné systémy, včetně možnosti zabudování do pouzdra.",
+  "od": 4362,
+  "od_txt": "4 362 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Presto ALTO · provedení 1",
+    "cena": 4362,
+    "img": "wp/presto-alto-bez-intarzie-08664a.jpg",
+    "cena_txt": "4 362 Kč",
+    "r": 0.417
+   },
+   {
+    "nazev": "Presto ALTO · provedení 2",
+    "cena": 4963,
+    "img": "wp/presto-alto-s-intarzii-dc0dc9.jpg",
+    "cena_txt": "4 963 Kč",
+    "r": 0.417
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Dub Nevi",
+    "img": "wp/511-dub-nevi-1-0adffa.png"
+   },
+   {
+    "nazev": "Dub Belo",
+    "img": "wp/512-dub-belo-1-21f1ed.png"
+   },
+   {
+    "nazev": "Dub Lago",
+    "img": "wp/513-dub-lago-1-5f05ca.png"
+   }
+  ],
+  "vybava": [],
+  "interier": "wp/interierove-dvere-presto-alto-aafed0.png",
+  "v_katalogu": true,
+  "seo_title": "Interiérové dveře Presto ALTO v Praze |",
+  "description": "Presto jsou dveře s minimalistickým designem a hladkým povrchem, který zdůrazňuje čistotu a jednoduchost interiéru. Tento model je ideální pro moderní a…",
+  "hlavni": 0
+ },
+ {
+  "id": 27069,
+  "slug": "interierove-dvere-braga-lido",
+  "nazev": "Braga Lido",
+  "typ": "folie",
+  "kratce": "Braga Lido je robustní model s výraznou texturou povrchu, která dodává dveřím zajímavý vizuální efekt a zároveň zdůrazňuje jejich kvalitu.",
+  "popis": "Braga Lido je robustní model s výraznou texturou povrchu, která dodává dveřím zajímavý vizuální efekt a zároveň zdůrazňuje jejich kvalitu. Hodí se do interiérů, kde je požadavek na pevnost a trvanlivost bez kompromisů na designu. Povrchová úprava je odolná a snadno udržovatelná. Braga se vyrábí ve falcovém i bezfalcovém provedení, doplněném o posuvné systémy na zeď i do pouzdra.",
+  "od": 3778,
+  "od_txt": "3 778 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Braga Lido · provedení 1",
+    "cena": 4489,
+    "img": "wp/braga-lido-bez-intarzie-f7b5ff.png",
+    "cena_txt": "4 489 Kč",
+    "r": 0.391
+   },
+   {
+    "nazev": "Braga Lido · provedení 2",
+    "cena": 4989,
+    "img": "wp/braga-lido-s-intarzii-1-scaled-64a6bc.jpg",
+    "cena_txt": "4 989 Kč",
+    "r": 0.416
+   },
+   {
+    "nazev": "Braga Lido · provedení 3",
+    "cena": 4989,
+    "img": "wp/braga-lido-s-intarzii-2-scaled-4b6ae5.jpg",
+    "cena_txt": "4 989 Kč",
+    "r": 0.411
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Šedý Beton",
+    "img": "wp/464-sedy-beton-b96a86.jpg"
+   },
+   {
+    "nazev": "Šedý Písek",
+    "img": "wp/465-sedy-pisek-3197e9.jpg"
+   },
+   {
+    "nazev": "Dub Santa",
+    "img": "wp/661-dub-santa-3b5cc3.png"
+   },
+   {
+    "nazev": "Dub Stříbrný",
+    "img": "wp/682-dub-stribrny-d73e11.jpg"
+   },
+   {
+    "nazev": "Bílá",
+    "img": "wp/bila-de75e7.jpg"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "p",
+    "h": "standardní vybavení",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "rám vyrobený z MDF potažený po celém obvodu, bez viditelných spojů",
+     "povrch: Decor Design nebo Decorative",
+     "sklo: tvrzené satinato 4 mm",
+     "příprava pro podřez křídla do 40 mm",
+     "zámek pro dózický klíč (K), WC zámek (W), zámek"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "pro vložku FAB (P) nebo bez otvoru pro klíč (Z)",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "doplňky za příplatek:",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "ventilace:",
+     "štěrbina (W)",
+     "ventilační otvory (T)",
+     "ventilační podřez (P)"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>falcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany, zakončené polodrážkou (falcem)",
+     "zadlabací zámek mechanický",
+     "panty čepové, regulované – 3 ks",
+     "dostupné také v dvoukřídlém provedení",
+     "dostupná obložková zárubeň regulovaná nebo rámová"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>bezfalcové- standardní vybavení</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zaoblené hrany bez polodrážky",
+     "zadlabací zámek magnetický",
+     "panty: dvě kapsy pro skryté 3D panty (skryté panty"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "jsou součástí vybavení bezfalcové obložkové zárubně)",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dostupná bezfalcová obložková zárubeň regulovaná",
+     "rámová zárubeň NEDOSTUPNÁ",
+     "dvoukřídlové provedení NEDOSTUPNÉ"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": null,
+  "v_katalogu": false,
+  "seo_title": "Interiérové dveře Braga LIDO |",
+  "description": "Braga Lido je robustní model s výraznou texturou povrchu, která dodává dveřím zajímavý vizuální efekt a zároveň zdůrazňuje jejich kvalitu. Hodí se do…",
+  "hlavni": 0
+ },
+ {
+  "id": 14523,
+  "slug": "interierove-dvere-teo",
+  "nazev": "Teo",
+  "typ": "folie",
+  "kratce": ".",
+  "popis": "",
+  "od": 3711,
+  "od_txt": "3 711 Kč",
+  "dostupnost": "14–21",
+  "varianty": [
+   {
+    "nazev": "Teo 1",
+    "cena": 3711,
+    "img": "wp/teo-1-84c805.jpg",
+    "cena_txt": "3 711 Kč",
+    "r": 0.411
+   },
+   {
+    "nazev": "Teo 2",
+    "cena": 3711,
+    "img": "wp/teo-2-d4955f.jpg",
+    "cena_txt": "3 711 Kč",
+    "r": 0.411
+   },
+   {
+    "nazev": "Teo 3",
+    "cena": 3711,
+    "img": "wp/teo-3-820822.jpg",
+    "cena_txt": "3 711 Kč",
+    "r": 0.411
+   },
+   {
+    "nazev": "Teo 4",
+    "cena": 3711,
+    "img": "wp/teo-4-a9b2db.jpg",
+    "cena_txt": "3 711 Kč",
+    "r": 0.411
+   },
+   {
+    "nazev": "Teo 5",
+    "cena": 3711,
+    "img": "wp/teo-5-5b08dd.jpg",
+    "cena_txt": "3 711 Kč",
+    "r": 0.411
+   }
+  ],
+  "dekory": [
+   {
+    "nazev": "Bílá",
+    "img": "wp/910-decorative-bila-3-c6fcf4.jpg"
+   },
+   {
+    "nazev": "Dub Sonoma",
+    "img": "wp/690-decor-design-dub-sonoma-3-ca795a.jpg"
+   },
+   {
+    "nazev": "Dub Aljaška",
+    "img": "wp/679-decor-design-dub-aljassky-2-4e28bb.jpg"
+   },
+   {
+    "nazev": "Dub Šedý",
+    "img": "wp/676-decor-design-dub-sedy-2-2e5676.jpg"
+   },
+   {
+    "nazev": "Ořech Muškátový",
+    "img": "wp/475-decor-design-orech-muskatovy-2-4b1a1b.jpg"
+   },
+   {
+    "nazev": "Dub Riviera",
+    "img": "wp/474-decor-design-dub-riviera-2-56019d.jpg"
+   },
+   {
+    "nazev": "Ořech Columbia",
+    "img": "wp/473-decor-design-orech-columbia-3-43bee3.jpg"
+   },
+   {
+    "nazev": "Dub Stříbrný",
+    "img": "wp/682-decor-design-dub-stribrny-2-5755db.jpg"
+   },
+   {
+    "nazev": "Dub Viking",
+    "img": "wp/375-dub-viking-1-4b9107.jpg"
+   },
+   {
+    "nazev": "Dub Santa",
+    "img": "wp/novy-dekor-dub-santa-b4c881.jpg"
+   }
+  ],
+  "vybava": [
+   {
+    "t": "ul",
+    "items": [
+     "díky použití unikátní technologie je povrchová úprava dveří bez lepených spojů",
+     "konstrukce i MDF výplň jsou potaženy velmi odolnou dekorativní fólií",
+     "všechny hrany křídel jsou zaoblené",
+     "výplň dveřního křídla: 4 mm MDF desky potažené fólií s dekorem dle výběru z obou stran, 4 mm tabulka z tvrzeného skla (ESG – odolné proti běžnému rozbití)",
+     "konstrukce (rám) dveřního křídla: vyrobena z masivního MDF materiálu (středně zhuštěná dřevovláknitá deska)"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>PŘÍSLUŠENSTVÍ V CENĚ DVEŘNÍHO KŘÍDLA:</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "zapuštěný jednobodový zámek: pro dózické klíče, WC/koupelnový zámek, nebo s cylindrickou vložkou",
+     "čepové šroubované závěsy (panty) ve stříbrném provedení: 3 ks",
+     "možnost zkrácení dveřního křídla až o 40 mm"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "p",
+    "h": "<strong>PŘÍSLUŠENSTVÍ ZA PŘÍPLATEK:</strong>",
+    "center": false
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dveřní ventilace",
+     "závěsy (panty) v jiném, než stříbrném provedení",
+     "dveřní zárubně (futra)"
+    ],
+    "auto": true,
+    "check": false
+   }
+  ],
+  "interier": null,
+  "v_katalogu": false,
+  "seo_title": "Interiérové dveře Teo |",
+  "description": "Interiérové dveře TEO kombinované s masivním rámem, vyrobené z MDF desky, potažené fólií v různých dekorech, v kombinaci s tvrzeným sklem.",
+  "hlavni": 0
+ }
+]

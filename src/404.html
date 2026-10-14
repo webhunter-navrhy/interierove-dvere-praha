@@ -1,0 +1,11 @@
+{% extends "_base.html" %}
+{% set titulek = "Stránka nenalezena | Interiérové dveře Praha" %}
+{% set noindex = True %}
+{% block obsah %}
+<section class="stranka-hlava stranka-hlava--404">
+  <p class="nadtitulek">Chyba 404</p>
+  <h1>Tyhle dveře nikam nevedou</h1>
+  <p class="stranka-hlava__perex">Stránka, kterou hledáte, tu není. Zkuste přehled modelů nebo nám rovnou napište poptávku.</p>
+  <div class="hero__akce"><a class="tlacitko" href="{{ url('dvere-interierove') }}">Interiérové dveře</a><a class="tlacitko tlacitko--obrys" href="{{ url('') }}">Úvod</a></div>
+</section>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "_base.html" %}
+{% import "_makra.html" as mk with context %}
+{% set titulek = "Interiérové dveře Vasco Doors | Moderní i klasické dveře Praha" %}
+{% set popis = "Objevte kvalitní interiérové dveře Vasco Doors – moderní i klasické modely v dekoru fólie a CPL. Prodej, zaměření a montáž v Praze, vzorkovna Praha 2." %}
+{% block obsah %}
+<section class="stranka-hlava">
+  <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a><span>Interiérové dveře</span></nav>
+  <h1>Interiérové dveře Vasco Doors</h1>
+  <p class="stranka-hlava__perex">Vyberte si z&nbsp;kolekce interiérových dveří Vasco Doors. Prohlédněte si jednotlivé modely a&nbsp;jejich možnosti provedení.</p>
+</section>
+
+<section class="katalog" data-filtr>
+  <div class="filtr" role="group" aria-label="Filtr modelů">
+    <button type="button" class="filtr__btn" aria-pressed="true" data-f="vse">Všechny</button>
+    <button type="button" class="filtr__btn" aria-pressed="false" data-f="folie">Fólie</button>
+    <button type="button" class="filtr__btn" aria-pressed="false" data-f="cpl">CPL</button>
+    <a class="filtr__btn" href="{{ url('dvere-bezfalcove') }}">Bezfalcové</a>
+    <a class="filtr__btn" href="{{ url('dvere-posuvne') }}">Posuvné</a>
+  </div>
+  <div class="katalog__mriz">
+    {% for m in data.models if m.v_katalogu %}
+    <article class="model-karta" data-typ="{{ m.typ }}">
+      <a href="{{ url(m.slug) }}" class="model-karta__foto">
+        {% if m.interier %}{{ img(m.interier, 'Interiérové dveře ' ~ m.nazev ~ ' v interiéru', sizes='(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw') }}{% endif %}
+        <span class="model-karta__kridlo" style="--r: {{ m.varianty[m.hlavni].r }}">{{ img(m.varianty[m.hlavni].img, '', sizes='90px') }}</span>
+      </a>
+      <div class="model-karta__text">
+        <p class="stitek">{{ 'Fólie' if m.typ == 'folie' else 'CPL' }}</p>
+        <h2><a href="{{ url(m.slug) }}">{{ m.nazev }}</a></h2>
+        <p>{{ m.kratce|nbsp }}</p>
+        <p class="model-karta__cena"><b>od {{ m.od_txt }}</b> bez DPH · {{ m.varianty|length }} provedení{% if m.dekory %} · {{ m.dekory|length }} dekorů{% endif %}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<aside class="vyzva vyzva--siroka">
+  <div>
+    <h2>Chcete znát cenu vybraných dveří?</h2>
+    <p class="vyzva__text">Pošlete nám nezávaznou poptávku a&nbsp;připravíme vám cenovou nabídku včetně možností montáže.</p>
+  </div>
+  <a class="tlacitko" href="{{ url('cenova-kalkulace-dvere') }}">Nacenit dveře</a>
+</aside>
+{% endblock %}

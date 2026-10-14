@@ -1,0 +1,81 @@
+{% extends "_base.html" %}
+{% import "_makra.html" as mk with context %}
+{% set m = model %}
+{% set titulek = m.seo_title or ('Interiérové dveře ' ~ m.nazev) %}
+{% set popis = m.description %}
+{% block obsah %}
+<section class="model">
+  <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a><a href="{{ url('dvere-interierove') }}">Interiérové dveře</a><span>{{ m.nazev }}</span></nav>
+  <div class="model__hlava">
+    <div class="model__stena">
+      {% set hv = m.varianty[m.hlavni] %}
+      <div class="model__kridlo" data-nahled style="--r: {{ hv.r }}">
+        <span class="kridlo__otvor"><span class="kridlo__list">{{ img(hv.img, 'Interiérové dveře ' ~ m.nazev ~ ' – ' ~ hv.nazev, sizes='(max-width: 800px) 60vw, 420px') }}</span></span>
+      </div>
+      {% if m.dekory %}
+      <figure class="model__vzorek" aria-hidden="true">{{ img(m.dekory[0].img, '', sizes='120px') }}<figcaption>{{ m.dekory[0].nazev }}</figcaption></figure>
+      {% endif %}
+    </div>
+    <div class="model__info">
+      <p class="stitek">{{ 'Fólie' if m.typ == 'folie' else 'CPL' }} · Vasco Doors</p>
+      <h1>Interiérové dveře {{ m.nazev }}</h1>
+      {% if m.popis %}<p class="model__popis">{{ m.popis|nbsp }}</p>{% endif %}
+      <dl class="model__udaje">
+        <div><dt>Výrobce</dt><dd>Vasco Doors</dd></div>
+        <div><dt>Dostupnost</dt><dd>u vás za {{ m.dostupnost }} dní</dd></div>
+        <div><dt>Cena</dt><dd><b>od {{ m.od_txt }}</b> / ks bez DPH</dd></div>
+      </dl>
+      <p class="model__pozn">Všechny uvedené ceny jsou bez DPH. Cenu dveří včetně zárubně, kování a&nbsp;montáže vám nezávazně spočítáme.</p>
+      <div class="hero__akce">
+        <a class="tlacitko" href="{{ url('cenova-kalkulace-dvere') }}?model={{ m.slug }}">Nechat nacenit dveře {{ m.nazev }}</a>
+        <a class="tlacitko tlacitko--obrys" href="#provedeni">Provedení a dekory</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="provedeni" id="provedeni" aria-labelledby="provedeni-h">
+  <div class="sekce-hlava sekce-hlava--radek">
+    <div><p class="nadtitulek">Modely dveří</p><h2 id="provedeni-h">Provedení {{ m.nazev }}</h2></div>
+    <p class="sekce-hlava__perex">Ceny za kus bez DPH podle ceníku. Klepnutím na provedení si ho zobrazíte v&nbsp;náhledu nahoře.</p>
+  </div>
+  <div class="rada-obal">
+    <div class="rada rada--provedeni" tabindex="0">
+      {% for v in m.varianty %}
+      <button type="button" class="kridlo kridlo--volba{% if v.r > 0.6 %} kridlo--sada{% endif %}" style="--r: {{ v.r }}" data-varianta="{{ img_url(v.img, 1280) }}" data-r="{{ v.r }}" data-nazev="{{ v.nazev }}" aria-pressed="{{ 'true' if loop.index0 == m.hlavni else 'false' }}">
+        <span class="kridlo__otvor"><span class="kridlo__list">{{ img(v.img, 'Interiérové dveře ' ~ v.nazev, sizes='(max-width: 700px) 30vw, 160px') }}</span></span>
+        <span class="kridlo__cedulka"><b>{{ v.nazev }}</b><span>{{ v.cena_txt }}</span></span>
+      </button>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if m.dekory %}
+<section class="dekory" aria-labelledby="dekory-h">
+  <div class="sekce-hlava"><p class="nadtitulek">Vzorník</p><h2 id="dekory-h">Dekory dveří {{ m.nazev }}</h2></div>
+  <div class="vzornik vzornik--dekory">
+    {% for d in m.dekory %}
+    <button type="button" class="vzornik__kus vzornik__kus--volba" data-dekor="{{ img_url(d.img, 640) }}" data-nazev="{{ d.nazev }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ img(d.img, 'Dekor ' ~ d.nazev, sizes='(max-width: 700px) 30vw, 160px') }}<span>{{ d.nazev }}</span></button>
+    {% endfor %}
+  </div>
+  <p class="dekory__pozn">Barvy na obrazovce se mohou od skutečnosti lišit. Vzorky všech dekorů si prohlédnete ve vzorkovně ve Slavíkově ulici.</p>
+</section>
+{% endif %}
+
+{% if m.vybava %}
+<section class="vybava" aria-labelledby="vybava-h">
+  <div class="vybava__hlava"><p class="nadtitulek">Popis</p><h2 id="vybava-h">Výbava a technické provedení</h2></div>
+  <div class="obsah obsah--vybava">{{ mk.bloky(m.vybava) }}</div>
+</section>
+{% endif %}
+
+<section class="dalsi-modely" aria-labelledby="dalsi-h">
+  <div class="sekce-hlava"><p class="nadtitulek">Kolekce Vasco Doors</p><h2 id="dalsi-h">Další modely</h2></div>
+  <div class="rada-obal">
+    <div class="rada rada--katalog" tabindex="0">
+      {% for x in data.models if x.v_katalogu and x.slug != m.slug %}{{ mk.kridlo(x) }}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
