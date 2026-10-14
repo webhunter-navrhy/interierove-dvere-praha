@@ -61,11 +61,11 @@
     </div>
     <div class="paticka__sloupec">
       <h2 class="paticka__nadpis">Fólie</h2>
-      <ul>{% for m in data.models if m.typ == 'folie' and m.v_katalogu %}<li><a href="{{ url(m.slug) }}">Interiérové dveře {{ m.nazev }}</a></li>{% endfor %}</ul>
+      <ul>{% for m in data.models if m.typ == 'folie' and m.v_katalogu %}<li><a href="{{ url(m.slug) }}"><span class="pref">Interiérové dveře&nbsp;</span>{{ m.nazev }}</a></li>{% endfor %}</ul>
     </div>
     <div class="paticka__sloupec">
       <h2 class="paticka__nadpis">CPL</h2>
-      <ul>{% for m in data.models if m.typ == 'cpl' %}<li><a href="{{ url(m.slug) }}">Interiérové dveře {{ m.nazev }}</a></li>{% endfor %}</ul>
+      <ul>{% for m in data.models if m.typ == 'cpl' %}<li><a href="{{ url(m.slug) }}"><span class="pref">Interiérové dveře&nbsp;</span>{{ m.nazev }}</a></li>{% endfor %}</ul>
     </div>
     <div class="paticka__sloupec">
       <h2 class="paticka__nadpis">Kontakt</h2>

@@ -200,12 +200,42 @@
    "typ": "odstavec",
    "text": "Interiérové dveře Primo Interiérové dveře Faro Interiérové dveře Rego Interiérové dveře Ventura Interiérové dveře Nero GT Interiérové dveře Presto Interiérové dveře Presto Alto",
    "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "cena",
+   "text": "Ceny modelů a jednotlivých provedení (např. Leon od 3 689 Kč/ks bez DPH) z tabulek a galerií na stránkách modelů",
+   "zdroj": "https://www.dvere-vascodoors.cz/interierove-dvere-vasco-doors-leon/"
+  },
+  {
+   "typ": "dodani",
+   "text": "Dostupnost U Vás 14–21 dní (Ventura 21–28 dní), na úvodu „Rychlé dodání dveří – již do 21 dnů“",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "lide",
+   "text": "Petra Šťastná – showroom a výběr dveří, 727 945 909; Josef Šťastný – technické poradenství a montáž, 728 252 929",
+   "zdroj": "https://www.dvere-vascodoors.cz/kontakt/"
+  },
+  {
+   "typ": "adresa",
+   "text": "Slavíkova 29, Praha 2 – Vinohrady, roh Vozová 10; Po–Čt 9–17, Pá po domluvě; IČO 74119893, DIČ CZ7502200904",
+   "zdroj": "https://www.dvere-vascodoors.cz/kontakt/"
+  },
+  {
+   "typ": "recenze",
+   "text": "4,8 / 5 na Google, 22 recenzí",
+   "zdroj": "https://www.dvere-vascodoors.cz/"
+  },
+  {
+   "typ": "fotky",
+   "text": "Realizace = fotky klienta s vodoznakem Dveře Šťastný; křídla a dekory z jeho webu",
+   "zdroj": "https://www.dvere-vascodoors.cz/realizace-interierovych-dveri/"
   }
  ],
  "chybi": [
-  "fotky firmy/provozu/produktů (nalezeno 4, potřeba aspoň 6)",
-  "adresa / provozovna",
-  "potvrzení služeb a ceníku (nic nevymýšlet)"
+  "PDF katalogy jsou na starém hostingu (vasco-doors-2026.pdf, ceník Boulit) – před spuštěním přenést",
+  "3D prohlídka showroomu (embed) – odkaz od klienta",
+  "ostrý příjem poptávek (formulář je v návrhu ukázkový)"
  ],
  "popis_webu": "Interiérové dveře Vasco Doors – bezfalcové dveře, posuvné dveře, obložkové zárubně a odborná montáž. Navštivte vzorkovnu Vasco Doors na Praze 2 – Vinohrady."
 }

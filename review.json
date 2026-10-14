@@ -1,0 +1,15 @@
+{
+  "znamka": 8,
+  "slabiny": [
+    "Sekce „Interiérové, posuvné i bezpečnostní dveře“ (PC buňka 2, mobil buňka 3): seznam sortimentu (Bezfalcové dveře, Masivní…, ECLISSE) je na PC jeden přecpaný řádek s červenými čtverečky nalepený na spodní hranu sekce a na mobilu holý odrážkový seznam. Karta Bezpečnostní dveře má vyříznuté křídlo na béžové ploše, zatímco obě vedlejší karty jsou fotky přes celou plochu. Oprava: ze seznamu udělat mřížku odkazových dlaždic s tenkou linkou a šipkou (6 sloupců na PC, 2 na mobilu, výška aspoň 48 px), od karet nad ní odsadit aspoň 48 px. Kartu Bezpečnostní dveře sjednotit s ostatními dvěma (fotka přes celou kartu se ztmavením dole pod textem).",
+    "Kolekce „Patnáct modelů, jak stojí ve vzorkovně“ (PC buňka 3, mobil buňky 4–5): první model Braga je vějíř několika křídel ve větším měřítku, ostatní jsou jednotlivá křídla, takže řada působí nesourodě. Na mobilu Braga zabírá půl šířky a další modely jsou useknuté uprostřed názvu. QA hlásí 11 odkazů modelů širokých jen 29–37 px. Oprava: Braga nahradit jedním křídlem ve stejném měřítku a na stejné základně jako ostatní. Na mobilu zobrazit 2,5 karty na šířku se scroll-snap. Celou kartu (křídlo + název + cena) udělat jedním odkazem s cílem aspoň 44 px.",
+    "Sekce „Od výběru až po montáž“ (PC buňky 5–6): vysoký portrét Josefa Šťastného zabírá asi 1,5 obrazovky a vedle něj krátký čtyřbodový seznam končí v polovině, takže vpravo zůstává prázdná plocha a sekce se zbytečně táhne. Oprava: fotku oříznout na 4:5 s maximální výškou kolem 620 px (obličej v horní třetině) a seznam kroků svisle vycentrovat k fotce. Pod seznam přidat řádek s kontakty na Petru (vzorkovna) a Josefa (montáž) podle briefu, ať sekce končí jasným dalším krokem."
+  ],
+  "silne": [
+    "Logo klienta je vlevo v hlavičce celé a ostré. Paleta je z loga (červená #ca2128 a zlatá), takže na první pohled je jasné, čí web to je.",
+    "Jasný oborový koncept: web jako vzorkovna. Křídla stojí v řadě s cenou „od … Kč“, kolekce je rozdělená na fólie a CPL a konfigurátor Model → Provedení → Dekor → Rozměr → Montáž ukazuje cenu hned.",
+    "Obsah je podložený briefem: ceny modelů, 4,8 / 5 z 22 recenzí Google, dodání 14–21 dnů, Petra a Josef Šťastní, Slavíkova 29 a otevírací doba. Realizace jsou vlastní fotky klienta, nic není vymyšlené.",
+    "Světlý, klidný layout s dobrou typografií (Jost + Albert Sans, háčky v pořádku). Na mobilu nic nepřetéká, CTA „Sestavit a nacenit“ i telefon jsou stále po ruce."
+  ],
+  "verdikt": "odeslat – redesign s konkrétním nápadem (online vzorkovna s cenami a konfigurátorem) v plném brandu klienta a jen s doloženým obsahem. Před odesláním stojí za to doladit pruh sortimentu, řadu kolekce na mobilu a délku sekce s Josefem."
+}

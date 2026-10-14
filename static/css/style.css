@@ -41,9 +41,9 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .stitek { font: 600 .72rem/1 var(--text); letter-spacing: .12em; text-transform: uppercase; color: var(--zlato-t); margin: 0 0 .7rem; }
 
 /* tlačítka – obdélník jako dveřní křídlo */
-.tlacitko { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 48px; padding: .8rem 1.5rem; background: var(--ink); color: var(--stena); border: 1px solid var(--ink); border-radius: 2px; font: 500 .98rem/1.2 var(--text); text-decoration: none; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+.tlacitko { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 48px; padding: .8rem 1.5rem; background: var(--cervena); color: #fff; border: 1px solid var(--cervena); border-radius: 2px; font: 500 .98rem/1.2 var(--text); text-decoration: none; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
 .tlacitko::after { content: "→"; transition: transform .2s; }
-.tlacitko:hover { background: var(--zlato-t); border-color: var(--zlato-t); color: #fff; }
+.tlacitko:hover { background: #A3171D; border-color: #A3171D; color: #fff; }
 .tlacitko:hover::after { transform: translateX(3px); }
 .tlacitko--obrys { background: transparent; color: var(--ink); border-color: rgba(22, 20, 18, .35); }
 .tlacitko--obrys::after { content: none; }
@@ -57,7 +57,7 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .hlavicka { position: sticky; top: 0; z-index: 50; background: rgba(243, 239, 232, .94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--linka); }
 .hlavicka__in { max-width: calc(var(--max) + 2 * var(--okraj)); margin: 0 auto; padding: .7rem var(--okraj); display: flex; align-items: center; gap: 1.5rem; }
 .hlavicka__logo { flex: none; display: block; }
-.hlavicka__logo img { height: 52px; width: auto; }
+.hlavicka__logo img { height: 62px; width: auto; }
 .menu { margin-left: auto; }
 .menu__seznam { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: .3rem; }
 .menu__polozka { position: relative; }
@@ -74,14 +74,14 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .burger { display: none; }
 
 /* úvod */
-.hero { max-width: calc(var(--max) + 2 * var(--okraj)); margin: 0 auto; padding: clamp(2.5rem, 6vw, 5rem) var(--okraj) 0; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(2rem, 4vw, 4rem); align-items: end; }
+.hero { max-width: calc(var(--max) + 2 * var(--okraj)); margin: 0 auto; padding: clamp(2rem, 4vw, 3.5rem) var(--okraj) 0; display: grid; grid-template-columns: minmax(0, 4.4fr) minmax(0, 6fr); gap: clamp(2rem, 4vw, 4rem); align-items: end; }
 .hero__h1 { font-size: clamp(2.6rem, 5.6vw, 5.4rem); line-height: .98; letter-spacing: -.03em; margin-bottom: 1.6rem; }
 .hero__perex { font-size: clamp(1.05rem, 1.2vw, 1.2rem); color: var(--ink-2); max-width: 34rem; margin-bottom: 2rem; }
 .hero__akce { display: flex; flex-wrap: wrap; gap: .8rem; }
-.hero__text { padding-bottom: clamp(1.5rem, 4vw, 3.5rem); }
+.hero__text { padding-bottom: 4.6rem; align-self: end; }
 .hero__stena { position: relative; }
 .hero__podpis { font-size: .8rem; color: var(--ink-3); text-align: right; margin: .9rem 0 0; }
-.fakta { grid-column: 1 / -1; list-style: none; margin: clamp(2rem, 4vw, 3rem) 0 0; padding: 1.4rem 0 0; border-top: 1px solid var(--linka); display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.fakta { grid-column: 1 / -1; list-style: none; margin: 1.2rem 0 0; padding: 1.4rem 0 0; border-top: 1px solid var(--linka); display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 .fakta li { display: flex; flex-direction: column; gap: .15rem; }
 .fakta b { font: 500 1.15rem/1.25 var(--disp); }
 .fakta span { color: var(--ink-3); font-size: .93rem; }
@@ -89,7 +89,7 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 /* řada křídel na podlaze – signature. Křídlo má výšku z řady (--vyska) a šířku podle poměru fotky (--r). */
 .rada { --vyska: 300px; display: flex; align-items: flex-end; gap: clamp(.9rem, 1.8vw, 1.7rem); position: relative; }
 .rada::after { content: ""; position: absolute; left: 0; right: 0; bottom: 4.15rem; height: 1px; background: linear-gradient(90deg, transparent, var(--podlaha) 6%, var(--podlaha) 94%, transparent); pointer-events: none; }
-.rada--hero { --vyska: clamp(220px, 20vw, 300px); justify-content: space-between; gap: .8rem; padding: 2rem 0 0; }
+.rada--hero { --vyska: min(30vw, 62vh, 470px); justify-content: space-between; gap: 1rem; padding: 1rem 0 0; }
 .kridlo { --r: .41; position: relative; display: flex; flex-direction: column; align-items: stretch; width: calc(var(--vyska) * var(--r)); text-decoration: none; color: var(--ink); background: none; border: 0; padding: 0; font: inherit; text-align: left; cursor: pointer; flex: none; }
 .kridlo__otvor { position: relative; display: block; height: var(--vyska); perspective: 900px; }
 .kridlo__otvor::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, #2b2620, #4b4235 70%, #6a5b45); opacity: 0; transition: opacity .35s; }
@@ -145,7 +145,7 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .modely__odkaz { margin: 1.4rem 0 0; }
 
 /* sestavte si dveře */
-.sestav { max-width: calc(var(--max) + 2 * var(--okraj)); margin: var(--sekce) auto 0; padding: clamp(3rem, 6vw, 5rem) var(--okraj); background: var(--papir); border-top: 1px solid var(--linka); border-bottom: 1px solid var(--linka); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.sestav { max-width: calc(var(--max) + 2 * var(--okraj)); margin: var(--sekce) auto 0; padding: clamp(2.5rem, 4.5vw, 3.8rem) var(--okraj); background: var(--papir); border-top: 1px solid var(--linka); border-bottom: 1px solid var(--linka); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
 @media (min-width: 1424px) { .sestav { border: 1px solid var(--linka); } }
 .sestav__text p { color: var(--ink-2); max-width: 32rem; }
 .sestav__text h2 { margin-bottom: 1.2rem; }
@@ -166,18 +166,22 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .sestav__cena span { color: var(--ink-3); font-size: .9rem; }
 
 /* postup */
-.postup__kroky { list-style: none; counter-reset: p; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--ink); }
-.postup__kroky li { counter-increment: p; padding: 1.4rem 1.6rem 0 0; display: flex; flex-direction: column; gap: .5rem; position: relative; }
-.postup__kroky li + li { padding-left: 1.6rem; border-left: 1px solid var(--linka); }
-.postup__kroky li::before { content: counter(p); font: 400 2.6rem/1 var(--disp); color: var(--zlato); }
-.postup__kroky b { font: 500 1.2rem/1.2 var(--disp); }
-.postup__kroky span { color: var(--ink-2); font-size: .95rem; }
+.postup { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.postup__foto { margin: 0; }
+.postup__foto img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; }
+.postup__foto figcaption { font-size: .85rem; color: var(--ink-3); margin-top: .6rem; }
+.postup__text h2 { margin-bottom: 1.6rem; }
+.postup__kroky { margin: 0; border-top: 1px solid var(--ink); }
+.postup__kroky > div { display: grid; grid-template-columns: 11rem 1fr; gap: 1.5rem; padding: 1.15rem 0; border-bottom: 1px solid var(--linka); }
+.postup__kroky dt { font: 500 1.2rem/1.3 var(--disp); }
+.postup__kroky dd { margin: 0; color: var(--ink-2); }
 
 /* realizace na úvodu */
-.realizace-uvod__pas { display: grid; grid-template-columns: repeat(6, 1fr); gap: clamp(.5rem, 1vw, .9rem); }
-.realizace-uvod__pas figure { margin: 0; aspect-ratio: 3 / 4; overflow: hidden; background: var(--stena-2); }
-.realizace-uvod__pas img { width: 100%; height: 100%; object-fit: cover; }
-.realizace-uvod__pata { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem 2rem; margin-top: 1.6rem; }
+.realizace-uvod__pas { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(.6rem, 1.2vw, 1.1rem); }
+.realizace-uvod__pas figure { margin: 0; aspect-ratio: 1; overflow: hidden; background: var(--stena-2); }
+.realizace-uvod__pas img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; }
+.realizace-uvod__pata { margin: 1.6rem 0 0; }
+.realizace-uvod .hodnoceni { margin-top: 1rem; }
 .hodnoceni { display: inline-flex; align-items: center; gap: 1rem; text-decoration: none; padding: .6rem 1rem .6rem 0; }
 .hodnoceni b { font: 500 1.8rem/1 var(--disp); white-space: nowrap; }
 .hodnoceni b::before { content: "★"; color: var(--zlato); margin-right: .35rem; font-size: 1.3rem; vertical-align: .15em; }
@@ -457,9 +461,8 @@ ol.seznam li::before { content: counter(o) "."; width: auto; height: auto; backg
   .sekce-hlava--radek { grid-template-columns: 1fr; gap: 1rem; }
   .sortiment__mriz { grid-template-columns: 1fr; }
   .dlazdice--velka { grid-row: auto; min-height: 420px; }
-  .postup__kroky { grid-template-columns: 1fr 1fr; gap: 1.6rem 0; }
-  .postup__kroky li:nth-child(3) { border-left: 0; padding-left: 0; }
-  .realizace-uvod__pas { grid-template-columns: repeat(3, 1fr); }
+  .postup { grid-template-columns: 1fr; }
+  .postup__foto img { aspect-ratio: 4 / 3; }
   .vzorkovna { grid-template-columns: 1fr; }
   .model__hlava { grid-template-columns: 1fr; }
   .tym { grid-template-columns: 1fr 1fr; }
@@ -469,15 +472,14 @@ ol.seznam li::before { content: counter(o) "."; width: auto; height: auto; backg
 }
 @media (max-width: 600px) {
   :root { --sekce: 4.5rem; }
-  .hlavicka__logo img { height: 40px; }
+  .hlavicka__logo img { height: 50px; }
   .hlavicka__cta { display: none; }
   .burger { margin-left: auto; }
   .menu { inset: 62px 0 0 0; }
   .hero { padding-top: 2rem; }
   .hero__h1 { font-size: clamp(2.4rem, 11vw, 3.2rem); }
   .hero__akce .tlacitko { flex: 1 1 100%; }
-  .rada--hero { --vyska: 190px; gap: .5rem; }
-  .rada--hero .kridlo:nth-child(5) { display: none; }
+  .rada--hero { --vyska: 210px; gap: .5rem; }
   .rada--hero .kridlo__cedulka { min-width: 0; }
   .rada--katalog, .rada--provedeni { --vyska: 220px; }
   .model__kridlo { --vyska: 380px; }
@@ -485,9 +487,9 @@ ol.seznam li::before { content: counter(o) "."; width: auto; height: auto; backg
   .rada--hero .kridlo__cedulka span { font-size: .74rem; }
   .hero__podpis { text-align: left; }
   .dlazdice--bezpecnost .dlazdice__text { right: 38%; }
-  .postup__kroky { grid-template-columns: 1fr; }
-  .postup__kroky li + li { border-left: 0; padding-left: 0; border-top: 1px solid var(--linka); padding-top: 1.2rem; }
-  .realizace-uvod__pas { grid-template-columns: repeat(6, 62vw); overflow-x: auto; margin: 0 calc(-1 * var(--okraj)); padding: 0 var(--okraj); scroll-snap-type: x mandatory; }
+  .postup__kroky > div { grid-template-columns: 1fr; gap: .2rem; }
+  .sortiment__dalsi { flex-direction: column; gap: 0; }
+  .realizace-uvod__pas { grid-template-columns: repeat(6, 44vw); overflow-x: auto; margin: 0 calc(-1 * var(--okraj)); padding: 0 var(--okraj); scroll-snap-type: x mandatory; }
   .realizace-uvod__pas figure { scroll-snap-align: start; }
   .sestav__ukazka { grid-template-columns: 1fr 1.6fr; gap: 1rem; }
   .vzorkovna__udaje { grid-template-columns: 1fr; }
@@ -510,5 +512,19 @@ ol.seznam li::before { content: counter(o) "."; width: auto; height: auto; backg
   .galerie__kus { margin-bottom: .5rem; }
 }
 @media (max-width: 400px) {
-  .rada--hero { --vyska: 168px; gap: .4rem; }
+  .rada--hero { --vyska: 180px; gap: .4rem; }
 }
+
+.katalog-odkaz { display: flex; align-items: center; gap: 1rem; margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid var(--linka); text-decoration: none; font-size: .9rem; color: var(--ink-3); }
+.katalog-odkaz img { width: 74px; mix-blend-mode: multiply; flex: none; }
+.katalog-odkaz b { display: block; font: 500 1.1rem/1.3 var(--disp); color: var(--ink); }
+.katalog-odkaz:hover b { color: var(--zlato-t); }
+@media (max-width: 1080px) { .hero__text { padding-bottom: 0; } }
+@media (max-width: 600px) {
+  .paticka__sloupec ul { grid-template-columns: 1fr 1fr; column-gap: 1rem; }
+  .paticka__sloupec li a { font-size: .86rem; }
+  .realizace-uvod__pas figure { aspect-ratio: 4 / 5; }
+}
+@media (max-width: 600px) { .paticka__sloupec .pref { display: none; } }
+.postup__foto img { max-height: 620px; object-position: 50% 20%; }
+.sortiment__dalsi { margin-top: 2.6rem; }

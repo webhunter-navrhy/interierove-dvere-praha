@@ -19,16 +19,14 @@
   </div>
   <div class="hero__stena" aria-label="Ukázka modelů ve vzorkovně">
     <div class="rada rada--hero">
-      {{ mk.kridlo(M['Santiago'], M['Santiago'].varianty[1], sizes='(max-width: 700px) 26vw, 150px') }}
-      {{ mk.kridlo(M['Leon'], M['Leon'].varianty[1], sizes='(max-width: 700px) 26vw, 150px') }}
-      {{ mk.kridlo(M['Faro'], M['Faro'].varianty[3], sizes='(max-width: 700px) 26vw, 150px') }}
-      {{ mk.kridlo(M['Presto'], M['Presto'].varianty[2], sizes='(max-width: 700px) 26vw, 150px') }}
-      {{ mk.kridlo(M['Ventura'], M['Ventura'].varianty[2], sizes='(max-width: 700px) 26vw, 150px') }}
+      {{ mk.kridlo(M['Santiago'], M['Santiago'].varianty[1], sizes='(max-width: 700px) 26vw, 200px') }}
+      {{ mk.kridlo(M['Leon'], M['Leon'].varianty[1], sizes='(max-width: 700px) 26vw, 200px') }}
+      {{ mk.kridlo(M['Faro'], M['Faro'].varianty[3], sizes='(max-width: 700px) 26vw, 200px') }}
+      {{ mk.kridlo(M['Presto'], M['Presto'].varianty[2], sizes='(max-width: 700px) 26vw, 200px') }}
     </div>
-    <p class="hero__podpis">Ceny křídel bez DPH, podle ceníku vzorkovny.</p>
   </div>
   <ul class="fakta">
-    <li><b>Již do 21 dnů</b><span>rychlé dodání dveří</span></li>
+    <li><b>Již do 21 dnů</b><span>rychlé dodání dveří, ceny křídel na webu bez DPH</span></li>
     <li><b>Prodej · zaměření · montáž</b><span>v Praze a okolí</span></li>
     <li><b>Vzorkovna Praha 2</b><span>{{ site.kontakt.adresa.ulice }}, Vinohrady</span></li>
   </ul>
@@ -102,33 +100,34 @@
 </section>
 
 <section class="postup" aria-labelledby="postup-h">
-  <div class="sekce-hlava">
-    <p class="nadtitulek">Jak probíhá spolupráce</p>
+  <figure class="postup__foto">{{ img(site.lide[1].foto, 'Josef Šťastný, technické poradenství, zaměření a montáž', sizes='(max-width: 820px) 100vw, 40vw') }}<figcaption>Josef Šťastný – technické poradenství, zaměření a montáž</figcaption></figure>
+  <div class="postup__text">
+    <p class="nadtitulek">Prodej · zaměření · montáž</p>
     <h2 id="postup-h">Od výběru až po montáž</h2>
+    <dl class="postup__kroky">
+      <div><dt>Výběr řešení</dt><dd>Ve vzorkovně poradíme s&nbsp;modelem, dekorem, kováním i&nbsp;typem otevírání.</dd></div>
+      <div><dt>Zaměření</dt><dd>Zkontrolujeme stavební otvor, změříme sílu zdi a&nbsp;doporučíme správnou zárubeň.</dd></div>
+      <div><dt>Dodání</dt><dd>Připravíme dveře, zárubeň, systém a&nbsp;potřebné příslušenství. U&nbsp;většiny modelů do 14–21 dnů.</dd></div>
+      <div><dt>Montáž</dt><dd>Zajistíme odborné osazení, seřízení a&nbsp;kontrolu funkčnosti.</dd></div>
+    </dl>
   </div>
-  <ol class="postup__kroky">
-    <li><b>Výběr řešení</b><span>Ve vzorkovně nebo podle webu poradíme s&nbsp;modelem, dekorem, kováním i&nbsp;typem otevírání.</span></li>
-    <li><b>Zaměření</b><span>Zkontrolujeme stavební otvor, změříme sílu zdi a&nbsp;doporučíme správnou zárubeň.</span></li>
-    <li><b>Dodání</b><span>Připravíme dveře, zárubeň, systém a&nbsp;potřebné příslušenství. U&nbsp;většiny modelů do 14–21 dnů.</span></li>
-    <li><b>Montáž</b><span>Zajistíme odborné osazení, seřízení a&nbsp;kontrolu funkčnosti.</span></li>
-  </ol>
 </section>
 
 <section class="realizace-uvod" aria-labelledby="realizace-h">
   <div class="sekce-hlava sekce-hlava--radek">
     <div>
-      <p class="nadtitulek">Skutečné montáže · Praha · Praha-západ · Praha-východ</p>
+      <p class="nadtitulek">Skutečné montáže · Praha a okolí</p>
       <h2 id="realizace-h">Skutečné realizace interiérových dveří v Praze</h2>
     </div>
-    <p class="sekce-hlava__perex">Ukázky skutečně dodaných a&nbsp;namontovaných interiérových a&nbsp;posuvných dveří. Každá realizace je řešená individuálně, od výběru dekoru až po odbornou montáž.</p>
+    <div>
+      <p class="sekce-hlava__perex">Ukázky skutečně dodaných a&nbsp;namontovaných interiérových a&nbsp;posuvných dveří. Každá realizace je řešená individuálně, od výběru dekoru až po odbornou montáž.</p>
+      <a class="hodnoceni" href="{{ site.recenze.odkaz }}" target="_blank" rel="noopener"><b>{{ site.recenze.hodnoceni }} / 5</b><span>{{ site.recenze.pocet }} recenzí Google od zákazníků z&nbsp;Prahy a&nbsp;okolí</span></a>
+    </div>
   </div>
   <div class="realizace-uvod__pas">
-    {% for r in data.realizace[0:24:4][:6] %}<figure>{{ img(r.img, r.nazev or 'Realizace interiérových dveří Dveře Šťastný', sizes='(max-width: 700px) 60vw, 22vw') }}</figure>{% endfor %}
+    {% for i in [9, 20, 33, 12, 3, 49] %}{% set r = data.realizace[i] %}<figure>{{ img(r.img, r.get('nazev') or 'Realizace interiérových dveří Dveře Šťastný', sizes='(max-width: 600px) 46vw, 33vw') }}</figure>{% endfor %}
   </div>
-  <div class="realizace-uvod__pata">
-    <a class="odkaz-sipka" href="{{ url('realizace-interierovych-dveri') }}">Zobrazit všechny realizace</a>
-    <a class="hodnoceni" href="{{ site.recenze.odkaz }}" target="_blank" rel="noopener"><b>{{ site.recenze.hodnoceni }} / 5</b><span>{{ site.recenze.pocet }} recenzí Google od zákazníků z&nbsp;Prahy a&nbsp;okolí</span></a>
-  </div>
+  <p class="realizace-uvod__pata"><a class="odkaz-sipka" href="{{ url('realizace-interierovych-dveri') }}">Zobrazit všechny realizace</a></p>
 </section>
 
 <section class="vzorkovna" aria-labelledby="vzorkovna-h">
@@ -146,17 +145,8 @@
       <a class="tlacitko" href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">Zavolat {{ site.kontakt.telefon }}</a>
       <a class="tlacitko tlacitko--obrys" href="{{ url('kontakt') }}">Kontakt a mapa</a>
     </div>
+    <a class="katalog-odkaz" href="{{ site.katalog_pdf }}" target="_blank" rel="noopener">{{ img('wp/vasco-katalog-icon3-5fa49b.png', '', sizes='90px') }}<span><b>Katalog Vasco Doors 2026</b>kompletní sortiment se specifikacemi, PDF</span></a>
   </div>
 </section>
 
-<section class="katalog-pdf">
-  <div class="katalog-pdf__in">
-    {{ img('wp/vasco-katalog-icon3-5fa49b.png', 'Katalog Vasco Doors 2026', sizes='280px', cls='katalog-pdf__obr') }}
-    <div>
-      <h2>Katalog Vasco Doors 2026</h2>
-      <p>Kompletní sortiment výrobků Vasco Doors včetně podrobných specifikací.</p>
-      <a class="odkaz-sipka" href="{{ site.katalog_pdf }}" target="_blank" rel="noopener">Stáhnout PDF</a>
-    </div>
-  </div>
-</section>
 {% endblock %}

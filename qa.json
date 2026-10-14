@@ -4,7 +4,7 @@
   "chyby": [],
   "varovani": [
     "Web má noindex (u ostrého webu pravděpodobně chyba)",
-    "Dotykové cíle <40 px na mobilu: 2× (např. a.skip \"Přeskočit na obsah\" 1×1; a \"Ochrana osobních úda\" 150×16)"
+    "Dotykové cíle <40 px na mobilu: 11× (např. a.skip \"Přeskočit na obsah\" 1×1; a \"Interiérové dveře Br\" 37×40; a \"Interiérové dveře Ev\" 36×40; a \"Interiérové dveře Ib\" 29×40)"
   ],
   "metriky": {
     "sirky": {
@@ -33,18 +33,18 @@
         "pocet_pretekajicich": 0
       }
     },
-    "preneseno_PC_MB": 1.86,
+    "preneseno_PC_MB": 1.83,
     "nejvetsi_obrazek_PC": {
       "kB": 160,
       "url": "http://localhost:8766/interierove-dvere-praha/img/wp-img-1459-4f4a71-1130.webp"
     },
-    "snimku_PC": 7,
-    "preneseno_mobil_MB": 1.94,
+    "snimku_PC": 8,
+    "preneseno_mobil_MB": 2.01,
     "nejvetsi_obrazek_mobil": {
       "kB": 160,
       "url": "http://localhost:8766/interierove-dvere-praha/img/wp-img-1459-4f4a71-1130.webp"
     },
-    "snimku_mobil": 11,
+    "snimku_mobil": 10,
     "seo": {
       "title": "Interiérové dveře Praha | Bezfalcové a posuvné dveře | Vasco Doors",
       "description": "Interiérové dveře Vasco Doors – bezfalcové dveře, posuvné dveře i bezpečnostní dveře. Prodej, zaměře",
@@ -59,7 +59,7 @@
       "canonical": true,
       "viewport": true
     },
-    "maly_dotykovy_cil": 2,
+    "maly_dotykovy_cil": 11,
     "font_nadpis": "Jost",
     "font_text": "Albert Sans"
   }
