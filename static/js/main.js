@@ -159,4 +159,29 @@
         .catch(function () { stav.textContent = 'Odeslání se nepodařilo. Napište nám prosím na e-mail nebo zavolejte.'; });
     });
   });
+
+  // Zvětšení obrázků v obsahu (tabulky a fotky): klepnutím na celou obrazovku
+  d.addEventListener('click', function (e) {
+    var f = e.target.closest ? e.target.closest('[data-zoom]') : null;
+    if (!f) return;
+    var o = d.createElement('div'); o.className = 'zoom'; o.setAttribute('role', 'dialog'); o.setAttribute('aria-label', 'Zvětšený obrázek');
+    var im = d.createElement('img'); im.src = f.getAttribute('data-zoom'); im.alt = '';
+    o.appendChild(im); o.addEventListener('click', function () { o.remove(); });
+    d.addEventListener('keydown', function esc(k) { if (k.key === 'Escape') { o.remove(); d.removeEventListener('keydown', esc); } });
+    d.body.appendChild(o);
+  });
+
+  // Sestavovač: typy dveří podle modelu (Ventura bez posuvných, Nero a Nero GT bez otočných)
+  var typyPodleModelu = function (slug) {
+    var skryt = /-ventura$/.test(slug || '') ? ['Posuvné do pouzdra', 'Posuvné na stěnu'] : (/-nero(-gt)?$/.test(slug || '') ? ['Interiérové otočné'] : []);
+    var prvni = null;
+    d.querySelectorAll('input[name="typ"]').forEach(function (r) {
+      var lab = r.closest('label'), schovat = skryt.indexOf(r.value) > -1;
+      lab.hidden = schovat; if (schovat && r.checked) r.checked = false;
+      if (!schovat && !prvni) prvni = r;
+    });
+    if (prvni && !d.querySelector('input[name="typ"]:checked')) { prvni.checked = true; prvni.dispatchEvent(new Event('change', { bubbles: true })); }
+  };
+  d.addEventListener('change', function (e) { if (e.target.name === 'model') typyPodleModelu(e.target.value); });
+  var q0 = new URLSearchParams(location.search).get('model'); if (q0) typyPodleModelu(q0);
 })();

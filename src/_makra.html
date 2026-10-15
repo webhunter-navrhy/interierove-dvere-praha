@@ -26,10 +26,10 @@
 {% elif b.t == 'table' %}
 <div class="tabulka-obal"><table class="tabulka">{% for r in b.rows %}<tr>{% for c in r %}<td>{{ c|odkazy }}</td>{% endfor %}</tr>{% endfor %}</table></div>
 {% elif b.t == 'img' %}
-<figure class="obsah__foto{% if b.get("w") and b.w < 700 %} obsah__foto--male{% endif %}">{{ img(b.src, b.get("alt") or '', sizes='(max-width: 800px) 100vw, 760px') }}{% if b.get("cap") %}<figcaption>{{ b.cap }}</figcaption>{% endif %}</figure>
+<figure class="obsah__foto{% if b.get("w") and b.w < 700 %} obsah__foto--male{% endif %}" data-zoom="{{ img_url(b.src, 1280) }}">{{ img(b.src, b.get("alt") or '', sizes='(max-width: 800px) 100vw, 760px') }}{% if b.get("cap") %}<figcaption>{{ b.cap }}</figcaption>{% endif %}</figure>
 {% elif b.t == 'gallery' %}
-<div class="vzornik{% if b['items']|length > 8 %} vzornik--husty{% endif %}">
-  {% for i in b['items'] %}<figure class="vzornik__kus">{{ img(i.src, i.get("title") or '', sizes='(max-width: 700px) 45vw, 220px') }}{% if i.get("title") %}<figcaption>{{ i.title }}</figcaption>{% endif %}</figure>{% endfor %}
+<div class="vzornik{% if b['items']|length > 8 %} vzornik--husty{% endif %}{% if b.get('loose') %} vzornik--volne{% endif %}">
+  {% for i in b['items'] %}<figure class="vzornik__kus" data-zoom="{{ img_url(i.src, 1280) }}">{{ img(i.src, i.get("title") or '', sizes='(max-width: 700px) 45vw, 220px') }}{% if i.get("title") %}<figcaption>{{ i.title }}</figcaption>{% endif %}</figure>{% endfor %}
 </div>
 {% elif b.t == 'cards' %}
 <div class="karty">{% for c in b['items'] %}<a class="karta" href="{{ c.href|replace('@/', base) }}">{% if c.get("img") %}{{ img(c.img, c.title, sizes='(max-width: 700px) 100vw, 360px') }}{% endif %}<b>{{ c.title }}</b>{% if c.get("excerpt") %}<span>{{ c.excerpt }}</span>{% endif %}</a>{% endfor %}</div>
@@ -44,6 +44,8 @@
 <p><a class="tlacitko tlacitko--obrys" href="{{ site.mapa }}" target="_blank" rel="noopener">Otevřít v mapách</a></p>
 {% elif b.t == 'video' %}
 <div class="video"><iframe src="{{ b.src }}" title="Video" loading="lazy" allowfullscreen></iframe></div>
+{% elif b.t == 'katalogy' %}
+<div class="katalogy">{% for k in b['items'] %}<a class="katalogy__kus" href="{{ base }}{{ k.src }}" target="_blank" rel="noopener" download><img src="{{ base }}{{ k.img }}" alt="" loading="lazy"><b>{{ k.title }}</b><span class="katalogy__tl">Stáhnout PDF</span></a>{% endfor %}</div>
 {% elif b.t == 'hr' %}
 <hr class="linka">
 {% endif %}

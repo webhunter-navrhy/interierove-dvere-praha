@@ -1249,6 +1249,31 @@
     "center": false
    },
    {
+    "t": "h",
+    "l": 2,
+    "x": "Katalogy kování ke stažení"
+   },
+   {
+    "t": "katalogy",
+    "items": [
+     {
+      "title": "Výběrový katalog klik 2026",
+      "src": "kovani-vyber-klik.pdf",
+      "img": "img-kovani-vyber-klik.jpg"
+     },
+     {
+      "title": "Výběr doplňků",
+      "src": "kovani-vyber-doplnky.pdf",
+      "img": "img-kovani-vyber-doplnky.jpg"
+     },
+     {
+      "title": "Kliky s uzamykáním",
+      "src": "kovani-kliky-s-uzamykanim.pdf",
+      "img": "img-kovani-kliky-s-uzamykanim.jpg"
+     }
+    ]
+   },
+   {
     "t": "img",
     "src": "wp/img-2614-c4f167.jpg",
     "alt": "",
@@ -2004,12 +2029,6 @@
       "desc": ""
      }
     ]
-   },
-   {
-    "t": "h",
-    "l": 2,
-    "x": "Stáhněte si katalog a získejte inspiraci!",
-    "center": true
    }
   ],
   "og": "wp/armonico-finale-d53006.jpeg"

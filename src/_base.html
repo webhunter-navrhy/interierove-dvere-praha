@@ -46,13 +46,15 @@
       </ul>
     </nav>
     <a class="tlacitko tlacitko--male hlavicka__cta" href="{{ url(site.cta.href) }}">{{ site.cta.text }}</a>
-    <button class="burger" type="button" aria-controls="menu" aria-expanded="false"><span class="burger__car"></span><span class="sr">Menu</span></button>
+    <button class="burger" type="button" aria-controls="menu" aria-expanded="false"><span class="burger__text">Menu</span></button>
   </div>
 </header>
 <main id="obsah">
 {% block obsah %}{% endblock %}
 </main>
-<aside class="katalog-pas"><div class="katalog-pas__in"><img class="katalog-pas__obalka" src="{{ base }}img-katalog-obalka.jpg" width="240" height="340" alt="Katalog Vasco Doors 2026" loading="lazy"><div class="katalog-pas__txt"><b>Podívejte se do kompletního katalogu Vasco Doors</b><p>Kompletní sortiment dveří včetně podrobných specifikací a dekorů.</p><a class="katalog-pas__tl" href="{{ base }}vasco-doors-2026.pdf" target="_blank" rel="noopener">Otevřít katalog (PDF, 23 MB)</a></div></div></aside>
+{% if cesta not in ['masivni-dvere-na-zakazku/', 'stavebni-pouzdra/'] %}
+<aside class="katalog-pas"><div class="katalog-pas__in"><img class="katalog-pas__obalka" src="{{ base }}img-katalog-obalka.jpg" width="240" height="340" alt="Katalog Vasco Doors 2026" loading="lazy"><div class="katalog-pas__txt"><b>Podívejte se do kompletního katalogu Vasco Doors</b><p>Najdete v něm kompletní sortiment výrobků Vasco Doors včetně podrobných specifikací.</p><a class="katalog-pas__tl" href="{{ base }}vasco-doors-2026.pdf" target="_blank" rel="noopener">PDF ke stažení ZDE</a></div></div></aside>
+{% endif %}
 <footer class="paticka">
   <div class="paticka__in">
     <div class="paticka__firma">
