@@ -536,3 +536,12 @@ ol.seznam li::before { content: counter(o) "."; width: auto; height: auto; backg
 .katalog-pas__ikona { flex: none; border: 2px solid #fff; border-radius: 6px; padding: .5rem .7rem; font-weight: 700; font-size: 1.1rem; }
 .katalog-pas a:hover b { text-decoration: underline; }
 @media (max-width: 600px) { .katalog-pas a { flex-direction: column; text-align: center; gap: .6rem; } .katalog-pas b { font-size: 1.25rem; } }
+
+.katalog-pas { background: #141414; color: #fff; padding: 3rem 1.2rem; }
+.katalog-pas__in { max-width: 62rem; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 2.5rem; }
+.katalog-pas__obalka { width: 240px; height: auto; flex: none; box-shadow: 0 12px 40px rgba(0,0,0,.6); }
+.katalog-pas__txt b { display: block; font: 500 1.6rem/1.3 var(--disp); margin-bottom: .6rem; }
+.katalog-pas__txt p { margin: 0 0 1.4rem; color: #d8d2c6; font-size: 1.1rem; }
+.katalog-pas__tl { display: inline-block; padding: 1rem 1.8rem; background: #c9a44c; color: #141414; font-weight: 700; font-size: 1.15rem; text-decoration: none; border-radius: 6px; }
+.katalog-pas__tl:hover { background: #ddb85e; }
+@media (max-width: 600px) { .katalog-pas__in { flex-direction: column; text-align: center; gap: 1.5rem; } .katalog-pas__obalka { width: 200px; } }
