@@ -1,12 +1,20 @@
 {% extends "_base.html" %}
-{% set titulek = "Blog o interiérových dveřích | Interiérové dveře Praha" %}
-{% set popis = "Rady k výběru, montáži a péči o interiérové dveře. Články připravujeme." %}
-{% set noindex = true %}
+{% set titulek = "Blog o interiérových dveřích | Rady z praxe | Interiérové dveře Praha" %}
+{% set popis = "Jak vybrat interiérové dveře, falcové nebo bezfalcové, posuvné dveře do pouzdra a rekonstrukce bytu v Praze. Rady od Josefa Šťastného, který dveře prodává i montuje." %}
 {% block obsah %}
 <section class="stranka-hlava">
   <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a><span>Blog</span></nav>
-  <p class="nadtitulek">Rady a novinky</p>
+  <p class="nadtitulek">Rady z praxe</p>
   <h1>Blog</h1>
-  <p class="stranka-hlava__perex">Rady k výběru, montáži a péči o interiérové dveře. První články právě připravujeme.</p>
+  <p class="stranka-hlava__perex">Rady k výběru, montáži a péči o interiérové dveře od člověka, který je nejen prodává, ale také montuje.</p>
 </section>
+<div class="clanky">
+  {% for c in data.blog.clanky %}
+  <a class="clanky__karta" href="{{ url(c.path) }}">
+    <h2>{{ c.h1|nbsp }}</h2>
+    <p>{{ c.description }}</p>
+    <span class="clanky__vice">Číst článek →</span>
+  </a>
+  {% endfor %}
+</div>
 {% endblock %}

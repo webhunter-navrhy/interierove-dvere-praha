@@ -221,6 +221,8 @@ def main():
         vypis("_model.html", m["slug"], model=m)
     for p in data.get("pages", []):
         vypis("_stranka.html", p["path"], stranka=p)
+    for cl in data.get("blog", {}).get("clanky", []):
+        vypis("_clanek.html", cl["path"], clanek=cl)
 
     # robots, sitemap, CNAME
     navrh = bool(site.get("navrh"))

@@ -1,0 +1,20 @@
+{% extends "_base.html" %}
+{% import "_makra.html" as mk with context %}
+{% set c = clanek %}
+{% set titulek = c.title %}
+{% set popis = c.description %}
+{% block head %}
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "Article", "headline": c.h1, "description": c.description, "inLanguage": "cs", "datePublished": "2026-10-17", "dateModified": "2026-10-17", "mainEntityOfPage": site.url ~ c.path ~ "/", "author": {"@type": "Person", "name": data.blog.autor}, "publisher": {"@type": "Organization", "name": site.nazev}}|tojson }}</script>
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Úvod", "item": site.url}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": site.url ~ "blog/"}, {"@type": "ListItem", "position": 3, "name": c.h1}]}|tojson }}</script>
+{% endblock %}
+{% block obsah %}
+<section class="stranka-hlava">
+  <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a><a href="{{ url('blog') }}">Blog</a><span>{{ c.kratky }}</span></nav>
+  <p class="nadtitulek">Rady z praxe</p>
+  <h1>{{ c.h1|nbsp }}</h1>
+</section>
+<article class="clanek obsah">
+  {{ mk.bloky(c.blocks) }}
+  <p class="clanek__autor"><b>Autor: {{ data.blog.autor }}</b> – {{ data.blog.autor_radek }}</p>
+</article>
+{% endblock %}

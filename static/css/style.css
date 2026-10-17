@@ -637,3 +637,17 @@ h1 { font-size: clamp(2rem, 4.2vw, 3.6rem); }
 .rychly__ik:hover { opacity: 1; color: #fff; }
 .rychly__ik.rychly__wa { background: #25D366; }
 @media (max-width: 900px) { .rychly { position: fixed; top: 50%; right: .6rem; } .rychly__ik { width: 40px; height: 40px; } }
+
+/* Blog: čitelné písmo pro starší čtenáře (stejné fonty jako zbytek webu) */
+.clanek { max-width: 44rem; margin-inline: auto; padding: 1rem 1.25rem 3rem; font-size: clamp(1.1875rem, 1.12rem + .35vw, 1.3125rem); line-height: 1.75; color: var(--ink); }
+.clanek p, .clanek li { margin: 0 0 1.1em; }
+.clanek .obsah__h2 { font-family: var(--disp); font-size: clamp(1.5rem, 1.3rem + 1vw, 1.9rem); line-height: 1.25; margin: 2em 0 .6em; }
+.clanek a { text-decoration: underline; text-underline-offset: .15em; }
+.clanek .seznam { padding-left: 1.4em; }
+.clanek__autor { margin-top: 2.5em; padding-top: 1.2em; border-top: 1px solid rgba(0,0,0,.15); font-size: 1.0625rem; line-height: 1.6; }
+.clanky { display: grid; gap: 1.25rem; max-width: 52rem; margin: 0 auto; padding: 0 1.25rem 3rem; }
+.clanky__karta { display: block; padding: 1.5rem; border: 1px solid rgba(0,0,0,.15); border-radius: 6px; text-decoration: none; color: inherit; background: #fff; }
+.clanky__karta:hover { border-color: currentColor; }
+.clanky__karta h2 { font-family: var(--disp); font-size: 1.45rem; line-height: 1.25; margin: 0 0 .5rem; }
+.clanky__karta p { font-size: 1.125rem; line-height: 1.6; margin: 0 0 .8rem; }
+.clanky__vice { font-weight: 600; }
