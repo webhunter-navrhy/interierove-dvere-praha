@@ -593,3 +593,21 @@ h1 { font-size: clamp(2rem, 4.2vw, 3.6rem); }
 .rychly__text { font-weight: 600; margin-right: .4rem; }
 .rychly__tl::after { content: none; }
 @media (max-width: 600px) { .rychly { position: sticky; top: 64px; z-index: 20; } .rychly__text { width: 100%; } .rychly__tl { flex: 1 1 100%; } }
+
+/* telefonní čísla výraznější a čitelnější (přání klienta 17. 10.) */
+.bocni__tel { font-size: 1.1rem !important; font-weight: 600; }
+.bocni__tel a { font-size: 1.3rem; font-weight: 700; color: var(--ink); text-decoration: none; white-space: nowrap; }
+.menu__polozka--tel .menu__odkaz { font-weight: 700; color: var(--ink); font-size: 1.1rem; }
+.paticka li a[href^="tel:"] { font-size: 1.2rem; font-weight: 700; color: #fff; }
+.osoba__tel { font-size: 1.25rem; font-weight: 700; color: var(--ink); }
+.kontakt__udaje a[href^="tel:"] { font-size: 1.2rem; font-weight: 700; }
+.rychly__tl { font-size: 1.1rem; font-weight: 700; min-height: 52px; }
+.rychly__text { font-size: 1.1rem; }
+.hero__akce .tlacitko[href^="tel:"] { font-size: 1.1rem; font-weight: 700; }
+/* mobil: o něco větší text */
+@media (max-width: 700px) {
+  body { font-size: 1.1875rem; }
+  .obsah p, .obsah li, .model__popis, .hero__perex, .stranka-hlava__perex, .model-karta p { font-size: 1.1875rem; }
+  .tabulka, .vzorkovna__pozn, .model__pozn { font-size: 1.05rem; }
+  .bocni__vyzva p, .bocni__menu a { font-size: 1.05rem; }
+}
