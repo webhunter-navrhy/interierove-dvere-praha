@@ -577,3 +577,13 @@ h1 { font-size: clamp(2rem, 4.2vw, 3.6rem); }
   .burger[aria-expanded="true"] .burger__text::after { content: " ✕"; }
 }
 .volba[hidden]{display:none!important}
+
+/* 17. 10.: dlaždice kategorií na úvodu stejně velké */
+.sortiment__mriz { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: none; }
+.dlazdice, .dlazdice--velka { grid-row: auto; min-height: 0; aspect-ratio: 4 / 5; }
+.dlazdice--bezpecnost img { left: 10%; right: 10%; top: 6%; bottom: auto; width: 80%; height: 62%; }
+.dlazdice--bezpecnost .dlazdice__text { right: 0; top: auto; }
+@media (max-width: 800px) {
+  .sortiment__mriz { grid-template-columns: 1fr; }
+  .dlazdice, .dlazdice--velka { aspect-ratio: 4 / 3; }
+}

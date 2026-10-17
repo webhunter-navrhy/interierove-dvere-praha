@@ -3079,5 +3079,128 @@
    }
   ],
   "og": null
+ },
+ {
+  "id": 900001,
+  "path": "servis-a-opravy-dveri",
+  "nazev": "Servis a opravy dveří",
+  "rubrika": "Sortiment",
+  "h1": "Servis a opravy interiérových dveří v Praze",
+  "kicker": "Seřízení · opravy · Praha a okolí",
+  "seo_title": "Servis a opravy interiérových dveří Praha | Seřízení dveří",
+  "description": "Servis, seřízení a opravy interiérových, bezfalcových, posuvných a skleněných dveří v Praze a okolí. Běžný servis zpravidla do 24 hodin, orientační cena předem.",
+  "blocks": [
+   {
+    "t": "p",
+    "h": "Dveře drhnou, nejdou zavřít nebo se posuvný systém zasekává? Seřízení a opravy interiérových dveří a zárubní řešíme v Praze a okolí. Pokud je oprava možná, zachráníme stávající dveře a nebudete kupovat nové.",
+    "center": false
+   },
+   {
+    "t": "h",
+    "l": 2,
+    "x": "Co opravujeme"
+   },
+   {
+    "t": "ul",
+    "items": [
+     "klasické a bezfalcové dveře (seřízení křídla, pantů, zámků, klik)",
+     "posuvné dveře na stěnu (pojezdy, vedení, drhnutí, hlučnost)",
+     "posuvné dveře do stavebního pouzdra",
+     "skleněné interiérové dveře",
+     "panty, kliky, zámky a další kování",
+     "obložkové zárubně"
+    ],
+    "auto": true,
+    "check": true
+   },
+   {
+    "t": "h",
+    "l": 2,
+    "x": "Nejčastější závady"
+   },
+   {
+    "t": "ul",
+    "items": [
+     "dveře drhnou o podlahu nebo zárubeň, případně po výměně podlahy",
+     "dveře nejdou zavřít nebo správně dovřít, nelícují se zárubní",
+     "dveře se samovolně otevírají nebo zavírají",
+     "bezfalcové dveře mají nerovnoměrné spáry, skryté panty jsou uvolněné",
+     "posuvné dveře vypadly z vedení, dveře do pouzdra se zadrhávají",
+     "klika nebo zámek nefungují správně"
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "h",
+    "l": 2,
+    "x": "Orientační ceny"
+   },
+   {
+    "t": "table",
+    "rows": [
+     [
+      "Diagnostika a kontrola dveří",
+      "od 600 Kč"
+     ],
+     [
+      "Seřízení otočných dveří",
+      "od 1 400 Kč"
+     ],
+     [
+      "Servis posuvných dveří na stěnu",
+      "od 1 700 Kč"
+     ],
+     [
+      "Servis posuvných dveří do pouzdra",
+      "od 1 800 Kč"
+     ],
+     [
+      "Výměna / oprava kliky, zámku nebo závěsu",
+      "od 690 Kč"
+     ],
+     [
+      "Servisní výjezd po Praze",
+      "od 700 Kč"
+     ]
+    ]
+   },
+   {
+    "t": "p",
+    "h": "Ceny jsou orientační, přesnou částku sdělíme podle typu dveří, rozsahu opravy a materiálu. Pošlete nám popis závady a fotografie dveří, orientační cenu uvedeme předem.",
+    "center": false
+   },
+   {
+    "t": "h",
+    "l": 2,
+    "x": "Jak oprava probíhá"
+   },
+   {
+    "t": "ol",
+    "items": [
+     "Popíšete závadu, ideálně s fotkou pantů, zámku nebo posuvného systému.",
+     "Domluvíme termín, běžný servis zpravidla do 24 hodin.",
+     "Dveře seřídíme, opravíme nebo vyměníme potřebné díly."
+    ],
+    "auto": true,
+    "check": false
+   },
+   {
+    "t": "h",
+    "l": 2,
+    "x": "Na co se nespecializujeme"
+   },
+   {
+    "t": "p",
+    "h": "Servisujeme pouze interiérové dveře. Nejsme zámečnická pohotovost: neotevíráme zabouchnuté byty a neopravujeme vstupní ani bezpečnostní dveře, okna a balkonové dveře.",
+    "center": false
+   },
+   {
+    "t": "btn",
+    "href": "@/kontakt/",
+    "x": "Poptat opravu dveří"
+   }
+  ],
+  "og": null
  }
 ]
