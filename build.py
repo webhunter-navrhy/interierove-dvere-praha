@@ -176,6 +176,8 @@ def main():
     og_url = site["url"] + og if og else None
 
     def url(cesta):
+        if cesta.startswith("#"):
+            return base + cesta
         cesta = cesta.strip("/")
         return base + (cesta + "/" if cesta else "")
 

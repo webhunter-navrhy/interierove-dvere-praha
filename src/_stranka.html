@@ -3,7 +3,7 @@
 {% set s = stranka %}
 {% set titulek = s.seo_title %}
 {% set popis = s.description %}
-{% set sortiment = site.nav[1].sub %}
+{% set sortiment = site.nav[2].sub %}
 {% block obsah %}
 <section class="stranka-hlava">
   <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a>{% if s.rubrika %}<span>{{ s.rubrika }}</span>{% endif %}<span>{{ s.nazev }}</span></nav>

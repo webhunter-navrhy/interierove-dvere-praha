@@ -153,10 +153,15 @@
         stav.textContent = 'Ukázka formuláře: v návrhu se nic neodesílá. Po spuštění webu přijde poptávka rovnou na e-mail vzorkovny.';
         return;
       }
+      var fo = f.querySelector('input[type=file]');
+      if (fo && fo.files[0] && fo.files[0].size > 9 * 1024 * 1024) { stav.textContent = 'Příloha je větší než 9 MB, pošlete ji prosím e-mailem.'; return; }
+      // běžné odeslání (multipart): AJAX u FormSubmit přílohy zahazuje
       stav.textContent = 'Odesílám…';
-      fetch(endpoint, { method: 'POST', body: new FormData(f), headers: { Accept: 'application/json' } })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); f.reset(); stav.textContent = 'Děkujeme, poptávka byla odeslána. Ozveme se vám s nabídkou.'; })
-        .catch(function () { stav.textContent = 'Odeslání se nepodařilo. Napište nám prosím na e-mail nebo zavolejte.'; });
+      f.action = endpoint;
+      var nx = f.querySelector('input[name=_next]');
+      if (!nx) { nx = d.createElement('input'); nx.type = 'hidden'; nx.name = '_next'; f.appendChild(nx); }
+      nx.value = location.href.split('#')[0];
+      f.submit();
     });
   });
 
