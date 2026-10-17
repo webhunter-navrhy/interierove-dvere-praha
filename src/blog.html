@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+{% set titulek = "Blog o interiérových dveřích | Interiérové dveře Praha" %}
+{% set popis = "Rady k výběru, montáži a péči o interiérové dveře. Články připravujeme." %}
+{% set noindex = true %}
+{% block obsah %}
+<section class="stranka-hlava">
+  <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a><span>Blog</span></nav>
+  <p class="nadtitulek">Rady a novinky</p>
+  <h1>Blog</h1>
+  <p class="stranka-hlava__perex">Rady k výběru, montáži a péči o interiérové dveře. První články právě připravujeme.</p>
+</section>
+{% endblock %}

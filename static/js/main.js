@@ -190,3 +190,11 @@
   d.addEventListener('change', function (e) { if (e.target.name === 'model') typyPodleModelu(e.target.value); });
   var q0 = new URLSearchParams(location.search).get('model'); if (q0) typyPodleModelu(q0);
 })();
+
+// Tlačítko Zpět nahoru (17. 10. 2026)
+(function () {
+  var b = document.querySelector('.totop'); if (!b) return;
+  function upd() { b.hidden = window.scrollY < 600; }
+  window.addEventListener('scroll', upd, { passive: true }); upd();
+  b.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+})();
