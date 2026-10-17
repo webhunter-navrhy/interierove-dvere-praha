@@ -25,7 +25,7 @@
       <p class="bocni__nadpis">Nezávazná poptávka</p>
       <p>Vyberte model, provedení a&nbsp;dekor, cenu připravíme i&nbsp;s&nbsp;montáží.</p>
       <a class="tlacitko tlacitko--male" href="{{ url('cenova-kalkulace-dvere') }}">Sestavit a nacenit</a>
-      <p class="bocni__tel">nebo volejte <a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>
+      {% set tel = s.get('tel') or site.kontakt.telefon %}<p class="bocni__tel">nebo volejte <a href="tel:{{ tel|replace(' ', '') }}">{{ tel }}</a></p>
     </div>
   </aside>
 </div>

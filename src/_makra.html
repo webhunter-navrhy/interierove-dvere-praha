@@ -35,6 +35,14 @@
 <div class="karty">{% for c in b['items'] %}<a class="karta" href="{{ c.href|replace('@/', base) }}">{% if c.get("img") %}{{ img(c.img, c.title, sizes='(max-width: 700px) 100vw, 360px') }}{% endif %}<b>{{ c.title }}</b>{% if c.get("excerpt") %}<span>{{ c.excerpt }}</span>{% endif %}</a>{% endfor %}</div>
 {% elif b.t == 'btn' %}
 <p><a class="tlacitko tlacitko--obrys" href="{{ b.href|replace('@/', base) }}">{{ b.x }}</a></p>
+{% elif b.t == 'btnext' %}
+<p><a class="tlacitko" href="{{ b.href }}" target="_blank" rel="noopener">{{ b.x }}</a></p>
+{% elif b.t == 'rychly' %}
+<div class="rychly" role="group" aria-label="Rychlý kontakt">
+  <span class="rychly__text">Rychlý kontakt</span>
+  <a class="tlacitko rychly__tl" href="tel:{{ b.tel|replace(' ', '') }}">Zavolat {{ b.tel }}</a>
+  <a class="tlacitko tlacitko--obrys rychly__tl rychly__wa" href="https://wa.me/{{ b.tel|replace(' ', '')|replace('+', '') }}" target="_blank" rel="noopener">WhatsApp</a>
+</div>
 {% elif b.t == 'form' %}
 <aside class="vyzva">
   <p class="vyzva__text">Nezávaznou poptávku vyplníte za dvě minuty. Vyberte model, provedení a dekor, my připravíme cenu včetně montáže.</p>

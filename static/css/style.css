@@ -587,3 +587,9 @@ h1 { font-size: clamp(2rem, 4.2vw, 3.6rem); }
   .sortiment__mriz { grid-template-columns: 1fr; }
   .dlazdice, .dlazdice--velka { aspect-ratio: 4 / 3; }
 }
+
+/* rychlý kontakt (volat + WhatsApp) */
+.rychly { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem; margin: 0 0 2rem; padding: 1rem 1.2rem; background: var(--papir); border-left: 3px solid var(--cervena); }
+.rychly__text { font-weight: 600; margin-right: .4rem; }
+.rychly__tl::after { content: none; }
+@media (max-width: 600px) { .rychly { position: sticky; top: 64px; z-index: 20; } .rychly__text { width: 100%; } .rychly__tl { flex: 1 1 100%; } }

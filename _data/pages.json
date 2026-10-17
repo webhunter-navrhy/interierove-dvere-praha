@@ -3083,124 +3083,124 @@
  {
   "id": 900001,
   "path": "servis-a-opravy-dveri",
-  "nazev": "Servis a opravy dveří",
+  "nazev": "Problémy s dveřmi",
   "rubrika": "Sortiment",
-  "h1": "Servis a opravy interiérových dveří v Praze",
-  "kicker": "Seřízení · opravy · Praha a okolí",
-  "seo_title": "Servis a opravy interiérových dveří Praha | Seřízení dveří",
-  "description": "Servis, seřízení a opravy interiérových, bezfalcových, posuvných a skleněných dveří v Praze a okolí. Běžný servis zpravidla do 24 hodin, orientační cena předem.",
+  "h1": "Interiérové dveře drhnou, nedovírají nebo se zasekávají?",
+  "kicker": "Příčiny a řešení",
+  "seo_title": "Dveře drhnou nebo nejdou zavřít? Příčiny a řešení",
+  "description": "Interiérové dveře drhnou, nedovírají nebo se zasekává posuvný systém? Podívejte se na časté příčiny a zjistěte, kdy už je vhodné zavolat servis.",
   "blocks": [
    {
+    "t": "rychly",
+    "tel": "+420 728 252 929"
+   },
+   {
     "t": "p",
-    "h": "Dveře drhnou, nejdou zavřít nebo se posuvný systém zasekává? Seřízení a opravy interiérových dveří a zárubní řešíme v Praze a okolí. Pokud je oprava možná, zachráníme stávající dveře a nebudete kupovat nové.",
+    "h": "Když interiérové dveře začnou drhnout, nejdou dovřít nebo se posuvný systém pohybuje ztuha, nemusí být hned nutná výměna dveří. Nejdřív je potřeba zjistit, kde problém vzniká. Příčinou může být změna podlahy, uvolněné kování, seřízení dveřního křídla nebo závada v pojezdu.",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "Závada se někdy objeví postupně, jindy krátce po montáži nebo rekonstrukci. Proto se vyplatí všimnout si, kdy potíže začaly a v jakém místě dveře zadrhávají.",
     "center": false
    },
    {
     "t": "h",
     "l": 2,
-    "x": "Co opravujeme"
-   },
-   {
-    "t": "ul",
-    "items": [
-     "klasické a bezfalcové dveře (seřízení křídla, pantů, zámků, klik)",
-     "posuvné dveře na stěnu (pojezdy, vedení, drhnutí, hlučnost)",
-     "posuvné dveře do stavebního pouzdra",
-     "skleněné interiérové dveře",
-     "panty, kliky, zámky a další kování",
-     "obložkové zárubně"
-    ],
-    "auto": true,
-    "check": true
+    "x": "Co může být příčinou potíží"
    },
    {
     "t": "h",
-    "l": 2,
-    "x": "Nejčastější závady"
-   },
-   {
-    "t": "ul",
-    "items": [
-     "dveře drhnou o podlahu nebo zárubeň, případně po výměně podlahy",
-     "dveře nejdou zavřít nebo správně dovřít, nelícují se zárubní",
-     "dveře se samovolně otevírají nebo zavírají",
-     "bezfalcové dveře mají nerovnoměrné spáry, skryté panty jsou uvolněné",
-     "posuvné dveře vypadly z vedení, dveře do pouzdra se zadrhávají",
-     "klika nebo zámek nefungují správně"
-    ],
-    "auto": true,
-    "check": false
-   },
-   {
-    "t": "h",
-    "l": 2,
-    "x": "Orientační ceny"
-   },
-   {
-    "t": "table",
-    "rows": [
-     [
-      "Diagnostika a kontrola dveří",
-      "od 600 Kč"
-     ],
-     [
-      "Seřízení otočných dveří",
-      "od 1 400 Kč"
-     ],
-     [
-      "Servis posuvných dveří na stěnu",
-      "od 1 700 Kč"
-     ],
-     [
-      "Servis posuvných dveří do pouzdra",
-      "od 1 800 Kč"
-     ],
-     [
-      "Výměna / oprava kliky, zámku nebo závěsu",
-      "od 690 Kč"
-     ],
-     [
-      "Servisní výjezd po Praze",
-      "od 700 Kč"
-     ]
-    ]
+    "l": 3,
+    "x": "Otočné dveře drhnou o podlahu nebo zárubeň"
    },
    {
     "t": "p",
-    "h": "Ceny jsou orientační, přesnou částku sdělíme podle typu dveří, rozsahu opravy a materiálu. Pošlete nám popis závady a fotografie dveří, orientační cenu uvedeme předem.",
+    "h": "Pokud dveře začaly škrtat po výměně podlahy, mohl se zmenšit prostor pod dveřním křídlem. Drhnutí o zárubeň může souviset například se změnou polohy křídla, seřízením pantů nebo stavem jejich uchycení. Bez kontroly konkrétních dveří nelze bezpečně určit, která příčina je ta správná.",
+    "center": false
+   },
+   {
+    "t": "h",
+    "l": 3,
+    "x": "Dveře se samy otevírají nebo zavírají"
+   },
+   {
+    "t": "p",
+    "h": "Samovolný pohyb může souviset s polohou dveří, zárubně nebo pantů. Ani dokonale vypadající zárubeň sama o sobě nezaručí, že je příčina vyřešená. Důležité je zkontrolovat, jak se dveře chovají v celém rozsahu pohybu.",
+    "center": false
+   },
+   {
+    "t": "h",
+    "l": 3,
+    "x": "Bezfalcové dveře mají nestejné spáry"
+   },
+   {
+    "t": "p",
+    "h": "U bezfalcových dveří je správné usazení vidět na rovnoměrných spárách mezi křídlem a zárubní. Pokud se mezery liší nebo dveře nedoléhají, může být potřeba prověřit skryté panty i polohu křídla.",
+    "center": false
+   },
+   {
+    "t": "h",
+    "l": 3,
+    "x": "Posuvné dveře se zadrhávají"
+   },
+   {
+    "t": "p",
+    "h": "U posuvných dveří na stěnu i dveří do stavebního pouzdra může být problém v pojezdu, vedení nebo dalších částech systému. Příznakem bývá ztížený pohyb, zvýšená hlučnost nebo zaseknutí v určité části dráhy. U dveří do pouzdra navíc nemusí být všechny části systému snadno přístupné.",
+    "center": false
+   },
+   {
+    "t": "h",
+    "l": 3,
+    "x": "Klika nebo zámek nefungují správně"
+   },
+   {
+    "t": "p",
+    "h": "Klika, která se vrací ztuha, nebo zámek, který nezapadá do protiplechu, nemusí být jen vadným dílem. Někdy je potřeba nejdřív prověřit polohu dveřního křídla a správné dovírání.",
     "center": false
    },
    {
     "t": "h",
     "l": 2,
-    "x": "Jak oprava probíhá"
+    "x": "Co si všimnout před objednáním opravy"
    },
    {
-    "t": "ol",
-    "items": [
-     "Popíšete závadu, ideálně s fotkou pantů, zámku nebo posuvného systému.",
-     "Domluvíme termín, běžný servis zpravidla do 24 hodin.",
-     "Dveře seřídíme, opravíme nebo vyměníme potřebné díly."
-    ],
-    "auto": true,
-    "check": false
+    "t": "p",
+    "h": "Zapište si, kdy závada začala a zda předcházela výměna podlahy, montáž dveří nebo jiná úprava interiéru. Užitečné je také určit, kde přesně dveře drhnou, jestli se problém objevuje při otevírání, zavírání, nebo v obou směrech a zda se týká jednoho křídla, nebo více dveří.",
+    "center": false
+   },
+   {
+    "t": "p",
+    "h": "Předem připravené fotografie celých dveří, pantů, zámku nebo viditelné části posuvného systému pomohou závadu lépe popsat. Dveře ani posuvný mechanismus se při zaseknutí nesnažte přemáhat silou — mohlo by dojít k poškození další části.",
+    "center": false
    },
    {
     "t": "h",
     "l": 2,
-    "x": "Na co se nespecializujeme"
+    "x": "Kdy přenechat dveře odborníkovi"
    },
    {
     "t": "p",
-    "h": "Servisujeme pouze interiérové dveře. Nejsme zámečnická pohotovost: neotevíráme zabouchnuté byty a neopravujeme vstupní ani bezpečnostní dveře, okna a balkonové dveře.",
+    "h": "Odborná kontrola dává smysl, když se závada opakuje, dveře výrazně drhnou, uvolnil se skrytý pant, posuvné dveře vypadávají z vedení nebo je problém u dveří do stavebního pouzdra. U skleněných dveří je vhodné vyhnout se neodborným zásahům také kvůli bezpečné manipulaci.",
     "center": false
    },
    {
-    "t": "btn",
-    "href": "@/kontakt/",
-    "x": "Poptat opravu dveří"
+    "t": "h",
+    "l": 2,
+    "x": "Potřebujete dveře opravit nebo seřídit?"
+   },
+   {
+    "t": "p",
+    "h": "Tato stránka pomáhá zorientovat se v běžných potížích s interiérovými dveřmi. Pro diagnostiku, seřízení nebo opravu dveří v Praze navštivte specializovaný servis interiérových dveří ServisDvere.cz. Na servisním webu najdete informace o opravách, orientačních cenách i možnostech objednání.",
+    "center": false
+   },
+   {
+    "t": "btnext",
+    "href": "https://servisdvere.cz/",
+    "x": "Objednat servis dveří"
    }
   ],
-  "og": null
+  "og": null,
+  "tel": "+420 728 252 929"
  }
 ]
