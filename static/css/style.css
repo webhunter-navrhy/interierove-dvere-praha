@@ -629,3 +629,11 @@ h1 { font-size: clamp(2rem, 4.2vw, 3.6rem); }
 }
 .rychly__tl, .rychly__tl:hover { color: #fff; }
 .rychly__tl.tlacitko--obrys { color: var(--ink); }
+
+/* rychlý kontakt: malé ikony, jezdí se stránkou (přání klienta 17. 10. 2026, UID 13601) */
+.rychly { position: fixed; right: 1rem; top: 50%; transform: translateY(-50%); z-index: 70; display: flex; flex-direction: column; gap: .5rem; margin: 0; padding: 0; background: none; border: 0; }
+.rychly__text { display: none; }
+.rychly__ik { display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 50%; color: #fff; background: var(--cervena); text-decoration: none; box-shadow: 0 3px 10px rgba(0, 0, 0, .22); opacity: .92; }
+.rychly__ik:hover { opacity: 1; color: #fff; }
+.rychly__ik.rychly__wa { background: #25D366; }
+@media (max-width: 900px) { .rychly { position: fixed; top: 50%; right: .6rem; } .rychly__ik { width: 40px; height: 40px; } }
