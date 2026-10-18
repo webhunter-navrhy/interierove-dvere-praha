@@ -57,7 +57,6 @@
   "pocet": 22,
   "odkaz": "https://www.google.com/search?q=Dve%C5%99e+Vasco+Doors+Recenze"
  },
- "katalog_pdf": "https://www.dvere-vascodoors.cz/vasco-doors-2026.pdf",
  "sesterske": [
   {
    "text": "Podlahy Šťastný",
@@ -164,5 +163,7 @@
  "cta": {
   "text": "Sestavit a nacenit",
   "href": "cenova-kalkulace-dvere"
- }
+ },
+ "cookie_lista": true,
+ "ga_id": ""
 }
