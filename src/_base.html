@@ -78,9 +78,11 @@
         <li><a href="{{ url('kontakt') }}">Jak nás najdete</a></li>
         <li><a href="{{ url('cenova-kalkulace-dvere') }}">Nezávazná poptávka</a></li>
       </ul>
-      <h2 class="paticka__nadpis paticka__nadpis--dalsi">Naše další weby</h2>
-      <ul>{% for s in site.sesterske %}<li><a href="{{ s.href }}">{{ s.text }}</a></li>{% endfor %}</ul>
     </div>
+  </div>
+  <div class="paticka__weby">
+    <span>Naše další weby</span>
+    {% for s in site.sesterske %}<a href="{{ s.href }}" rel="noopener" target="_blank">{{ s.text }} ↗</a>{% endfor %}
   </div>
   <div class="paticka__spodek">
     <p>{{ site.provozovatel }} · IČO {{ site.ico }} · DIČ {{ site.dic }}</p>

@@ -1,152 +1,168 @@
 {
-  "slug": "interierove-dvere-praha",
-  "nazev": "Interiérové dveře Praha",
-  "znacka": "Dveře Šťastný · Vasco Doors",
-  "url": "https://webhunter-navrhy.github.io/interierove-dvere-praha/",
-  "base": "/interierove-dvere-praha/",
-  "lang": "cs",
-  "popis": "Interiérové, posuvné, bezfalcové i bezpečnostní dveře Vasco Doors s montáží v Praze a okolí. Vzorkovna Slavíkova 29, Praha 2 – Vinohrady, dodání do 21 dnů.",
-  "navrh": true,
-  "domena": "interierove-dvere-praha.cz",
-  "og_image": "wp/interierove-dvere-braga-d86fde.png",
-  "logo": "img-logo-svetle.png",
-  "logo_tmave": "img-logo-tmave.png",
-  "theme_color": "#F3EFE8",
-  "typ": "HomeAndConstructionBusiness",
-  "ico": "74119893",
-  "dic": "CZ7502200904",
-  "provozovatel": "Josef Šťastný",
-  "kontakt": {
-    "email": "info@dvere-vascodoors.cz",
-    "telefon": "+420 727 945 909",
-    "adresa": {
-      "ulice": "Slavíkova 29",
-      "psc": "120 00",
-      "mesto": "Praha 2 – Vinohrady",
-      "zeme": "CZ"
-    }
-  },
-  "lide": [
-    {
-      "jmeno": "Petra Šťastná",
-      "role": "Showroom a výběr dveří",
-      "telefon": "+420 727 945 909",
-      "foto": "wp/img-2494-eacc87.jpeg"
-    },
-    {
-      "jmeno": "Josef Šťastný",
-      "role": "Technické poradenství, zaměření a montáž",
-      "telefon": "+420 728 252 929",
-      "foto": "wp/2026-04-14-8555ba.jpg"
-    }
-  ],
-  "vzorkovna_foto": "wp/img-1459-4f4a71.jpeg",
-  "oteviraci_doba": [
-    "Mo-Th 09:00-17:00"
-  ],
-  "oteviraci_text": [
-    "Po–Čt 9:00–17:00",
-    "Pá po telefonické domluvě"
-  ],
-  "oteviraci_pozn": "Doporučujeme si předem zavolat nebo domluvit termín. Jsme často na realizacích u zákazníků, takže se může stát, že ve studiu zrovna nejsme.",
-  "sameas": [],
-  "cenove_rozpeti": "",
-  "mapa": "https://www.google.com/maps/search/?api=1&query=Slav%C3%ADkova+29%2C+Praha+2",
-  "recenze": {
-    "hodnoceni": "4,8",
-    "pocet": 22,
-    "odkaz": "https://www.google.com/search?q=Dve%C5%99e+Vasco+Doors+Recenze"
-  },
-  "katalog_pdf": "https://www.dvere-vascodoors.cz/vasco-doors-2026.pdf",
-  "sesterske": [
-    {
-      "text": "podlahystastny.cz",
-      "href": "https://www.podlahystastny.cz/"
-    },
-    {
-      "text": "terasy-drevoplast.cz",
-      "href": "https://www.terasy-drevoplast.cz/"
-    }
-  ],
-  "formular": {
-    "endpoint": "",
-    "demo": true,
-    "predmet": "Poptávka dveří z webu"
-  },
-  "nav": [
-    {
-      "text": "Úvod",
-      "href": ""
-    },
-    {
-      "text": "Sortiment",
-      "href": "#",
-      "sub": [
-        {
-          "text": "Interiérové dveře",
-          "href": "dvere-interierove"
-        },
-        {
-          "text": "Posuvné dveře",
-          "href": "dvere-posuvne"
-        },
-        {
-          "text": "Bezfalcové dveře",
-          "href": "dvere-bezfalcove"
-        },
-        {
-          "text": "Masivní dveře na zakázku",
-          "href": "masivni-dvere-na-zakazku"
-        },
-        {
-          "text": "Bezpečnostní dveře",
-          "href": "bezpecnostni-dvere"
-        },
-        {
-          "text": "Obložkové zárubně",
-          "href": "oblozkove-zarubne"
-        },
-        {
-          "text": "Kování – kliky",
-          "href": "kovani"
-        },
-        {
-          "text": "Stavební pouzdra Scrigno",
-          "href": "stavebni-pouzdra"
-        },
-        {
-          "text": "Stavební pouzdra ECLISSE",
-          "href": "eclisse"
-        },
-        {
-          "text": "Problémy s dveřmi",
-          "href": "problemy-s-interierovymi-dvermi"
-        }
-      ]
-    },
-    {
-      "text": "Problémy s dveřmi",
-      "href": "problemy-s-interierovymi-dvermi"
-    },
-    {
-      "text": "Realizace",
-      "href": "realizace-interierovych-dveri"
-    },
-    {
-      "text": "O nás",
-      "href": "#o-nas"
-    },
-    {
-      "text": "Blog",
-      "href": "blog"
-    },
-    {
-      "text": "Kontakt",
-      "href": "kontakt"
-    }
-  ],
-  "cta": {
-    "text": "Sestavit a nacenit",
-    "href": "cenova-kalkulace-dvere"
+ "slug": "interierove-dvere-praha",
+ "nazev": "Interiérové dveře Praha",
+ "znacka": "Dveře Šťastný · Vasco Doors",
+ "url": "https://webhunter-navrhy.github.io/interierove-dvere-praha/",
+ "base": "/interierove-dvere-praha/",
+ "lang": "cs",
+ "popis": "Interiérové, posuvné, bezfalcové i bezpečnostní dveře Vasco Doors s montáží v Praze a okolí. Vzorkovna Slavíkova 29, Praha 2 – Vinohrady, dodání do 21 dnů.",
+ "navrh": true,
+ "domena": "interierove-dvere-praha.cz",
+ "og_image": "wp/interierove-dvere-braga-d86fde.png",
+ "logo": "img-logo-svetle.png",
+ "logo_tmave": "img-logo-tmave.png",
+ "theme_color": "#F3EFE8",
+ "typ": "HomeAndConstructionBusiness",
+ "ico": "74119893",
+ "dic": "CZ7502200904",
+ "provozovatel": "Josef Šťastný",
+ "kontakt": {
+  "email": "info@dvere-vascodoors.cz",
+  "telefon": "+420 727 945 909",
+  "adresa": {
+   "ulice": "Slavíkova 29",
+   "psc": "120 00",
+   "mesto": "Praha 2 – Vinohrady",
+   "zeme": "CZ"
   }
+ },
+ "lide": [
+  {
+   "jmeno": "Petra Šťastná",
+   "role": "Showroom a výběr dveří",
+   "telefon": "+420 727 945 909",
+   "foto": "wp/img-2494-eacc87.jpeg"
+  },
+  {
+   "jmeno": "Josef Šťastný",
+   "role": "Technické poradenství, zaměření a montáž",
+   "telefon": "+420 728 252 929",
+   "foto": "wp/2026-04-14-8555ba.jpg"
+  }
+ ],
+ "vzorkovna_foto": "wp/img-1459-4f4a71.jpeg",
+ "oteviraci_doba": [
+  "Mo-Th 09:00-17:00"
+ ],
+ "oteviraci_text": [
+  "Po–Čt 9:00–17:00",
+  "Pá po telefonické domluvě"
+ ],
+ "oteviraci_pozn": "Doporučujeme si předem zavolat nebo domluvit termín. Jsme často na realizacích u zákazníků, takže se může stát, že ve studiu zrovna nejsme.",
+ "sameas": [],
+ "cenove_rozpeti": "",
+ "mapa": "https://www.google.com/maps/search/?api=1&query=Slav%C3%ADkova+29%2C+Praha+2",
+ "recenze": {
+  "hodnoceni": "4,8",
+  "pocet": 22,
+  "odkaz": "https://www.google.com/search?q=Dve%C5%99e+Vasco+Doors+Recenze"
+ },
+ "katalog_pdf": "https://www.dvere-vascodoors.cz/vasco-doors-2026.pdf",
+ "sesterske": [
+  {
+   "text": "Podlahy Šťastný",
+   "href": "https://www.podlahystastny.cz/"
+  },
+  {
+   "text": "Terasy z dřevoplastu a dřeva",
+   "href": "https://www.terasy-drevoplast.cz/"
+  },
+  {
+   "text": "Servis dveří",
+   "href": "https://www.servisdvere.cz/"
+  },
+  {
+   "text": "Podlahy Floorify",
+   "href": "https://www.podlahyfloorify.cz/"
+  },
+  {
+   "text": "Masivní dřevěné podlahy",
+   "href": "https://www.masivnidrevenepodlahy.cz/"
+  },
+  {
+   "text": "Profi terasy Praha",
+   "href": "https://www.profiterasypraha.cz/"
+  }
+ ],
+ "formular": {
+  "endpoint": "",
+  "demo": true,
+  "predmet": "Poptávka dveří z webu"
+ },
+ "nav": [
+  {
+   "text": "Úvod",
+   "href": ""
+  },
+  {
+   "text": "Sortiment",
+   "href": "#",
+   "sub": [
+    {
+     "text": "Interiérové dveře",
+     "href": "dvere-interierove"
+    },
+    {
+     "text": "Posuvné dveře",
+     "href": "dvere-posuvne"
+    },
+    {
+     "text": "Bezfalcové dveře",
+     "href": "dvere-bezfalcove"
+    },
+    {
+     "text": "Masivní dveře na zakázku",
+     "href": "masivni-dvere-na-zakazku"
+    },
+    {
+     "text": "Bezpečnostní dveře",
+     "href": "bezpecnostni-dvere"
+    },
+    {
+     "text": "Obložkové zárubně",
+     "href": "oblozkove-zarubne"
+    },
+    {
+     "text": "Kování – kliky",
+     "href": "kovani"
+    },
+    {
+     "text": "Stavební pouzdra Scrigno",
+     "href": "stavebni-pouzdra"
+    },
+    {
+     "text": "Stavební pouzdra ECLISSE",
+     "href": "eclisse"
+    },
+    {
+     "text": "Problémy s dveřmi",
+     "href": "problemy-s-interierovymi-dvermi"
+    }
+   ]
+  },
+  {
+   "text": "Problémy s dveřmi",
+   "href": "problemy-s-interierovymi-dvermi"
+  },
+  {
+   "text": "Realizace",
+   "href": "realizace-interierovych-dveri"
+  },
+  {
+   "text": "O nás",
+   "href": "#o-nas"
+  },
+  {
+   "text": "Blog",
+   "href": "blog"
+  },
+  {
+   "text": "Kontakt",
+   "href": "kontakt"
+  }
+ ],
+ "cta": {
+  "text": "Sestavit a nacenit",
+  "href": "cenova-kalkulace-dvere"
+ }
 }
