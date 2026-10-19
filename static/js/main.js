@@ -157,6 +157,13 @@
       if (fo && fo.files[0] && fo.files[0].size > 9 * 1024 * 1024) { stav.textContent = 'Příloha je větší než 9 MB, pošlete ji prosím e-mailem.'; return; }
       // běžné odeslání (multipart): AJAX u FormSubmit přílohy zahazuje
       stav.textContent = 'Odesílám…';
+      if (f.hasAttribute('data-sestavovac')) {
+        // do e-mailu pošleme názvy místo čísel voleb (stejné jako v souhrnu)
+        [['model', '.js-s-model'], ['varianta', '.js-s-var'], ['dekor', '.js-s-dekor']].forEach(function (p) {
+          var r = f.querySelector('input[name="' + p[0] + '"]:checked'), t = f.querySelector(p[1]);
+          if (r && t && t.textContent && t.textContent !== '–') r.value = t.textContent;
+        });
+      }
       f.action = endpoint;
       var nx = f.querySelector('input[name=_next]');
       if (!nx) { nx = d.createElement('input'); nx.type = 'hidden'; nx.name = '_next'; f.appendChild(nx); }
