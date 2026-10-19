@@ -160,10 +160,23 @@
       f.action = endpoint;
       var nx = f.querySelector('input[name=_next]');
       if (!nx) { nx = d.createElement('input'); nx.type = 'hidden'; nx.name = '_next'; f.appendChild(nx); }
-      nx.value = location.href.split('#')[0];
+      nx.value = location.href.split('#')[0].split('?')[0] + '?odeslano=1';
       f.submit();
     });
   });
+
+  // Po odeslání (návrat z FormSubmit) potvrdíme, že poptávka odešla
+  if (/[?&]odeslano=1/.test(location.search)) {
+    var ff = d.querySelector('form.formular'), st = ff && ff.querySelector('.formular-stav');
+    if (st) {
+      st.textContent = 'Děkujeme, Vaše zpráva byla odeslána. Brzy se Vám ozveme.';
+      st.classList.add('formular-stav--ok');
+      st.setAttribute('tabindex', '-1');
+      var ok = function () { st.scrollIntoView({ block: 'center' }); };
+      if (d.readyState === 'complete') ok(); else window.addEventListener('load', ok);
+    }
+    if (history.replaceState) history.replaceState(null, '', location.pathname + location.hash);
+  }
 
   // Zvětšení obrázků v obsahu (tabulky a fotky): klepnutím na celou obrazovku
   d.addEventListener('click', function (e) {
