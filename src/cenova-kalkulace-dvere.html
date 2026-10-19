@@ -105,6 +105,8 @@
       <label class="krok__poznamka">Poznámka / upřesnění<textarea name="poznamka" rows="4"></textarea></label>
       <label class="souhlas"><input type="checkbox" name="souhlas" required><span>Souhlasím se zpracováním osobních údajů za účelem vyřízení poptávky (<a href="{{ url('ochrana-osobnich-udaju') }}">podrobnosti</a>).</span></label>
       <div class="past" aria-hidden="true"><label>Nevyplňovat <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_cc" value="sudetak@seznam.cz">
       <input type="hidden" name="_subject" value="{{ site.formular.predmet }}">
       <input type="hidden" name="souhrn" class="js-souhrn">
       <button type="submit" class="tlacitko tlacitko--velke">Odeslat poptávku</button>
