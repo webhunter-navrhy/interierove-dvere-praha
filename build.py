@@ -145,6 +145,21 @@ def jsonld(site):
     return json.dumps(j, ensure_ascii=False).replace("</", "<\\/")
 
 
+def seo_dolad(kod):
+    """SEO dolad (19. 10. 2026): meta description max ~160 znaků po slově, prázdné alt obrázků v obsahu = nadpis stránky."""
+    def _kratce(m):
+        t = html.unescape(m.group(2))
+        if len(t) > 165:
+            t = t[:160].rsplit(" ", 1)[0].rstrip(" ,;:-–") + "…"
+        return m.group(1) + html.escape(t, quote=True) + '"'
+    kod = re.sub(r'(<meta (?:name="description"|property="og:description") content=")([^"]*)"', _kratce, kod)
+    h1 = re.search(r"<h1[^>]*>(.*?)</h1>", kod, re.S)
+    h1 = re.sub(r"<[^>]+>", "", h1.group(1)).strip() if h1 else ""
+    if h1:
+        kod = re.sub(r'(<img [^>]*?)alt=""', lambda m: m.group(1) + 'alt="%s"' % html.escape(h1, quote=True), kod)
+    return kod
+
+
 def main():
     data = nacti_data()
     site = data["site"]
@@ -207,7 +222,7 @@ def main():
             vystup = os.path.join(DIST, jmeno, "index.html")
             stranky.append(jmeno + "/")
         with open(vystup, "w", encoding="utf-8") as fh:
-            fh.write(kod)
+            fh.write(seo_dolad(kod))
 
     # dynamické stránky: modely dveří a obsahové stránky (URL stejné jako na dvere-vascodoors.cz)
     def vypis(sablona, cesta, **kw):
@@ -215,7 +230,7 @@ def main():
         kod = env.get_template(sablona).render(cesta=cesta + "/", **kw)
         os.makedirs(os.path.join(DIST, cesta), exist_ok=True)
         with open(os.path.join(DIST, cesta, "index.html"), "w", encoding="utf-8") as fh:
-            fh.write(kod)
+            fh.write(seo_dolad(kod))
         stranky.append(cesta + "/")
     for m in data.get("models", []):
         vypis("_model.html", m["slug"], model=m)
