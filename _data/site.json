@@ -2,11 +2,11 @@
  "slug": "interierove-dvere-praha",
  "nazev": "Interiérové dveře Praha",
  "znacka": "Dveře Šťastný · Vasco Doors",
- "url": "https://webhunter-navrhy.github.io/interierove-dvere-praha/",
- "base": "/interierove-dvere-praha/",
+ "url": "https://interierove-dvere-praha.cz/",
+ "base": "/",
  "lang": "cs",
  "popis": "Interiérové, posuvné, bezfalcové i bezpečnostní dveře Vasco Doors s montáží v Praze a okolí. Vzorkovna Slavíkova 29, Praha 2 – Vinohrady, dodání do 21 dnů.",
- "navrh": true,
+ "navrh": false,
  "domena": "interierove-dvere-praha.cz",
  "og_image": "wp/interierove-dvere-braga-d86fde.png",
  "logo": "img-logo-svetle.png",
@@ -84,8 +84,8 @@
   }
  ],
  "formular": {
-  "endpoint": "",
-  "demo": true,
+  "endpoint": "https://formsubmit.co/info@dvere-vascodoors.cz",
+  "demo": false,
   "predmet": "Poptávka dveří z webu"
  },
  "nav": [
