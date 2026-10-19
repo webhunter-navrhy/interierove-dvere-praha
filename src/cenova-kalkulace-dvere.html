@@ -21,7 +21,7 @@
   <p class="stranka-hlava__perex">Vyberte model a&nbsp;parametry, my vám připravíme nabídku. Cenu křídla vidíte hned podle ceníku, zárubeň, kování a&nbsp;montáž doplníme po zaměření. Nejde o&nbsp;závaznou objednávku.</p>
 </section>
 
-<form class="sestavovac formular" data-sestavovac data-endpoint="{{ site.formular.endpoint }}" data-demo="{{ 1 if site.formular.demo or not site.formular.endpoint else 0 }}" novalidate>
+<form class="sestavovac formular" method="post" data-sestavovac data-endpoint="{{ site.formular.endpoint }}" data-demo="{{ 1 if site.formular.demo or not site.formular.endpoint else 0 }}" novalidate>
   <div class="sestavovac__nahled" aria-live="polite">
     <div class="sestavovac__stena">
       {% set v0 = data.models[3].varianty[0] %}<div class="model__kridlo js-kridlo" style="--r: {{ v0.r }}"><span class="kridlo__otvor"><span class="kridlo__list"><img class="js-nahled" src="{{ img_url(v0.img, 640) }}" alt="Náhled dveří" width="300" height="795"></span></span></div>
