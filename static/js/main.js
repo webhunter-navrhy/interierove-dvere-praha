@@ -182,6 +182,12 @@
       var ok = function () { st.scrollIntoView({ block: 'center' }); };
       if (d.readyState === 'complete') ok(); else window.addEventListener('load', ok);
     }
+    // měřitelná konverze (Google Analytics / Ads): událost generate_lead, jen po souhlasu s cookies
+    if (ff && ff.hasAttribute('data-b2b')) {
+      window.dataLayer = window.dataLayer || [];
+      var konv = function () { if (window.swGAOn) { (function () { window.dataLayer.push(arguments); })('event', 'generate_lead', { form_id: 'b2b_pro_firmy', page_location: location.href }); } };
+      if (d.readyState === 'complete') setTimeout(konv, 800); else window.addEventListener('load', function () { setTimeout(konv, 800); });
+    }
     if (history.replaceState) history.replaceState(null, '', location.pathname + location.hash);
   }
 

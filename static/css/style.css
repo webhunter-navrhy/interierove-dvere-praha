@@ -669,3 +669,28 @@ h1 { font-size: clamp(2rem, 4.2vw, 3.6rem); }
 .cookie__b{display:flex;gap:.6rem}
 .cookie button{font:inherit;font-weight:500;cursor:pointer;padding:.55rem 1.1rem;border-radius:6px;border:1px solid #b88a3a;background:linear-gradient(135deg,#d9b768,#b88a3a);color:#141414}
 .cookie button.cookie__ne{background:transparent;border-color:#6b645a;color:#f1ece3}
+
+/* B2B stránka Pro firmy */
+.b2b-hlava h1 { max-width: 26ch; }
+.b2b-sekce, .b2b-nabidka, .b2b-zvyrazneni, .b2b-formular, .b2b-uvod { max-width: calc(var(--max) + 2 * var(--okraj)); margin: var(--sekce) auto 0; padding-left: var(--okraj); padding-right: var(--okraj); }
+.b2b-sekce { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.b2b-sekce--obracene { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); }
+.b2b-sekce--obracene .b2b-sekce__text { order: 2; }
+.b2b-sekce--jednosl { grid-template-columns: minmax(0, 46rem); }
+.b2b-sekce__foto { margin: 0; } .b2b-sekce__foto img { width: 100%; height: auto; display: block; }
+.b2b-nabidka__mriz { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--linka); border: 1px solid var(--linka); }
+.b2b-nabidka__mriz article { background: var(--papir); padding: 1.5rem; }
+.b2b-nabidka__mriz h3 { margin-bottom: .5rem; }
+.b2b-zvyrazneni { padding-top: clamp(2rem, 4vw, 3.2rem); padding-bottom: clamp(2rem, 4vw, 3.2rem); background: var(--papir); border-left: 4px solid var(--cervena); box-sizing: border-box; }
+.b2b-zvyrazneni h2 { max-width: 30ch; margin-bottom: 1.2rem; }
+.b2b-zvyrazneni__text { max-width: 46rem; }
+.b2b-formular { max-width: 46rem; }
+.b2b-formular__perex { color: var(--ink-2); margin-bottom: 1.5rem; }
+.b2b-formular select { font: inherit; font-size: 1rem; color: var(--ink); background: var(--papir); border: 1px solid var(--linka); border-radius: 2px; padding: .75rem .85rem; min-height: 48px; width: 100%; }
+.b2b-volby { border: 0; padding: 0; margin: 0 0 1rem; }
+.b2b-volby legend { font-size: .9rem; color: var(--ink-2); margin-bottom: .5rem; padding: 0; }
+.formular .b2b-volby__pol { flex-direction: row; align-items: center; gap: .6rem; margin-bottom: .4rem; font-size: .95rem; }
+.b2b-uvod { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem 3rem; padding-top: clamp(1.6rem, 3vw, 2.4rem); padding-bottom: clamp(1.6rem, 3vw, 2.4rem); background: var(--papir); border-top: 1px solid var(--linka); border-bottom: 1px solid var(--linka); box-sizing: border-box; }
+.b2b-uvod h2 { margin-bottom: .6rem; } .b2b-uvod p { max-width: 46rem; color: var(--ink-2); margin: 0; }
+.b2b-odkaz { max-width: var(--max); margin: 2rem auto 0; padding: 0 var(--okraj); color: var(--ink-2); }
+@media (max-width: 900px) { .b2b-sekce, .b2b-sekce--obracene { grid-template-columns: 1fr; } .b2b-sekce--obracene .b2b-sekce__text { order: 0; } .b2b-nabidka__mriz { grid-template-columns: 1fr; } .b2b-uvod { flex-direction: column; align-items: flex-start; } }

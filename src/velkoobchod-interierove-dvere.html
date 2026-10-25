@@ -1,0 +1,112 @@
+{% extends "_base.html" %}
+{% set titulek = "Velkoobchod interiérových dveří Vasco Doors | Pro firmy" %}
+{% set popis = "Velkoobchod a B2B spolupráce pro firmy, řemeslníky a prodejce. Interiérové dveře Vasco Doors, technická podpora, zaměření, dodávka i montáž." %}
+{% block head %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Úvod","item":"{{ site.url }}"},{"@type":"ListItem","position":2,"name":"Pro firmy","item":"{{ site.url }}velkoobchod-interierove-dvere/"}]}</script>
+{% endblock %}
+{% block obsah %}
+<section class="stranka-hlava b2b-hlava">
+  <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a><span>Pro firmy</span></nav>
+  <p class="nadtitulek">B2B · velkoobchod · Vasco Doors</p>
+  <h1>Velkoobchod interiérových dveří Vasco&nbsp;Doors pro firmy a&nbsp;prodejce</h1>
+  <p class="stranka-hlava__perex">Hledáte spolehlivého dodavatele interiérových dveří pro své zákazníky nebo projekty? Nabízíme velkoobchodní a&nbsp;B2B spolupráci malým i&nbsp;středním firmám, řemeslníkům, interiérovým studiím a&nbsp;prodejcům.</p>
+  <p><a class="tlacitko" href="#formular-b2b">Mám zájem o spolupráci</a></p>
+</section>
+
+<section class="b2b-sekce" aria-labelledby="b2b-koho">
+  <div class="b2b-sekce__text">
+    <h2 id="b2b-koho">Spolupráce pro malé i střední firmy</h2>
+    <p>Nechceme spolupracovat pouze s velkými prodejci. Zajímavým partnerem pro nás může být i menší firma nebo řemeslník, který řeší dveře pouze jako součást svých zakázek.</p>
+    <p>Spolupráci nabízíme například:</p>
+    <ul class="seznam seznam--fajfky">
+      <li>podlahářským firmám</li><li>truhlářům</li><li>stavebním a rekonstrukčním firmám</li><li>interiérovým studiím a designérům</li><li>architektům</li><li>developerům</li><li>prodejnám stavebních a interiérových materiálů</li><li>prodejcům dveří</li><li>dalším firmám, které chtějí rozšířit svoji nabídku o interiérové dveře</li>
+    </ul>
+    <p>Není podmínkou odebírat desítky dveří měsíčně. Způsob spolupráce můžeme nastavit podle velikosti firmy, typu zakázek a předpokládaného odběru.</p>
+  </div>
+  <figure class="b2b-sekce__foto">{{ img(site.vzorkovna_foto, 'Vzorkovna interiérových dveří Vasco Doors, Slavíkova 29, Praha 2', sizes='(max-width: 900px) 100vw, 45vw') }}</figure>
+</section>
+
+<section class="b2b-nabidka" aria-labelledby="b2b-nabizime">
+  <div class="sekce-hlava">
+    <h2 id="b2b-nabizime">Co získáte spoluprací s námi</h2>
+    <p class="sekce-hlava__perex">Nejde nám pouze o prodej dveří. Partnerům chceme nabídnout také naše zkušenosti s jejich zaměřením, objednávkou, montáží a následným servisem.</p>
+  </div>
+  <div class="b2b-nabidka__mriz">
+    <article><h3>Interiérové dveře Vasco Doors</h3><p>Dodáváme interiérové dveře a zárubně Vasco Doors v různých provedeních, dekorech a rozměrech.</p></article>
+    <article><h3>Obchodní podmínky pro firmy</h3><p>Pro obchodní partnery nabízíme individuální obchodní a velkoobchodní podmínky podle charakteru spolupráce a rozsahu odběru.</p></article>
+    <article><h3>Technická podpora</h3><p>Pokud si nejste jistí správným rozměrem, typem zárubně, stavebním otvorem nebo technickým řešením, můžeme vám pomoci ještě před objednávkou.</p></article>
+    <article><h3>Zaměření</h3><p>Podle dohody můžeme zajistit odborné zaměření přímo na zakázce.</p></article>
+    <article><h3>Montáž dveří</h3><p>Pokud dveře nechcete montovat vlastními pracovníky, můžeme po dohodě zajistit také montáž.</p></article>
+    <article><h3>Servis</h3><p>Dokážeme řešit také následné seřízení, opravy a servis dveří.</p></article>
+  </div>
+</section>
+
+<section class="b2b-zvyrazneni" aria-labelledby="b2b-neodbornik">
+  <h2 id="b2b-neodbornik">Dveře můžete nabídnout zákazníkovi, i když nejsou vaším hlavním oborem</h2>
+  <div class="b2b-zvyrazneni__text">
+    <p>Typickým příkladem může být podlahářská nebo stavební firma, která realizuje rekonstrukci bytu a zákazník se jí zeptá také na nové interiérové dveře.</p>
+    <p>Nemusíte kvůli tomu dveře studovat, hledat pokaždé jiného dodavatele nebo zakázku odmítat.</p>
+    <p><b>Dveřní část zakázky můžeme vyřešit společně.</b></p>
+    <p>Pomůžeme s výběrem vhodných dveří, technickým řešením, zaměřením a objednávkou. Podle dohody můžeme zajistit také montáž a následný servis.</p>
+    <p>Partner tak může svému zákazníkovi nabídnout další službu, aniž by musel budovat vlastní dveřové oddělení.</p>
+  </div>
+</section>
+
+<section class="b2b-sekce b2b-sekce--obracene" aria-labelledby="b2b-prodejce">
+  <div class="b2b-sekce__text">
+    <h2 id="b2b-prodejce">Chcete zařadit dveře Vasco Doors do své nabídky?</h2>
+    <p>Máte prodejnu, showroom, interiérové studio nebo vlastní síť zákazníků?</p>
+    <p>Pokud chcete rozšířit svoji nabídku o interiérové dveře Vasco Doors, kontaktujte nás.</p>
+    <p>Spolupráci můžeme nastavit jak pro jednotlivé zakázky, tak pro pravidelný odběr. Konkrétní obchodní podmínky řešíme individuálně podle typu spolupráce.</p>
+    <p><a class="odkaz-sipka" href="{{ url('dvere-interierove') }}">Prohlédnout sortiment interiérových dveří</a></p>
+  </div>
+  <figure class="b2b-sekce__foto">{{ img(site.lide[1].foto, 'Josef Šťastný, technické poradenství, zaměření a montáž dveří', sizes='(max-width: 900px) 100vw, 40vw') }}</figure>
+</section>
+
+<section class="b2b-sekce b2b-sekce--jednosl" aria-labelledby="b2b-proc">
+  <div class="b2b-sekce__text">
+    <h2 id="b2b-proc">Nejsme pouze internetový prodejce dveří</h2>
+    <p>Dveře a podlahy řešíme v reálných interiérech a známe problémy, které se často ukážou až při zaměření nebo montáži.</p>
+    <p>Máme zkušenosti s klasickými i bezfalcovými dveřmi, obložkovými zárubněmi, posuvnými dveřmi na stěnu i do stavebního pouzdra a s atypickými situacemi při rekonstrukcích.</p>
+    <p>Díky tomu dokážeme obchodnímu partnerovi pomoci nejen s dodáním výrobku, ale také s technickou stránkou konkrétní zakázky. Podívejte se na <a href="{{ url('realizace-interierovych-dveri') }}">naše realizace</a>.</p>
+  </div>
+</section>
+
+<section class="b2b-formular" id="formular-b2b" aria-labelledby="b2b-form-h">
+  <h2 id="b2b-form-h">Máte zájem o velkoobchodní nebo B2B spolupráci?</h2>
+  <p class="b2b-formular__perex">Vyplňte krátký formulář, ozveme se vám a probereme, jak by spolupráce mohla vypadat.</p>
+  <form class="formular" method="post" enctype="multipart/form-data" {% if site.formular.endpoint and not site.formular.demo %}action="{{ site.formular.endpoint }}"{% endif %} data-endpoint="{{ site.formular.endpoint }}" data-demo="{{ 1 if site.formular.demo or not site.formular.endpoint else 0 }}" data-b2b>
+    <label>Jméno a příjmení * <input name="jmeno" autocomplete="name" required></label>
+    <div class="formular__dva">
+      <label>Firma / název společnosti * <input name="firma" autocomplete="organization" required></label>
+      <label>IČO <input name="ico" inputmode="numeric" autocomplete="off"></label>
+    </div>
+    <label>Město / kraj * <input name="mesto_kraj" autocomplete="address-level2" required></label>
+    <div class="formular__dva">
+      <label>Telefon * <input name="telefon" type="tel" autocomplete="tel" required></label>
+      <label>E-mail * <input name="email" type="email" autocomplete="email" required></label>
+    </div>
+    <label>Obor firmy
+      <select name="obor">
+        <option value="">Vyberte…</option>
+        {% for o in ['prodejce dveří', 'podlahářská firma', 'truhlář', 'stavební / rekonstrukční firma', 'interiérové studio', 'architekt / projektant', 'developer', 'jiný'] %}<option>{{ o }}</option>{% endfor %}
+      </select>
+    </label>
+    <fieldset class="b2b-volby">
+      <legend>O jakou spolupráci máte zájem?</legend>
+      {% for o in ['nákup dveří pro vlastní zakázky', 'další prodej dveří zákazníkům', 'pravidelný velkoobchodní odběr', 'dodávka včetně zaměření', 'dodávka včetně montáže', 'zatím nevím – chci spolupráci probrat'] %}
+      <label class="b2b-volby__pol"><input type="checkbox" name="Spolupráce: {{ o }}" value="ano"><span>{{ o }}</span></label>
+      {% endfor %}
+    </fieldset>
+    <label>Zpráva / předpokládaný rozsah spolupráce <textarea name="zprava" rows="5"></textarea></label>
+    <label class="souhlas"><input type="checkbox" name="souhlas" required><span>Souhlasím se zpracováním osobních údajů za účelem vyřízení dotazu (<a href="{{ url('ochrana-osobnich-udaju') }}">podrobnosti</a>).</span></label>
+    <div class="past" aria-hidden="true"><label>Nevyplňovat <input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_cc" value="sudetak@seznam.cz">
+    <input type="hidden" name="_subject" value="Poptávka B2B / velkoobchod z webu (stránka Pro firmy)">
+    <input type="hidden" name="zdroj" value="B2B stránka – Pro firmy">
+    <button type="submit" class="tlacitko">Chci probrat spolupráci</button>
+    <p class="formular-stav" role="status" aria-live="polite"></p>
+  </form>
+</section>
+{% endblock %}
