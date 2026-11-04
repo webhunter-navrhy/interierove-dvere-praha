@@ -149,6 +149,7 @@
       if (souhlas && !souhlas.checked) { stav.textContent = 'Potvrďte prosím souhlas se zpracováním osobních údajů.'; return; }
       if (!f.hasAttribute('data-sestavovac') && !f.checkValidity()) { f.reportValidity(); return; }
       var endpoint = f.getAttribute('data-endpoint');
+      if (!window.__fs) window.__fs = Date.now() - 10000;
       if (f.getAttribute('data-demo') === '1' || !endpoint) {
         stav.textContent = 'Ukázka formuláře: v návrhu se nic neodesílá. Po spuštění webu přijde poptávka rovnou na e-mail vzorkovny.';
         return;
@@ -163,6 +164,28 @@
           var r = f.querySelector('input[name="' + p[0] + '"]:checked'), t = f.querySelector(p[1]);
           if (r && t && t.textContent && t.textContent !== '–') r.value = t.textContent;
         });
+      }
+      if (/workers\.dev\/api\//.test(endpoint)) {
+        var L = {jmeno: 'Jméno', email: 'E-mail', telefon: 'Telefon', zprava: 'Zpráva', firma: 'Firma', ico: 'IČO', obor: 'Obor', mesto: 'Město', mesto_kraj: 'Město / kraj', ulice: 'Ulice', psc: 'PSČ', model: 'Model', typ: 'Typ', pocet: 'Počet', sirka: 'Šířka', sila_zdi: 'Síla zdi', montaz: 'Montáž', doprava: 'Doprava', poznamka: 'Poznámka', souhrn: 'Souhrn', zdroj: 'Zdroj'};
+        var fields = {}, fd = new FormData(f);
+        fd.forEach(function (v, k) {
+          if (typeof v !== 'string' || !v || k.charAt(0) === '_' || k === 'souhlas') return;
+          var key = L[k] || k; fields[key] = fields[key] ? fields[key] + ', ' + v : v;
+        });
+        if (!fields['Jméno']) { stav.textContent = 'Vyplňte prosím jméno.'; return; }
+        stav.textContent = 'Odesílám…';
+        var tl = f.querySelector('button[type=submit]'); if (tl) tl.disabled = true;
+        fetch(endpoint, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({type: 'kontakt', fields: fields, page: location.href.split('#')[0], hp: (past && past.value) || '', ms: Date.now() - (window.__fs || Date.now() - 10000)})})
+          .then(function (r) { return r.json().catch(function () { return {}; }); })
+          .then(function (j) {
+            if (tl) tl.disabled = false;
+            if (j && j.ok) {
+              stav.textContent = 'Děkujeme, Vaše zpráva byla odeslána. Brzy se Vám ozveme.'; stav.classList.add('formular-stav--ok'); f.reset();
+              if (f.hasAttribute('data-b2b')) { window.dataLayer = window.dataLayer || []; if (window.swGAOn) (function () { window.dataLayer.push(arguments); })('event', 'generate_lead', { form_id: 'b2b_pro_firmy', page_location: location.href }); }
+            } else stav.textContent = (j && j.error) || 'Odeslání se nepodařilo. Napište nám prosím na info@dvere-vascodoors.cz.';
+          })
+          .catch(function () { if (tl) tl.disabled = false; stav.textContent = 'Odeslání se nepodařilo. Napište nám prosím na info@dvere-vascodoors.cz.'; });
+        return;
       }
       f.action = endpoint;
       var nx = f.querySelector('input[name=_next]');

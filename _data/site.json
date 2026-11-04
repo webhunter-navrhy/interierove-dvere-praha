@@ -84,7 +84,7 @@
   }
  ],
  "formular": {
-  "endpoint": "https://formsubmit.co/info@dvere-vascodoors.cz",
+  "endpoint": "https://webhunter-admin.webhunter.workers.dev/api/interierove-dvere-praha/form",
   "demo": false,
   "predmet": "Poptávka dveří z webu"
  },
