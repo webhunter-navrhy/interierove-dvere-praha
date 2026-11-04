@@ -249,8 +249,8 @@ def main():
     dnes = datetime.date.today().isoformat()
     with open(os.path.join(DIST, "sitemap.xml"), "w", encoding="utf-8") as fh:
         fh.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-        for s in stranky:
-            fh.write(f"  <url><loc>{site['url']}{s}</loc><lastmod>{dnes}</lastmod></url>\n")
+        for s in sorted(stranky, key=lambda x: (x != "", x)):
+            fh.write(f"<url><loc>{site['url']}{s}</loc></url>\n")
         fh.write("</urlset>\n")
     open(os.path.join(DIST, ".nojekyll"), "w").close()
     if site.get("domena") and not navrh:
