@@ -220,7 +220,8 @@ def main():
         else:
             os.makedirs(os.path.join(DIST, jmeno), exist_ok=True)
             vystup = os.path.join(DIST, jmeno, "index.html")
-            stranky.append(jmeno + "/")
+            if not jmeno.startswith("dekujeme"):
+                stranky.append(jmeno + "/")
         with open(vystup, "w", encoding="utf-8") as fh:
             fh.write(seo_dolad(kod))
 

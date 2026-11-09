@@ -179,6 +179,7 @@
           .then(function (r) { return r.json().catch(function () { return {}; }); })
           .then(function (j) {
             if (tl) tl.disabled = false;
+            if (j && j.ok && f.getAttribute('data-dekuji')) { location.href = f.getAttribute('data-dekuji'); return; }
             if (j && j.ok) {
               stav.textContent = 'Děkujeme, Vaše zpráva byla odeslána. Brzy se Vám ozveme.'; stav.classList.add('formular-stav--ok'); f.reset();
               if (f.hasAttribute('data-b2b')) { window.dataLayer = window.dataLayer || []; if (window.swGAOn) (function () { window.dataLayer.push(arguments); })('event', 'generate_lead', { form_id: 'b2b_pro_firmy', page_location: location.href }); }
@@ -190,7 +191,7 @@
       f.action = endpoint;
       var nx = f.querySelector('input[name=_next]');
       if (!nx) { nx = d.createElement('input'); nx.type = 'hidden'; nx.name = '_next'; f.appendChild(nx); }
-      nx.value = location.href.split('#')[0].split('?')[0] + '?odeslano=1';
+      nx.value = f.getAttribute('data-dekuji') || (location.href.split('#')[0].split('?')[0] + '?odeslano=1');
       f.submit();
     });
   });

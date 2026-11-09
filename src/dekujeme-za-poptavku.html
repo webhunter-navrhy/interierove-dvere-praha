@@ -1,0 +1,11 @@
+{% extends "_base.html" %}
+{% set titulek = "Děkujeme za poptávku | Interiérové dveře Praha" %}
+{% set noindex = True %}
+{% block obsah %}
+<section class="stranka-hlava stranka-hlava--404">
+  <p class="nadtitulek">Odesláno</p>
+  <h1>Děkujeme za Váš zájem</h1>
+  <p class="stranka-hlava__perex">Poptávku jsme přijali a ozveme se Vám co nejdříve s nabídkou.</p>
+  <div class="hero__akce"><a class="tlacitko" href="{{ url('dvere-interierove') }}">Interiérové dveře</a><a class="tlacitko tlacitko--obrys" href="{{ url('') }}">Zpět na úvod</a></div>
+</section>
+{% endblock %}

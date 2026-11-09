@@ -1,5 +1,5 @@
 {# Kontaktní formulář. Endpoint a demo režim z _data/site.json (formular.endpoint, formular.demo). #}
-<form class="formular" method="post" enctype="multipart/form-data" {% if site.formular.endpoint and not site.formular.demo %}action="{{ site.formular.endpoint }}"{% endif %} data-endpoint="{{ site.formular.endpoint }}" data-demo="{{ 1 if site.formular.demo or not site.formular.endpoint else 0 }}">
+<form class="formular" data-dekuji="{{ url('dekujeme-za-zpravu') }}" method="post" enctype="multipart/form-data" {% if site.formular.endpoint and not site.formular.demo %}action="{{ site.formular.endpoint }}"{% endif %} data-endpoint="{{ site.formular.endpoint }}" data-demo="{{ 1 if site.formular.demo or not site.formular.endpoint else 0 }}">
   <label>Jméno a příjmení <input name="jmeno" autocomplete="name" required></label>
   <div class="formular__dva">
     <label>E-mail <input name="email" type="email" autocomplete="email"></label>
